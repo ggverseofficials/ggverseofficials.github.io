@@ -1,47 +1,260 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>GG Verse Official</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #111;
-            color: white;
-            text-align: center;
-            padding: 50px;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GG Verse Official</title>
 
-        h1 {
-            color: gold;
-        }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 25px;
-            background: gold;
-            color: black;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-    </style>
+    body {
+      background: #0d0d0d;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+      url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px;
+    }
+
+    header h1 {
+      font-size: 60px;
+      color: gold;
+      margin-bottom: 15px;
+    }
+
+    header h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    header p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 30px;
+      background: gold;
+      color: black;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    nav {
+      background: #111;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: gold;
+    }
+
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      color: gold;
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 25px;
+    }
+
+    .about, .hotel {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      border: 1px solid #333;
+    }
+
+    .card h3 {
+      color: gold;
+      margin-bottom: 10px;
+    }
+
+    .socials {
+      text-align: center;
+    }
+
+    .socials a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 22px;
+      background: gold;
+      color: black;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #050505;
+      text-align: center;
+      padding: 25px;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 42px;
+      }
+
+      header h2 {
+        font-size: 22px;
+      }
+
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-    <h1>GG Verse</h1>
+  <header>
+    <div>
+      <h1>GG Verse</h1>
+      <h2>Food • Travel • Lifestyle • Inspiration • Hospitality</h2>
+      <p>
+        Welcome to GG Verse — a personal brand by Ganesh Gupta, built around food,
+        travel, motivation, creativity, and the future vision of creating a world-class
+        hospitality destination in Nepal.
+      </p>
+      <a href="#about" class="btn">Explore GG Verse</a>
+    </div>
+  </header>
 
-    <h2>Welcome to My World</h2>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#food">Food</a>
+    <a href="#travel">Travel</a>
+    <a href="#hotel">Hotel Vision</a>
+    <a href="#social">Social</a>
+  </nav>
 
+  <section id="about" class="about">
+    <h2>About GG Verse</h2>
     <p>
-        Food • Travel • Motivation • Lifestyle • Future Hospitality Projects
+      Hi, I’m Ganesh Gupta — a chef, hospitality professional, creator, and dreamer.
+      GG Verse is my space to share my journey through food, travel, personal growth,
+      stories, ideas, and future business dreams.
     </p>
+  </section>
 
+  <section id="food">
+    <h2>Food & Creativity</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Chef Journey</h3>
+        <p>Sharing kitchen experience, food ideas, recipes, plating, and chef life.</p>
+      </div>
+
+      <div class="card">
+        <h3>GG Food Art</h3>
+        <p>Creative food content, restaurant dishes, specials, and visual food stories.</p>
+      </div>
+
+      <div class="card">
+        <h3>Future Menu Ideas</h3>
+        <p>Building ideas for future GG Verse restaurants, cafés, and hotel dining.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="travel">
+    <h2>Travel & Lifestyle</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Australia</h3>
+        <p>Life, work, travel, and experiences from Australia.</p>
+      </div>
+
+      <div class="card">
+        <h3>Nepal</h3>
+        <p>Culture, nature, family, memories, and future dreams back home.</p>
+      </div>
+
+      <div class="card">
+        <h3>World Journey</h3>
+        <p>Exploring places, people, food, stories, and meaningful experiences.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="hotel" class="hotel">
+    <h2>Future GG Verse Hotel Project</h2>
     <p>
-        Created by Ganesh Gupta
+      The long-term vision of GG Verse is to create a world-class hotel and resort
+      project in Nepal — a place with luxury rooms, spa, wellness, swimming pool,
+      restaurants, events, nature, culture, and unforgettable hospitality.
     </p>
+    <br>
+    <p>
+      GG Verse will represent comfort, creativity, Nepalese warmth, international
+      service standards, and a memorable guest experience.
+    </p>
+  </section>
 
-    <a href="#" class="btn">Explore GG Verse</a>
+  <section id="social" class="socials">
+    <h2>Follow GG Verse</h2>
+    <p>Connect with GG Verse across social media.</p>
+
+    <a href="#" target="_blank">YouTube</a>
+    <a href="#" target="_blank">Instagram</a>
+    <a href="#" target="_blank">TikTok</a>
+    <a href="#" target="_blank">Facebook</a>
+  </section>
+
+  <footer>
+    <p>© 2026 GG Verse Official. Created by Ganesh Gupta.</p>
+  </footer>
 
 </body>
 </html>
