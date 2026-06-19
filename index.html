@@ -504,6 +504,11 @@
     text-align:center;
 }
 
+.food-creativity{
+    padding:120px 20px;
+    text-align:center;
+}
+
 .food-creativity h2{
     color:#d4af37;
     font-size:48px;
@@ -549,7 +554,8 @@
     color:#f0f0f0;
     line-height:1.8;
 }
-    .chef-quote{
+
+.chef-quote{
     margin-top:60px;
     font-size:24px;
     font-style:italic;
@@ -557,6 +563,12 @@
     max-width:900px;
     margin-left:auto;
     margin-right:auto;
+}
+
+@media(max-width:900px){
+    .creativity-grid{
+        grid-template-columns:1fr;
+    }
 }
     .footer{
     background:#000;
@@ -803,33 +815,44 @@ Showcasing dishes crafted throughout my professional hospitality journey in Sydn
     </div>
 
  
-  <section id="food">
+  <section id="food-creativity" class="food-creativity">
     <h2>The Culinary Vision Behind GG Verse</h2>
 
-<p class="section-intro">
-From professional kitchens in Sydney to future hospitality concepts in Nepal,
-food remains at the heart of the GG Verse journey.
-</p>
-    <div class="cards">
-      <div class="card">
-        <h3>👨‍🍳 Professional Chef Journey</h3>
-        <p>Sharing kitchen experience, food ideas, recipes, plating, and chef life.</p>
-      </div>
+    <p class="section-intro">
+        From professional kitchens in Sydney to future hospitality concepts in Nepal,
+        food remains at the heart of the GG Verse journey.
+    </p>
 
-      <div class="card">
-        <h3>📸 GG Food Art & Storytelling</h3>
-        <p>Creative food content, restaurant dishes, specials, and visual food stories.</p>
-      </div>
+    <div class="creativity-grid">
+        <div class="creativity-card">
+            <h3>👨‍🍳 Professional Chef Journey</h3>
+            <p>
+                Years of hands-on kitchen experience, leadership, menu creation,
+                plating, preparation, and professional hospitality service.
+            </p>
+        </div>
 
-      <div class="card">
-        <h3>🍽 Future Hospitality Concepts</h3>
-        <p>Building ideas for future GG Verse restaurants, cafés, and hotel dining.</p>
-      </div>
-      <div class="chef-quote">
-    "Every great hospitality destination begins with great food, genuine service, and a clear vision."
-</div>
+        <div class="creativity-card">
+            <h3>📸 GG Food Art & Storytelling</h3>
+            <p>
+                Creative food content, restaurant dishes, chef specials,
+                visual stories, and the journey behind every plate.
+            </p>
+        </div>
+
+        <div class="creativity-card">
+            <h3>🏨 Future Hospitality Concepts</h3>
+            <p>
+                Building ideas for future GG Verse restaurants, cafés,
+                hotel dining, resort menus, and luxury guest experiences.
+            </p>
+        </div>
     </div>
-  </section>
+
+    <div class="chef-quote">
+        "Every great hospitality destination begins with great food, genuine service, and a clear vision."
+    </div>
+</section>
  
 
 </section><section id="resort-gallery" class="resort-gallery">
