@@ -306,10 +306,21 @@
 
 }
 
-.food-gallery h2{
-    color:#d4af37;
-    font-size:42px;
-    margin-bottom:20px;
+.gallery-item img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:15px 15px 0 0;
+}
+    .gallery-item{
+    overflow:hidden;
+    border-radius:15px;
+    transition:0.4s;
+}
+
+.gallery-item:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(212,175,55,0.3);
 }
 
 .section-intro{
@@ -638,12 +649,18 @@ Building Experiences Today • Creating a Legacy Tomorrow
 </section>
 </section>
   <section id="food" class="food-gallery">
-    <h2>Culinary Creations</h2>
+    <h2>Signature Culinary Collection</h2>
 
-    <p class="section-intro">
-        A collection of dishes created throughout my hospitality journey in Sydney.
-    </p>
-
+<p class="section-intro">
+Showcasing dishes crafted throughout my professional hospitality journey in Sydney.
+</p>
+<div style="margin-top:50px;">
+    <a href="https://www.instagram.com/gg_food_art"
+       class="btn"
+       target="_blank">
+       View Full Food Gallery
+    </a>
+</div>
     <div class="gallery-grid">
 
         <div class="gallery-item">
