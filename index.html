@@ -391,55 +391,84 @@
     text-align:center;
 }
 
-    .resort-gallery{
-    padding:100px 20px;
+.resort-gallery{
+    padding:120px 20px;
     text-align:center;
-    background:#050505;
+    background:linear-gradient(180deg,#050505,#0d0d0d);
 }
 
 .resort-gallery h2{
     color:#d4af37;
-    font-size:42px;
+    font-size:48px;
     margin-bottom:20px;
+}
+
+.resort-gallery .section-intro{
+    max-width:850px;
+    margin:0 auto 60px;
+    color:#ddd;
+    font-size:18px;
 }
 
 .resort-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
     max-width:1200px;
-    margin:50px auto 0;
+    margin:auto;
 }
 
 .resort-card{
-    background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
+    position:relative;
+    min-height:320px;
+    border-radius:22px;
+    overflow:hidden;
+    border:1px solid rgba(212,175,55,0.45);
+    background:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.8)),
     url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80");
     background-size:cover;
     background-position:center;
-    border:1px solid rgba(212,175,55,0.5);
-    border-radius:18px;
-    padding:60px 25px;
-    min-height:260px;
     display:flex;
-    flex-direction:column;
-    justify-content:center;
-    transition:0.3s;
+    align-items:flex-end;
+    padding:35px;
+    text-align:left;
+    transition:0.4s ease;
 }
 
 .resort-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 30px rgba(212,175,55,0.25);
+    transform:translateY(-12px);
+    box-shadow:0 25px 45px rgba(0,0,0,0.6);
+    border-color:#d4af37;
 }
 
 .resort-card h3{
     color:#d4af37;
-    margin-bottom:15px;
-    font-size:24px;
+    font-size:26px;
+    margin-bottom:12px;
 }
 
 .resort-card p{
-    color:white;
+    color:#f5f5f5;
+    font-size:16px;
+    line-height:1.7;
 }
+
+@media(max-width:900px){
+    .resort-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+    .resort-grid{
+        grid-template-columns:1fr;
+    }
+
+    .resort-gallery h2{
+        font-size:36px;
+    }
+}
+
     
 .contact-section h2{
     color:#d4af37;
@@ -737,8 +766,7 @@ Showcasing dishes crafted throughout my professional hospitality journey in Sydn
  
 
 </section><section id="resort-gallery" class="resort-gallery">
-    <h2>Future Resort Gallery</h2>
-
+    <h2>Future GG Verse Resort Concept</h2>
     <p class="section-intro">
         A visual concept of the future GG Verse Resort & Spa Nepal — luxury, wellness, nature, culture, and unforgettable hospitality.
     </p>
