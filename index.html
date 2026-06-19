@@ -389,6 +389,55 @@
 .contact-buttons{
     margin-top:40px;
 }
+    .resort-gallery{
+    padding:100px 20px;
+    text-align:center;
+    background:#050505;
+}
+
+.resort-gallery h2{
+    color:#d4af37;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.resort-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    max-width:1200px;
+    margin:50px auto 0;
+}
+
+.resort-card{
+    background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
+    url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80");
+    background-size:cover;
+    background-position:center;
+    border:1px solid rgba(212,175,55,0.5);
+    border-radius:18px;
+    padding:60px 25px;
+    min-height:260px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    transition:0.3s;
+}
+
+.resort-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 30px rgba(212,175,55,0.25);
+}
+
+.resort-card h3{
+    color:#d4af37;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.resort-card p{
+    color:white;
+}
   </style>
 <header>
   <div>
@@ -422,6 +471,7 @@
     <a href="#vision2035">Vision 2035</a>
     <a href="#travel">Travel</a>
     <a href="#contact">Contact</a>
+    <a href="#resort-gallery">Resort Gallery</a>
   </nav>
 
 <section id="about" class="about">
@@ -653,6 +703,44 @@
 
     
 
+</section><section id="resort-gallery" class="resort-gallery">
+    <h2>Future Resort Gallery</h2>
+
+    <p class="section-intro">
+        A visual concept of the future GG Verse Resort & Spa Nepal — luxury, wellness, nature, culture, and unforgettable hospitality.
+    </p>
+
+    <div class="resort-grid">
+        <div class="resort-card">
+            <h3>Luxury Rooms & Suites</h3>
+            <p>Comfort, elegance, and world-class accommodation.</p>
+        </div>
+
+        <div class="resort-card">
+            <h3>Infinity Pool</h3>
+            <p>A peaceful escape surrounded by nature and mountain views.</p>
+        </div>
+
+        <div class="resort-card">
+            <h3>Spa & Wellness</h3>
+            <p>Massage, relaxation, yoga, wellness, and healing spaces.</p>
+        </div>
+
+        <div class="resort-card">
+            <h3>Fine Dining Restaurant</h3>
+            <p>Chef-driven menus inspired by Nepalese and international flavours.</p>
+        </div>
+
+        <div class="resort-card">
+            <h3>Wedding & Events</h3>
+            <p>A destination for celebrations, memories, and premium experiences.</p>
+        </div>
+
+        <div class="resort-card">
+            <h3>Nepal Nature Retreat</h3>
+            <p>Culture, adventure, hospitality, and natural beauty in one place.</p>
+        </div>
+    </div>
 </section>
 
   <section id="hotel" class="hotel">
