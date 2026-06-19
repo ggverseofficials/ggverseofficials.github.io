@@ -318,6 +318,43 @@
     padding:20px;
     color:#d4af37;
 }
+  .travel-section {
+    padding: 100px 20px;
+    text-align: center;
+    background: #0d0d0d;
+}
+
+.travel-section h2 {
+    color: #d4af37;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.travel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 50px auto 0;
+}
+
+.travel-card {
+    background: #111;
+    border: 1px solid rgba(212,175,55,0.4);
+    padding: 35px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.travel-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(212,175,55,0.2);
+}
+
+.travel-card h3 {
+    color: #d4af37;
+    margin-bottom: 15px;
+}
   </style>
 <header>
   <div>
@@ -473,6 +510,38 @@
             <h3>International Cuisine</h3>
         </div>
      
+
+    </div>
+</section>
+  <section id="travel" class="travel-section">
+    <h2>Travel & Lifestyle</h2>
+
+    <p class="section-intro">
+        From life in Sydney to future dreams in Nepal, GG Verse is a journey of culture, growth, food, travel, and hospitality.
+    </p>
+
+    <div class="travel-grid">
+
+        <div class="travel-card">
+            <h3>Sydney Journey</h3>
+            <p>
+                My current life and hospitality career in Sydney, Australia — learning, growing, and building the foundation for GG Verse.
+            </p>
+        </div>
+
+        <div class="travel-card">
+            <h3>Nepal Roots</h3>
+            <p>
+                Nepal is home, culture, memory, and future. It is the heart of the GG Verse Resort & Spa vision.
+            </p>
+        </div>
+
+        <div class="travel-card">
+            <h3>Lifestyle & Growth</h3>
+            <p>
+                Personal growth, discipline, creativity, mindset, and the daily journey of becoming better.
+            </p>
+        </div>
 
     </div>
 </section>
