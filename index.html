@@ -153,6 +153,46 @@
         margin: 8px 0;
       }
     }
+    .founder-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.founder-image {
+    width: 320px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(212,175,55,0.3);
+}
+
+.founder-text {
+    max-width: 700px;
+    text-align: left;
+}
+
+.founder-text h2 {
+    color: gold;
+    margin-bottom: 15px;
+}
+
+@media(max-width:768px){
+    .founder-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .founder-text{
+        text-align:center;
+    }
+
+    .founder-image{
+        width:250px;
+    }
+}
   </style>
 <header>
   <div>
