@@ -276,6 +276,47 @@
 
 .experience-grid div:hover {
     transform: translateY(-10px);
+}.food-gallery{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.food-gallery h2{
+    color:#d4af37;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.section-intro{
+    max-width:700px;
+    margin:auto;
+    margin-bottom:50px;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.gallery-item{
+    background:#111;
+    border-radius:15px;
+    overflow:hidden;
+    border:1px solid rgba(212,175,55,0.2);
+}
+
+.gallery-item img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.gallery-item h3{
+    padding:20px;
+    color:#d4af37;
 }
   </style>
 <header>
@@ -401,6 +442,37 @@
             <h3>🎉 Events & Weddings</h3>
             <p>Create unforgettable celebrations in a world-class destination.</p>
         </div>
+    </div>
+</section>
+  <section id="food" class="food-gallery">
+    <h2>Culinary Creations</h2>
+
+    <p class="section-intro">
+        A collection of dishes created throughout my hospitality journey in Sydney.
+    </p>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="food1.jpg" alt="Food">
+            <h3>Signature Creations</h3>
+        </div>
+
+        <div class="gallery-item">
+            <img src="food2.jpg" alt="Food">
+            <h3>Modern Dining</h3>
+        </div>
+
+        <div class="gallery-item">
+            <img src="food3.jpg" alt="Food">
+            <h3>Chef Specials</h3>
+        </div>
+
+        <div class="gallery-item">
+            <img src="food4.jpg" alt="Food">
+            <h3>International Cuisine</h3>
+        </div>
+
     </div>
 </section>
     </div>
