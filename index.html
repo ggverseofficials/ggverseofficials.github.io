@@ -355,6 +355,40 @@
     color: #d4af37;
     margin-bottom: 15px;
 }
+    .contact-section{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.contact-section h2{
+    color:#d4af37;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    max-width:1000px;
+    margin:50px auto;
+}
+
+.contact-card{
+    background:#111;
+    border:1px solid rgba(212,175,55,0.4);
+    border-radius:15px;
+    padding:30px;
+}
+
+.contact-card h3{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+.contact-buttons{
+    margin-top:40px;
+}
   </style>
 <header>
   <div>
@@ -588,6 +622,41 @@
       </div>
     </div>
   </section>
+  <section id="contact" class="contact-section">
+
+    <h2>Contact & Collaboration</h2>
+
+    <p class="section-intro">
+        Interested in collaborating, connecting, or following the GG Verse journey?
+        I'd love to hear from you.
+    </p>
+
+    <div class="contact-grid">
+
+        <div class="contact-card">
+            <h3>📧 Email</h3>
+            <p>ggverseofficial@gmail.com</p>
+        </div>
+
+        <div class="contact-card">
+            <h3>📍 Location</h3>
+            <p>Sydney, Australia</p>
+        </div>
+
+        <div class="contact-card">
+            <h3>🏨 Future Vision</h3>
+            <p>GG Verse Resort & Spa Nepal</p>
+        </div>
+
+    </div>
+
+    <div class="contact-buttons">
+        <a href="https://instagram.com/ggverseofficial" class="btn">Instagram</a>
+        <a href="https://youtube.com/@ggverseofficial" class="btn">YouTube</a>
+        <a href="https://tiktok.com/@ggverseofficial" class="btn">TikTok</a>
+    </div>
+
+</section>
 
   <section id="hotel" class="hotel">
     <h2>Future GG Verse Hotel Project</h2>
