@@ -592,6 +592,55 @@
     letter-spacing:2px;
     margin-bottom:25px;
 }
+    .navbar{
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:rgba(0,0,0,0.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(212,175,55,0.25);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+}
+
+.nav-brand{
+    color:#d4af37;
+    font-weight:bold;
+    font-size:24px;
+    letter-spacing:2px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:28px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#d4af37;
+}
+
+@media(max-width:768px){
+    .navbar{
+        flex-direction:column;
+        padding:15px 20px;
+    }
+
+    .nav-links{
+        margin-top:12px;
+        text-align:center;
+    }
+
+    .nav-links a{
+        display:inline-block;
+        margin:8px 10px;
+        font-size:14px;
+    }
+}
   </style>
 <header>
   <div>
@@ -621,19 +670,18 @@ Building Experiences Today • Creating a Legacy Tomorrow
   </div>
 </header>
 
-  <nav>
-    
-    <a href="#about">About</a>
-    <a href="#my current journey">My Current Journey</a>
-    <a href="#vision2036">Vision 2036</a>
-    <a href="#the gg verse experience">The GG Verse Experience</a>
-    <a href="#food">Food</a>
-    <a href="#travel">Travel</a>
-    <a href="#the culinary vision behind gg verse">The Culinary Vision Behind GG Verse</a>
-    <a href="#resort-gallery">Resort Gallery</a>
-    <a href="#contact">Contact</a>
-    <a href="#social">Social</a>
-  </nav>
+  <nav class="navbar">
+    <div class="nav-brand">GG VERSE</div>
+
+    <div class="nav-links">
+        <a href="#about">Founder</a>
+        <a href="#food">Food</a>
+        <a href="#travel">Travel</a>
+        <a href="#vision2035">Vision 2035</a>
+        <a href="#resort-gallery">Resort</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
 
 <section id="about" class="about">
 
