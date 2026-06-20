@@ -721,7 +721,38 @@
         grid-template-columns:1fr;
     }
 }
-  </style>
+ .stats-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    max-width:1200px;
+    margin:60px auto;
+    text-align:center;
+}
+
+.stat-box{
+    background:#111;
+    padding:30px;
+    border-radius:15px;
+    border:1px solid rgba(212,175,55,0.3);
+}
+
+.stat-box h3{
+    color:#d4af37;
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.stat-box p{
+    color:white;
+    font-size:16px;
+}
+
+@media(max-width:900px){
+    .stats-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+} </style>
 <header>
   <div>
 
