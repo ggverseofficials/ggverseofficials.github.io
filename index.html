@@ -40,6 +40,7 @@
     border: 1px solid rgba(212,175,55,0.25);
     max-width: 950px;
     margin: 0 auto;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
 }
 header h1 {
     font-size: 72px;
@@ -49,10 +50,13 @@ header h1 {
     text-transform: uppercase;
 }
 
-    header h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
+  header h2 {
+    font-size: 52px;
+    line-height: 1.25;
+    font-weight: 700;
+    max-width: 900px;
+    margin: 0 auto 25px;
+}
     .hero-logo {
     width: 340px;
     max-width: 90%;
@@ -60,6 +64,11 @@ header h1 {
 }
 .hero-logo {
     filter: drop-shadow(0 0 15px rgba(212,175,55,0.25));
+}
+    .hero-categories {
+    font-size: 14px;
+    letter-spacing: 1px;
+    opacity: 0.8;
 }
     .btn {
     letter-spacing: 1px;
@@ -612,17 +621,17 @@ header h1 {
     letter-spacing:2px;
     margin-bottom:25px;
 }
-    .navbar{
-    position:sticky;
-    top:0;
-    z-index:999;
-    background:rgba(0,0,0,0.92);
-    backdrop-filter:blur(10px);
-    border-bottom:1px solid rgba(212,175,55,0.25);
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 60px;
+    .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: rgba(0,0,0,0.78);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(212,175,55,0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
 }
 
 .nav-brand{
@@ -632,16 +641,30 @@ header h1 {
     letter-spacing:2px;
 }
 
-.nav-links a{
-    color:white;
-    text-decoration:none;
-    margin-left:28px;
-    font-weight:bold;
-    transition:0.3s;
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 28px;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    position: relative;
+    transition: 0.3s ease;
 }
 
-.nav-links a:hover{
-    color:#d4af37;
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    background: #d4af37;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
 }
 
 @media(max-width:768px){
@@ -923,7 +946,7 @@ header h1 {
     
     <p class="hero-tagline">
 Building Experiences Today • Creating a Legacy Tomorrow
-</p><p>
+</p> <p>
       Food • Travel • Lifestyle • Hospitality • Entrepreneurship
     </p>
 
