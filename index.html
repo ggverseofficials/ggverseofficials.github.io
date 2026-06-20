@@ -20,28 +20,36 @@
     }
 
     header {
-      background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
-      url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1600&q=80");
-      background-size: cover;
-      background-position: center;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 30px;
-    }
-
-    header h1 {
-      font-size: 60px;
-      color: gold;
-      margin-bottom: 15px;
-    }
+    background: linear-gradient(rgba(0,0,0,0.82), rgba(0,0,0,0.82)),
+    url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+}
+header h1 {
+    font-size: 72px;
+    color: gold;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
 
     header h2 {
       font-size: 28px;
       margin-bottom: 20px;
     }
+    .hero-divider {
+    width: 120px;
+    height: 2px;
+    background: #d4af37;
+    margin: 25px auto;
+}
 
     header p {
       font-size: 18px;
@@ -50,15 +58,22 @@
     }
 
     .btn {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 14px 30px;
-      background: gold;
-      color: black;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
+    display: inline-block;
+    margin: 30px 10px 0;
+    padding: 14px 30px;
+    border: 1px solid #d4af37;
+    color: #d4af37;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #d4af37;
+    color: #000;
+    transform: translateY(-4px);
+}
 
     nav {
       background: #111;
@@ -890,7 +905,7 @@
     
 
     <h2>A Vision of Hospitality, Wellness & Luxury in Nepal</h2>
-
+<div class="hero-divider"></div>
     
     <p class="hero-tagline">
 Building Experiences Today • Creating a Legacy Tomorrow
