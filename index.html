@@ -189,12 +189,43 @@
     margin: 40px auto;
 }
 
-.vision-grid div {
-    background: rgba(212,175,55,0.12);
-    border: 1px solid #d4af37;
-    padding: 18px;
-    border-radius: 10px;
-    font-weight: bold;
+.vision-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.vision-card {
+    background: rgba(0,0,0,0.75);
+    border: 1px solid rgba(212,175,55,0.35);
+    border-radius: 18px;
+    padding: 30px;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(5px);
+}
+
+.vision-card:hover {
+    transform: translateY(-8px);
+    border-color: #d4af37;
+    box-shadow: 0 0 25px rgba(212,175,55,0.2);
+}
+
+.vision-card span {
+    font-size: 42px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.vision-card h3 {
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+.vision-card p {
+    color: #dddddd;
+    line-height: 1.7;
 }
 
 .vision-quote {
@@ -955,32 +986,56 @@ Building Experiences Today • Creating a Legacy Tomorrow
 </section>
 
 </section>
-  <section id="vision2036" class="vision2036">
-    <div class="vision-overlay">
-        <h2>Vision 2036</h2>
-        <h3>GG Verse Resort & Spa Nepal</h3>
+ <section id="vision" class="vision-section">
 
-        <p>
-            A future luxury hospitality destination in Nepal, designed to combine
-            world-class accommodation, wellness, fine dining, culture, nature,
-            and unforgettable guest experiences.
-        </p>
+    <p class="small-title">VISION 2035</p>
 
-        <div class="vision-grid">
-            <div>Luxury Rooms & Suites</div>
-            <div>Spa & Wellness Centre</div>
-            <div>Infinity Pool</div>
-            <div>Fine Dining Restaurant</div>
-            <div>Destination Weddings</div>
-            <div>Nepalese Cultural Experiences</div>
-            <div>Adventure & Nature Retreats</div>
-            <div>International Service Standards</div>
+    <h2>Building GG Verse Resort & Spa Nepal</h2>
+
+    <p class="vision-intro">
+        By 2035, GG Verse aims to become a luxury hospitality destination in Nepal, bringing together wellness, food, travel, culture, and unforgettable guest experiences.
+    </p>
+
+    <div class="vision-grid">
+
+        <div class="vision-card">
+            <span>🏨</span>
+            <h3>Luxury Resort</h3>
+            <p>Premium accommodation designed for comfort, elegance, and world-class hospitality.</p>
         </div>
 
-        <p class="vision-quote">
-            “A dream built today can become a destination tomorrow.”
-        </p>
+        <div class="vision-card">
+            <span>🧖</span>
+            <h3>Spa & Wellness</h3>
+            <p>Relaxation, wellness treatments, massage therapies, and holistic experiences.</p>
+        </div>
+
+        <div class="vision-card">
+            <span>🍽️</span>
+            <h3>Fine Dining</h3>
+            <p>Signature dining experiences inspired by global cuisine and Nepalese flavours.</p>
+        </div>
+
+        <div class="vision-card">
+            <span>🏊</span>
+            <h3>Infinity Pool</h3>
+            <p>Luxury leisure spaces offering breathtaking views and relaxation.</p>
+        </div>
+
+        <div class="vision-card">
+            <span>💍</span>
+            <h3>Events & Weddings</h3>
+            <p>Elegant venues for celebrations, conferences, weddings, and special occasions.</p>
+        </div>
+
+        <div class="vision-card">
+            <span>🌿</span>
+            <h3>Sustainable Design</h3>
+            <p>Environmentally responsible hospitality inspired by nature and local culture.</p>
+        </div>
+
     </div>
+
 </section>
 <section class="experience-section">
 
