@@ -935,8 +935,8 @@ header h1 {
     font-size: 15px;
 }
  .philosophy-section {
-    background: #0a0a0a;
-    padding: 100px 20px;
+    background: linear-gradient(135deg, #050505, #111111);
+    padding: 110px 20px;
     text-align: center;
 }
 
@@ -956,15 +956,15 @@ header h1 {
 .philosophy-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-    gap: 25px;
-    max-width: 1100px;
-    margin: auto;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 60px auto 0;
 }
 
 .philosophy-card {
-    background: #111;
+    background: rgba(255,255,255,0.03);
     border: 1px solid rgba(212,175,55,0.25);
-    padding: 35px;
+    padding: 45px 35px;
     border-radius: 18px;
     transition: 0.3s ease;
 }
@@ -978,6 +978,12 @@ header h1 {
 .philosophy-card h3 {
     color: #d4af37;
     margin-bottom: 15px;
+}
+    .philosophy-icon {
+    color: #d4af37;
+    font-size: 28px;
+    display: block;
+    margin-bottom: 18px;
 }
   </style>
 <header>
@@ -1032,6 +1038,7 @@ Building Experiences Today • Creating a Legacy Tomorrow
     <div class="philosophy-grid">
 
         <div class="philosophy-card">
+          <span class="philosophy-icon">✦</span>
             <h3>Excellence</h3>
             <p>
                 Pursuing the highest standards in hospitality, service, and guest experience.
