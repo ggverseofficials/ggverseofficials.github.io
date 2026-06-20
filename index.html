@@ -746,7 +746,112 @@
         width:280px;
     }
 }
-  </style>
+ .premium-founder{
+    padding:120px 20px;
+    background:linear-gradient(180deg,#050505,#0d0d0d);
+}
+
+.premium-founder-inner{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:420px 1fr;
+    gap:80px;
+    align-items:center;
+}
+
+.premium-photo img{
+    width:100%;
+    border-radius:28px;
+    border:1px solid rgba(212,175,55,0.4);
+    box-shadow:0 0 45px rgba(212,175,55,0.25);
+}
+
+.small-title{
+    color:#d4af37;
+    letter-spacing:4px;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.premium-founder-content h2{
+    color:#d4af37;
+    font-size:52px;
+    margin-bottom:10px;
+}
+
+.premium-founder-content h3{
+    color:white;
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+.premium-founder-content p{
+    color:#ddd;
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:18px;
+}
+
+.founder-quote{
+    color:#d4af37 !important;
+    font-style:italic;
+    font-size:22px !important;
+    margin-top:25px;
+}
+
+.premium-stats{
+    max-width:1100px;
+    margin:90px auto 0;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    text-align:center;
+}
+
+.premium-stats div{
+    background:#111;
+    border:1px solid rgba(212,175,55,0.4);
+    border-radius:20px;
+    padding:35px 20px;
+}
+
+.premium-stats h4{
+    color:#d4af37;
+    font-size:46px;
+    margin-bottom:10px;
+}
+
+.premium-stats p{
+    color:white;
+    font-weight:bold;
+}
+
+@media(max-width:900px){
+    .premium-founder-inner{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .premium-photo{
+        max-width:360px;
+        margin:auto;
+    }
+
+    .premium-stats{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+    .premium-stats{
+        grid-template-columns:1fr;
+    }
+
+    .premium-founder-content h2{
+        font-size:38px;
+    }
+} </style>
 <header>
   <div>
 
@@ -788,61 +893,63 @@ Building Experiences Today • Creating a Legacy Tomorrow
     </div>
 </nav>
 
-<section id="about" class="founder-section">
-  <div class="founder-container">
-    <img src="ganesh-gupta.png" alt="Ganesh Gupta" class="founder-image">
+<section id="about" class="premium-founder">
 
-    <div class="founder-text">
-      <h2>Founder of GG Verse</h2>
-      <h3>Ganesh Gupta</h3>
-      <p class="founder-title">Head Chef | Creator | Future Hospitality Entrepreneur</p>
+  <div class="premium-founder-inner">
 
-      <div class="founder-badges">
-        <span>🏆 Head Chef</span>
-        <span>🇦🇺 Sydney</span>
-        <span>🍽 5+ Years Experience</span>
-        <span>🏨 Vision 2035</span>
-      </div>
+    <div class="premium-photo">
+      <img src="ganesh-gupta.png" alt="Ganesh Gupta">
+    </div>
+
+    <div class="premium-founder-content">
+      <p class="small-title">FOUNDER OF GG VERSE</p>
+
+      <h2>Ganesh Gupta</h2>
+
+      <h3>Head Chef • Creator • Future Hospitality Entrepreneur</h3>
 
       <p>
-        Welcome to GG Verse — a platform built around food, travel, lifestyle,
-        hospitality, and entrepreneurship.
+        GG Verse is a personal hospitality brand built around food, travel,
+        lifestyle, creativity, and the long-term vision of creating a luxury
+        resort and spa destination in Nepal.
       </p>
 
       <p>
-        Based in Sydney, Australia, I am building my hospitality career while
-        pursuing a long-term vision of creating GG Verse Resort & Spa Nepal —
-        a luxury destination focused on exceptional guest experiences, wellness,
-        dining, and world-class service.
+        Based in Sydney, Australia, I am building my career in hospitality while
+        developing the foundation for GG Verse Resort & Spa Nepal — a future
+        destination focused on wellness, fine dining, culture, nature, and
+        unforgettable guest experiences.
       </p>
 
-      <p class="quote">
-        "Building experiences today, creating a legacy tomorrow."
+      <p class="founder-quote">
+        “Building experiences today, creating a legacy tomorrow.”
       </p>
     </div>
+
   </div>
 
-  <div class="stats-container">
-    <div class="stat-box">
-      <h3>5+</h3>
+  <div class="premium-stats">
+    <div>
+      <h4>5+</h4>
       <p>Years Hospitality Experience</p>
     </div>
 
-    <div class="stat-box">
-      <h3>100+</h3>
+    <div>
+      <h4>100+</h4>
       <p>Food Creations</p>
     </div>
 
-    <div class="stat-box">
-      <h3>2035</h3>
+    <div>
+      <h4>2035</h4>
       <p>Future Resort Vision</p>
     </div>
 
-    <div class="stat-box">
-      <h3>1</h3>
+    <div>
+      <h4>1</h4>
       <p>Big Dream: GG Verse Nepal</p>
     </div>
   </div>
+
 </section>
   <section id="vision2036" class="vision2036">
     <div class="vision-overlay">
