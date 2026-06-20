@@ -721,6 +721,69 @@
         font-size:38px;
     }
 }
+ .journey-section{
+    padding:120px 20px;
+    background:#0d0d0d;
+    text-align:center;
+}
+
+.journey-section h2{
+    color:#d4af37;
+    font-size:46px;
+    margin-bottom:20px;
+}
+
+.journey-timeline{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:22px;
+    max-width:1300px;
+    margin:60px auto 0;
+}
+
+.journey-step{
+    background:linear-gradient(145deg,#111,#1a1a1a);
+    border:1px solid rgba(212,175,55,0.35);
+    border-radius:20px;
+    padding:35px 22px;
+    transition:0.3s;
+}
+
+.journey-step:hover{
+    transform:translateY(-10px);
+    border-color:#d4af37;
+    box-shadow:0 0 25px rgba(212,175,55,0.18);
+}
+
+.journey-step span{
+    font-size:36px;
+}
+
+.journey-step h3{
+    color:#d4af37;
+    margin:18px 0 12px;
+}
+
+.journey-step p{
+    color:#ddd;
+    line-height:1.7;
+}
+
+@media(max-width:1000px){
+    .journey-timeline{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+    .journey-timeline{
+        grid-template-columns:1fr;
+    }
+
+    .journey-section h2{
+        font-size:34px;
+    }
+}
   </style>
 <header>
   <div>
@@ -819,6 +882,49 @@ Building Experiences Today • Creating a Legacy Tomorrow
       <p>Big Dream: GG Verse Nepal</p>
     </div>
   </div>
+  <section id="journey" class="journey-section">
+    <p class="small-title">MY STORY</p>
+
+    <h2>From Nepal to Sydney: My Hospitality Journey</h2>
+
+    <p class="section-intro">
+        GG Verse is built from real experience, hard work, and a long-term dream of creating a luxury hospitality destination in Nepal.
+    </p>
+
+    <div class="journey-timeline">
+
+        <div class="journey-step">
+            <span>🇳🇵</span>
+            <h3>Nepal Roots</h3>
+            <p>Born with dreams, culture, family values, and the desire to build something meaningful.</p>
+        </div>
+
+        <div class="journey-step">
+            <span>🇦🇺</span>
+            <h3>Australia Journey</h3>
+            <p>Moved to Australia in 2019 and started building a new life through study, work, and discipline.</p>
+        </div>
+
+        <div class="journey-step">
+            <span>👨‍🍳</span>
+            <h3>Chef Career</h3>
+            <p>Worked through different kitchen roles, developing skills in food, leadership, service, and hospitality.</p>
+        </div>
+
+        <div class="journey-step">
+            <span>🏆</span>
+            <h3>Head Chef Growth</h3>
+            <p>Growing as a hospitality leader while learning management, menus, teams, costs, and guest experience.</p>
+        </div>
+
+        <div class="journey-step">
+            <span>🏨</span>
+            <h3>Future Vision</h3>
+            <p>Every step today is shaping the future GG Verse Resort & Spa Nepal.</p>
+        </div>
+
+    </div>
+</section>
 
 </section>
   <section id="vision2036" class="vision2036">
