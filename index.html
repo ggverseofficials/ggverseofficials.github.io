@@ -640,6 +640,86 @@
         margin:8px 10px;
         font-size:14px;
     }
+  
+.journey-section{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.journey-section h2{
+    color:#d4af37;
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.journey-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    max-width:1200px;
+    margin:50px auto;
+}
+
+.journey-card{
+    background:#111;
+    border:1px solid rgba(212,175,55,0.3);
+    border-radius:20px;
+    padding:35px;
+    transition:0.3s;
+}
+
+.journey-card:hover{
+    transform:translateY(-10px);
+    border-color:#d4af37;
+}
+
+.journey-card h3{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+@media(max-width:900px){
+    .journey-grid{
+        grid-template-columns:1fr;
+    }
+}
+  .stats-section{
+    padding:80px 20px;
+    background:#050505;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    text-align:center;
+}
+
+.stat-card{
+    border:1px solid rgba(212,175,55,0.35);
+    border-radius:18px;
+    padding:35px 20px;
+    background:linear-gradient(145deg,#111,#1a1a1a);
+}
+
+.stat-card h3{
+    color:#d4af37;
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.stat-card p{
+    color:#eee;
+    font-weight:bold;
+}
+
+@media(max-width:900px){
+    .stats-section{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+    .stats-section{
+        grid-template-columns:1fr;
+    }
 }
   </style>
 <header>
@@ -677,7 +757,7 @@ Building Experiences Today • Creating a Legacy Tomorrow
         <a href="#about">Founder</a>
         <a href="#food">Food</a>
         <a href="#travel">Travel</a>
-        <a href="#vision2036">Vision 2035</a>
+        <a href="#vision2036">Vision 2036</a>
         <a href="#resort-gallery">Resort</a>
         <a href="#contact">Contact</a>
     </div>
@@ -710,19 +790,64 @@ Building Experiences Today • Creating a Legacy Tomorrow
 </p>
 
         </div> </section>
-  <section id="journey">
+<section id="stats" class="stats-section">
+    <div class="stat-card">
+        <h3>5+</h3>
+        <p>Years Hospitality Experience</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>100+</h3>
+        <p>Food Creations</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>2035</h3>
+        <p>Future Resort Vision</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>1</h3>
+        <p>Big Dream: GG Verse Nepal</p>
+    </div>
+</section>
+  
+ <section id="journey" class="journey-section">
+
     <h2>My Current Journey</h2>
 
-    <p>
-        Currently working as a hospitality professional in Sydney, Australia,
-        while building GG Verse as a global platform focused on food, travel,
-        lifestyle, and future hospitality ventures.
+    <p class="section-intro">
+        Building the foundation today for the future vision of GG Verse Resort & Spa Nepal.
     </p>
 
-    <p>
-        Every experience today is helping shape the future vision of
-        GG Verse Resort & Spa Nepal.
-    </p>
+    <div class="journey-grid">
+
+        <div class="journey-card">
+            <h3>👨‍🍳 Hospitality Career</h3>
+            <p>
+                Currently working in Sydney's hospitality industry, developing leadership,
+                culinary, and business skills through real-world experience.
+            </p>
+        </div>
+
+        <div class="journey-card">
+            <h3>📱 GG Verse Brand</h3>
+            <p>
+                Growing GG Verse across food, travel, lifestyle, content creation,
+                and future hospitality ventures.
+            </p>
+        </div>
+
+        <div class="journey-card">
+            <h3>🏨 Future Vision</h3>
+            <p>
+                Every experience, lesson, and achievement contributes toward the
+                long-term goal of creating GG Verse Resort & Spa Nepal.
+            </p>
+        </div>
+
+    </div>
+
 </section>
   <section id="vision2036" class="vision2036">
     <div class="vision-overlay">
