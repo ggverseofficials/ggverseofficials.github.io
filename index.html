@@ -273,63 +273,150 @@ header h1 {
     font-style: italic;
     font-size: 22px;
 }
-   .experience-section{
-    padding:100px 20px;
-    text-align:center;
-    background:#000;
+  .experience-section {
+    background: radial-gradient(circle at top, #151515, #050505);
+    padding: 110px 40px;
+    text-align: center;
+    color: white;
 }
 
-.experience-section h2{
-    color:#d4af37;
-    font-size:52px;
-    margin-bottom:60px;
+.experience-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 25px;
 }
 
-.experience-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:30px;
-    max-width:1400px;
-    margin:auto;
+.luxury-line {
+    width: 220px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #d4af37, transparent);
 }
 
-.experience-card{
-    background:#111;
-    border:1px solid #d4af37;
-    border-radius:20px;
-    padding:35px 25px;
-    transition:0.4s;
+.luxury-symbol {
+    color: #d4af37;
+    font-size: 38px;
 }
 
-.experience-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 25px rgba(212,175,55,0.3);
+.experience-section h2 {
+    font-family: Georgia, serif;
+    color: #d4af37;
+    font-size: 72px;
+    font-weight: 400;
+    margin-bottom: 25px;
 }
 
-.experience-card h3{
-    color:white;
-    margin-bottom:15px;
-    font-size:28px;
+.experience-intro {
+    max-width: 850px;
+    margin: 0 auto 70px;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #eeeeee;
 }
 
-.experience-card p{
-    color:#ddd;
-    line-height:1.8;
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1500px;
+    margin: auto;
 }
-    @media(max-width:900px){
 
-    .experience-grid{
-        grid-template-columns:repeat(2,1fr);
+.experience-card {
+    height: 620px;
+    border-radius: 22px;
+    overflow: hidden;
+    border: 1px solid #d4af37;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: 0.4s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 35px rgba(212,175,55,0.25);
+}
+
+.experience-content {
+    height: 100%;
+    padding: 35px;
+    background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.9));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.experience-icon {
+    width: 95px;
+    height: 95px;
+    border: 1px solid #d4af37;
+    border-radius: 50%;
+    color: #d4af37;
+    font-size: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.55);
+    margin-bottom: 25px;
+}
+
+.experience-card h3 {
+    color: #d4af37;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.mini-line {
+    width: 60px;
+    height: 2px;
+    background: #d4af37;
+    margin-bottom: 25px;
+}
+
+.experience-card p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: white;
+}
+
+/* Background Images */
+.dining {
+    background-image: url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80");
+}
+
+.wellness {
+    background-image: url("https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=80");
+}
+
+.nature {
+    background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80");
+}
+
+.events {
+    background-image: url("https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=80");
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+    .experience-grid {
+        grid-template-columns: 1fr;
     }
 
-}
-
-@media(max-width:600px){
-
-    .experience-grid{
-        grid-template-columns:1fr;
+    .experience-section h2 {
+        font-size: 44px;
     }
 
+    .experience-card {
+        height: 520px;
+    }
+
+    .luxury-line {
+        width: 90px;
+    }
 }
 
 .gallery-item img{
@@ -1367,48 +1454,61 @@ Building Experiences Today • Creating a Legacy Tomorrow
     </div>
 
 </section>
-<section class="experience-section">
+<section id="experience" class="experience-section">
+
+    <div class="experience-header">
+        <div class="luxury-line"></div>
+        <div class="luxury-symbol">✦</div>
+        <div class="luxury-line"></div>
+    </div>
 
     <h2>The GG Verse Experience</h2>
 
+    <p class="experience-intro">
+        A harmonious blend of luxury, wellness, nature, and celebration crafted to create unforgettable memories in Nepal.
+    </p>
+
     <div class="experience-grid">
 
-        <div class="experience-card">
-            <h3>🍽 Fine Dining</h3>
-            <p>
-                Signature culinary experiences inspired by Nepalese heritage
-                and international cuisine.
-            </p>
+        <div class="experience-card dining">
+            <div class="experience-content">
+                <div class="experience-icon">🍴</div>
+                <h3>Fine Dining</h3>
+                <div class="mini-line"></div>
+                <p>Signature culinary experiences inspired by Nepalese heritage and international cuisine.</p>
+            </div>
         </div>
 
-        <div class="experience-card">
-            <h3>💆 Luxury Wellness</h3>
-            <p>
-                Spa treatments, infinity pools, yoga retreats,
-                and complete relaxation.
-            </p>
+        <div class="experience-card wellness">
+            <div class="experience-content">
+                <div class="experience-icon">♨</div>
+                <h3>Luxury Wellness</h3>
+                <div class="mini-line"></div>
+                <p>Spa treatments, infinity pools, yoga retreats, and complete relaxation.</p>
+            </div>
         </div>
 
-        <div class="experience-card">
-            <h3>🌿 Nature Retreats</h3>
-            <p>
-                Discover Nepal's natural beauty through curated
-                adventures and exclusive escapes.
-            </p>
+        <div class="experience-card nature">
+            <div class="experience-content">
+                <div class="experience-icon">❦</div>
+                <h3>Nature Retreats</h3>
+                <div class="mini-line"></div>
+                <p>Discover Nepal’s natural beauty through curated adventures and exclusive escapes.</p>
+            </div>
         </div>
 
-        <div class="experience-card">
-            <h3>🎉 Weddings & Events</h3>
-            <p>
-                Celebrate unforgettable moments in a world-class
-                luxury destination.
-            </p>
+        <div class="experience-card events">
+            <div class="experience-content">
+                <div class="experience-icon">◇</div>
+                <h3>Weddings & Events</h3>
+                <div class="mini-line"></div>
+                <p>Celebrate unforgettable moments in a world-class luxury destination.</p>
+            </div>
         </div>
 
     </div>
+</section>
 
-</section>
-</section>
   <section id="food" class="food-gallery">
     <h2>Signature Culinary Collection</h2>
 
