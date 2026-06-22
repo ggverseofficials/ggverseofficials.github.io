@@ -986,10 +986,14 @@ header h1 {
     margin-bottom: 18px;
 }
 .future-quote {
-    max-width: 850px;
-    margin: 80px auto 0;
+    width: 100%;
+    max-width: 900px;
+    margin: 100px auto;
     text-align: center;
-    color: #d4af37;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .quote-lines {
@@ -1018,6 +1022,10 @@ header h1 {
     font-family: Georgia, serif;
     color: #d4af37;
     margin: 0 auto;
+}.future-quote p {
+    max-width: 800px;
+    font-size: 38px;
+    line-height: 1.6;
 }
 
 .quote-diamond {
