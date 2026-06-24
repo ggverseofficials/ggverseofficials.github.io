@@ -141,28 +141,55 @@
     .premium-quote-text{z-index:1;}
     .premium-quote-text p{color:#f4f4f4;font-family:Georgia,serif;font-size:25px;font-style:italic;line-height:1.45;text-align:left;margin:0;}
     .premium-quote-text h4{color:var(--gold);font-size:20px;margin-top:18px;}
-   .premium-mountain{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
+      .premium-mountain{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      z-index:1;
+    }
 
-.premium-mountain svg{
-    width:330px;
-    max-width:100%;
-    height:auto;
-    opacity:.95;
-}
-}
-    .premium-feature-final{max-width:1200px;margin:28px 0 0;display:grid;grid-template-columns:repeat(5,1fr);gap:0;background:rgba(0,0,0,.25);}
-    .premium-feature-final div{color:#ddd;font-size:17px;line-height:1.4;display:flex;align-items:center;justify-content:center;gap:18px;text-align:left;padding:8px 20px;border-right:1px solid rgba(212,175,55,.45);}
+    .premium-mountain svg{
+      width:330px;
+      max-width:100%;
+      height:auto;
+      opacity:.95;
+      filter:drop-shadow(0 0 8px rgba(212,175,55,.22));
+    }
+
+    .premium-feature-final{
+      max-width:1200px;
+      margin:28px auto 0;
+      display:grid;
+      grid-template-columns:repeat(5,1fr);
+      gap:0;
+      background:rgba(0,0,0,.18);
+    }
+
+    .premium-feature-final div{
+      color:#ddd;
+      font-size:17px;
+      line-height:1.4;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:18px;
+      text-align:left;
+      padding:8px 20px;
+      border-right:1px solid rgba(212,175,55,.45);
+    }
+
     .premium-feature-final div:last-child{border-right:none;}
-    .premium-feature-final span{color:var(--gold);font-size:38px;line-height:1;}
+
     .premium-feature-final i{
-    color:#d4af37;
-    font-size:34px;
-    min-width:40px;
-}
+      color:var(--gold);
+      font-size:34px;
+      min-width:40px;
+    }
+
+    .premium-feature-final p{
+      margin:0;
+      color:#ddd;
+    }
 
     /* EXPERIENCE */
     .experience-section{background:radial-gradient(circle at top,#151515,#050505);padding:110px 40px;text-align:center;}
@@ -319,17 +346,18 @@
       <div class="premium-quote-mark">“</div>
       <div class="premium-quote-text"><p>GG Verse is more than a resort project. It is a lifelong vision to create a destination that reflects excellence, hospitality, culture, and unforgettable experiences.</p><h4>— Ganesh Gupta</h4></div>
      <div class="premium-mountain">
-  <svg viewBox="0 0 520 220" fill="none">
-    <path d="M20 180 L120 70 L170 125 L230 35 L330 180" stroke="#d4af37" stroke-width="4"/>
-    <path d="M120 70 L145 110 L170 125" stroke="#d4af37" stroke-width="3"/>
-    <path d="M230 35 L260 95 L300 75 L390 180" stroke="#d4af37" stroke-width="4"/>
-    <path d="M300 75 L340 120 L390 180" stroke="#d4af37" stroke-width="3"/>
-    <path d="M330 180 L420 85 L500 180" stroke="#d4af37" stroke-width="4"/>
-    <path d="M420 85 L445 130 L470 120" stroke="#d4af37" stroke-width="3"/>
-    <path d="M60 190 C140 165, 220 165, 300 190" stroke="#d4af37" stroke-width="2" opacity="0.45"/>
-    <path d="M220 200 C310 175, 395 175, 500 200" stroke="#d4af37" stroke-width="2" opacity="0.45"/>
-  </svg>
-</div>
+        <svg viewBox="0 0 520 220" fill="none" aria-hidden="true">
+          <path d="M18 176 L130 68 L188 128 L254 34 L365 176" stroke="#d4af37" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M254 34 L291 92 L324 76 L454 176" stroke="#d4af37" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M365 176 L424 104 L502 176" stroke="#d4af37" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M130 68 L154 103 L188 128" stroke="#d4af37" stroke-width="2.2" stroke-linecap="round" opacity=".72"/>
+          <path d="M254 34 L278 96 L324 76" stroke="#d4af37" stroke-width="2.2" stroke-linecap="round" opacity=".72"/>
+          <path d="M424 104 L446 136 L476 128" stroke="#d4af37" stroke-width="2.2" stroke-linecap="round" opacity=".72"/>
+          <path d="M60 189 C145 164 230 164 318 190" stroke="#d4af37" stroke-width="1.8" stroke-linecap="round" opacity=".42"/>
+          <path d="M218 202 C314 174 408 176 502 202" stroke="#d4af37" stroke-width="1.8" stroke-linecap="round" opacity=".42"/>
+          <path d="M92 198 C170 184 225 184 280 198" stroke="#d4af37" stroke-width="1.2" stroke-linecap="round" opacity=".28"/>
+        </svg>
+      </div>
     </div>
 
     <div class="premium-feature-final">
