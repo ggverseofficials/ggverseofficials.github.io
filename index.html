@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GG Verse Official</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root{
@@ -16,7 +17,33 @@
 
     *{margin:0;padding:0;box-sizing:border-box;}
     html{scroll-behavior:smooth;}
-    body{background:#0d0d0d;color:white;line-height:1.6;font-family:Arial,sans-serif;}
+    body{background:#0d0d0d;color:white;line-height:1.7;font-family:'Poppins',sans-serif;font-weight:400;letter-spacing:.1px;}
+
+    /* GLOBAL PREMIUM TYPOGRAPHY */
+    h1,h2,h3,h4,h5,h6{
+      font-family:'Playfair Display',serif;
+      font-weight:600;
+      letter-spacing:.3px;
+    }
+
+    p,
+    a,
+    span,
+    li,
+    .btn,
+    .nav-links a,
+    .small-title{
+      font-family:'Poppins',sans-serif;
+    }
+
+    h2{
+      line-height:1.15;
+    }
+
+    .small-title{
+      font-weight:500;
+      letter-spacing:5.5px;
+    }
     section{padding:100px 20px;}
     h2{color:var(--gold);text-align:center;font-size:42px;margin-bottom:25px;}
     p{font-size:17px;}
@@ -101,12 +128,12 @@
     .vision-content{max-width:1300px;margin:auto;}
     #vision2036 .vision-label{color:var(--gold);letter-spacing:7px;font-size:14px;margin-bottom:22px;text-align:left;}
     #vision2036 .vision-label::after{content:"";display:block;width:180px;height:1px;background:var(--gold);margin-top:14px;}
-    #vision2036 h2{text-align:left;font-family:Georgia,serif;font-size:76px;line-height:1.05;color:#fff;margin-bottom:28px;}
+    #vision2036 h2{text-align:left;font-family:'Playfair Display',serif;font-size:76px;line-height:1.05;color:#fff;margin-bottom:28px;}
     #vision2036 h2 span{color:var(--gold);}
     #vision2036 .vision-intro{text-align:left;max-width:850px;color:#ddd;font-size:19px;line-height:1.8;margin:0 0 45px;}
     #vision2036 .vision-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1200px;}
     #vision2036 .vision-card{min-height:190px;background:linear-gradient(145deg,rgba(10,10,10,.95),rgba(0,0,0,.82));border:1px solid rgba(212,175,55,.55);border-radius:16px;padding:30px;display:grid;grid-template-columns:90px 1fr;gap:24px;align-items:center;text-align:left;}
-    #vision2036 .vision-icon{width:78px;height:78px;border-radius:50%;border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:42px;font-family:Georgia,serif;}
+    #vision2036 .vision-icon{width:78px;height:78px;border-radius:50%;border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:42px;font-family:'Playfair Display',serif;}
     #vision2036 .vision-card h3{color:var(--gold);font-size:24px;margin-bottom:12px;text-align:left;}
     #vision2036 .vision-card h3::after{content:"";display:block;width:42px;height:2px;background:var(--gold);margin-top:12px;}
     #vision2036 .vision-card p{color:#ddd;font-size:16px;line-height:1.7;text-align:left;}
@@ -137,9 +164,9 @@
     opacity:.4;
     pointer-events:none;
 }
-    .premium-quote-mark{color:var(--gold);font-size:76px;font-family:Georgia,serif;border-right:2px solid rgba(212,175,55,.55);height:130px;display:flex;align-items:flex-start;justify-content:center;z-index:1;line-height:1;}
+    .premium-quote-mark{color:var(--gold);font-size:76px;font-family:'Playfair Display',serif;border-right:2px solid rgba(212,175,55,.55);height:130px;display:flex;align-items:flex-start;justify-content:center;z-index:1;line-height:1;}
     .premium-quote-text{z-index:1;}
-    .premium-quote-text p{color:#f4f4f4;font-family:Georgia,serif;font-size:25px;font-style:italic;line-height:1.45;text-align:left;margin:0;}
+    .premium-quote-text p{color:#f4f4f4;font-family:'Playfair Display',serif;font-size:25px;font-style:italic;line-height:1.45;text-align:left;margin:0;}
     .premium-quote-text h4{color:var(--gold);font-size:20px;margin-top:18px;}
       .premium-mountain{
       display:flex;
@@ -196,14 +223,14 @@
     .experience-header{display:flex;align-items:center;justify-content:center;gap:30px;margin-bottom:25px;}
     .luxury-line{width:220px;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent);}
     .luxury-symbol{color:var(--gold);font-size:38px;}
-    .experience-section h2{font-family:Georgia,serif;color:var(--gold);font-size:72px;font-weight:400;}
+    .experience-section h2{font-family:'Playfair Display',serif;color:var(--gold);font-size:72px;font-weight:400;}
     .experience-intro{max-width:850px;margin:0 auto 70px;font-size:24px;color:#eee;}
     .experience-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:25px;max-width:1500px;margin:auto;}
     .experience-card{height:620px;border-radius:22px;overflow:hidden;border:1px solid var(--gold);background-size:cover;background-position:center;position:relative;transition:.4s;}
     .experience-card:hover{transform:translateY(-10px);box-shadow:0 0 35px rgba(212,175,55,.25);}
     .experience-content{height:100%;padding:35px;background:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.9));display:flex;flex-direction:column;justify-content:flex-end;align-items:center;}
     .experience-icon{width:95px;height:95px;border:1px solid var(--gold);border-radius:50%;color:var(--gold);font-size:42px;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.55);margin-bottom:25px;}
-    .experience-card h3{color:var(--gold);font-family:Georgia,serif;font-size:32px;margin-bottom:15px;}
+    .experience-card h3{color:var(--gold);font-family:'Playfair Display',serif;font-size:32px;margin-bottom:15px;}
     .mini-line{width:60px;height:2px;background:var(--gold);margin-bottom:25px;}
     .experience-card p{font-size:20px;line-height:1.6;color:white;}
     .dining{background-image:url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80");}
@@ -247,7 +274,7 @@
     }
 
     .premium-travel h2{
-      font-family:Georgia, serif;
+      font-family:'Playfair Display',serif;
       font-size:58px;
       color:var(--gold);
     }
@@ -359,7 +386,7 @@
     }
 
     .premium-culinary h2{
-      font-family:Georgia,serif;
+      font-family:'Playfair Display',serif;
       font-size:58px;
       line-height:1.15;
       color:var(--gold);
@@ -441,7 +468,7 @@
 
     .card-number{
       color:rgba(212,175,55,.45);
-      font-family:Georgia,serif;
+      font-family:'Playfair Display',serif;
       letter-spacing:3px;
       font-size:18px;
       position:relative;
@@ -466,7 +493,7 @@
 
     .premium-culinary-card h3{
       color:var(--gold);
-      font-family:Georgia,serif;
+      font-family:'Playfair Display',serif;
       font-size:27px;
       margin-bottom:16px;
       position:relative;
@@ -529,7 +556,7 @@
       margin:55px auto 0;
       padding:34px 42px;
       color:#f5f5f5;
-      font-family:Georgia,serif;
+      font-family:'Playfair Display',serif;
       font-size:26px;
       font-style:italic;
       line-height:1.55;
@@ -542,7 +569,7 @@
     .premium-chef-quote span{
       display:block;
       color:var(--gold);
-      font-family:Arial,sans-serif;
+      font-family:'Poppins',sans-serif;
       font-style:normal;
       font-size:17px;
       font-weight:bold;
@@ -585,7 +612,7 @@
     }
 
     .premium-resort-concept h2{
-      font-family:Georgia,serif;
+      font-family:'Playfair Display',serif;
       font-size:60px;
       color:var(--gold);
       margin-bottom:20px;
@@ -657,7 +684,7 @@
 
     .resort-overlay span{
       color:var(--gold);
-      font-family:Georgia,serif;
+      font-family:'Playfair Display',serif;
       font-size:18px;
       letter-spacing:3px;
       display:block;
@@ -665,7 +692,7 @@
     }
 
     .resort-overlay h3{
-      font-family:Georgia,serif;
+      font-family:'Playfair Display',serif;
       color:var(--gold);
       font-size:29px;
       margin-bottom:12px;
@@ -724,31 +751,31 @@
       background-size:28px 28px;opacity:.35;pointer-events:none;
     }
     .story-shell{max-width:1300px;margin:auto;position:relative;z-index:1;}
-    .premium-story-section h2{font-family:Georgia,serif;font-size:58px;color:var(--gold);}
+    .premium-story-section h2{font-family:'Playfair Display',serif;font-size:58px;color:var(--gold);}
     .story-path{display:grid;grid-template-columns:repeat(5,1fr);gap:22px;margin-top:65px;position:relative;}
     .story-path::before{content:"";position:absolute;top:58px;left:8%;right:8%;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent);opacity:.55;}
     .story-step{background:linear-gradient(145deg,rgba(18,18,18,.96),rgba(0,0,0,.88));border:1px solid rgba(212,175,55,.38);border-radius:22px;padding:34px 22px;position:relative;transition:.35s;}
     .story-step:hover{transform:translateY(-10px);border-color:var(--gold);box-shadow:0 0 28px rgba(212,175,55,.18);}
     .story-year{position:absolute;top:-16px;left:50%;transform:translateX(-50%);background:#050505;border:1px solid var(--gold);border-radius:30px;color:var(--gold);padding:5px 14px;font-size:13px;letter-spacing:2px;}
-    .story-icon{width:70px;height:70px;margin:14px auto 22px;border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:30px;font-family:Georgia,serif;background:rgba(0,0,0,.5);}
+    .story-icon{width:70px;height:70px;margin:14px auto 22px;border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:30px;font-family:'Playfair Display',serif;background:rgba(0,0,0,.5);}
     .story-step h3{color:var(--gold);font-size:22px;margin-bottom:12px;}
     .story-step p{color:#ddd;line-height:1.7;font-size:15px;}
 
     /* PREMIUM MILESTONES */
     .premium-milestones{max-width:none;text-align:center;background:linear-gradient(180deg,#0d0d0d,#050505);position:relative;overflow:hidden;}
     .premium-milestones::after{content:"";position:absolute;right:-120px;top:80px;width:360px;height:360px;border:1px solid rgba(212,175,55,.18);border-radius:50%;box-shadow:0 0 60px rgba(212,175,55,.08);}
-    .premium-milestones h2{font-family:Georgia,serif;font-size:58px;}
+    .premium-milestones h2{font-family:'Playfair Display',serif;font-size:58px;}
     .milestones-luxury-grid{max-width:1200px;margin:60px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;position:relative;z-index:1;}
     .milestone-lux-card{background:linear-gradient(145deg,rgba(20,20,20,.95),rgba(0,0,0,.88));border:1px solid rgba(212,175,55,.34);border-radius:22px;padding:38px 30px;text-align:left;position:relative;overflow:hidden;transition:.35s;}
     .milestone-lux-card::before{content:"";position:absolute;top:0;left:0;width:100%;height:4px;background:linear-gradient(to right,transparent,var(--gold),transparent);}
     .milestone-lux-card:hover{transform:translateY(-9px);border-color:var(--gold);box-shadow:0 0 30px rgba(212,175,55,.18);}
-    .milestone-lux-card span{display:inline-block;color:var(--gold);font-family:Georgia,serif;font-size:32px;margin-bottom:18px;letter-spacing:2px;}
+    .milestone-lux-card span{display:inline-block;color:var(--gold);font-family:'Playfair Display',serif;font-size:32px;margin-bottom:18px;letter-spacing:2px;}
     .milestone-lux-card h3{color:white;font-size:23px;margin-bottom:12px;}
     .milestone-lux-card p{color:#d6d6d6;line-height:1.75;font-size:16px;}
 
     /* PREMIUM CONTACT */
     .premium-contact{max-width:none;text-align:center;background:radial-gradient(circle at top,rgba(212,175,55,.08),transparent 35%),linear-gradient(180deg,#050505,#0b0b0b);}
-    .premium-contact h2{font-family:Georgia,serif;font-size:58px;}
+    .premium-contact h2{font-family:'Playfair Display',serif;font-size:58px;}
     .contact-luxury-grid{max-width:1150px;margin:60px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:30px;}
     .contact-lux-card{background:linear-gradient(145deg,rgba(18,18,18,.96),rgba(0,0,0,.9));border:1px solid rgba(212,175,55,.38);border-radius:24px;padding:42px 32px;position:relative;overflow:hidden;transition:.35s;}
     .contact-lux-card::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at top left,rgba(212,175,55,.08),transparent 38%);pointer-events:none;}
@@ -761,7 +788,7 @@
     /* PREMIUM SOCIAL */
     .premium-social{max-width:none;text-align:center;background:linear-gradient(180deg,#0b0b0b,#050505);position:relative;overflow:hidden;}
     .premium-social::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(212,175,55,.06) 1px,transparent 1px);background-size:34px 34px;opacity:.35;pointer-events:none;}
-    .premium-social h2{font-family:Georgia,serif;font-size:58px;position:relative;z-index:1;}
+    .premium-social h2{font-family:'Playfair Display',serif;font-size:58px;position:relative;z-index:1;}
     .social-luxury-grid{max-width:1150px;margin:60px auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative;z-index:1;}
     .social-lux-card{display:block;text-decoration:none;color:white;background:linear-gradient(145deg,rgba(18,18,18,.96),rgba(0,0,0,.88));border:1px solid rgba(212,175,55,.34);border-radius:22px;padding:38px 24px;transition:.35s;}
     .social-lux-card:hover{transform:translateY(-10px);border-color:var(--gold);box-shadow:0 0 30px rgba(212,175,55,.18);}
@@ -777,6 +804,35 @@
     @media(max-width:650px){
       .premium-story-section h2,.premium-milestones h2,.premium-contact h2,.premium-social h2{font-size:38px;}
       .social-luxury-grid{grid-template-columns:1fr;}
+    }
+
+
+    /* FINAL FONT POLISH */
+    .nav-brand{
+      font-family:'Playfair Display',serif;
+      font-weight:700;
+      letter-spacing:2.5px;
+    }
+
+    header h2{
+      font-family:'Playfair Display',serif;
+      font-weight:700;
+    }
+
+    .hero-tagline{
+      font-family:'Poppins',sans-serif;
+      font-weight:400;
+    }
+
+    footer,
+    footer p{
+      font-family:'Poppins',sans-serif;
+    }
+
+    footer h3{
+      font-family:'Playfair Display',serif;
+      font-weight:700;
+      letter-spacing:2px;
     }
 
   </style>
