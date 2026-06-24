@@ -110,17 +110,57 @@
     #vision2036 .vision-card h3{color:var(--gold);font-size:24px;margin-bottom:12px;text-align:left;}
     #vision2036 .vision-card h3::after{content:"";display:block;width:42px;height:2px;background:var(--gold);margin-top:12px;}
     #vision2036 .vision-card p{color:#ddd;font-size:16px;line-height:1.7;text-align:left;}
-    .premium-quote-final{max-width:1200px;margin:42px 0 0;padding:28px 38px;background:linear-gradient(135deg,rgba(0,0,0,.94),rgba(8,8,8,.88));border:1px solid rgba(212,175,55,.45);border-radius:16px;display:grid;grid-template-columns:70px 1fr 320px;gap:25px;align-items:center;position:relative;overflow:hidden;}
-    .premium-quote-final::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(145deg,rgba(212,175,55,.04) 0,rgba(212,175,55,.04) 1px,transparent 1px,transparent 16px);opacity:.35;pointer-events:none;}
+    .premium-quote-final{
+    max-width:1200px;
+    margin:45px auto 0;
+    padding:35px;
+    border:1px solid rgba(212,175,55,.45);
+    border-radius:20px;
+    background:rgba(0,0,0,.85);
+    backdrop-filter:blur(8px);
+    display:grid;
+    grid-template-columns:90px 1fr 320px;
+    align-items:center;
+    gap:30px;
+    position:relative;
+}
+   .premium-quote-final::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-image:
+      radial-gradient(
+      rgba(212,175,55,.04) 1px,
+      transparent 1px
+      );
+    background-size:30px 30px;
+    opacity:.4;
+    pointer-events:none;
+}
     .premium-quote-mark{color:var(--gold);font-size:76px;font-family:Georgia,serif;border-right:2px solid rgba(212,175,55,.55);height:130px;display:flex;align-items:flex-start;justify-content:center;z-index:1;line-height:1;}
     .premium-quote-text{z-index:1;}
     .premium-quote-text p{color:#f4f4f4;font-family:Georgia,serif;font-size:25px;font-style:italic;line-height:1.45;text-align:left;margin:0;}
     .premium-quote-text h4{color:var(--gold);font-size:20px;margin-top:18px;}
-    .premium-mountain{color:var(--gold);font-size:64px;text-align:right;letter-spacing:6px;z-index:1;}
+   .premium-mountain{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.premium-mountain svg{
+    width:280px;
+    height:auto;
+    opacity:.95;
+}
     .premium-feature-final{max-width:1200px;margin:28px 0 0;display:grid;grid-template-columns:repeat(5,1fr);gap:0;background:rgba(0,0,0,.25);}
     .premium-feature-final div{color:#ddd;font-size:17px;line-height:1.4;display:flex;align-items:center;justify-content:center;gap:18px;text-align:left;padding:8px 20px;border-right:1px solid rgba(212,175,55,.45);}
     .premium-feature-final div:last-child{border-right:none;}
     .premium-feature-final span{color:var(--gold);font-size:38px;line-height:1;}
+    .premium-feature-final i{
+    color:#d4af37;
+    font-size:34px;
+    min-width:40px;
+}
 
     /* EXPERIENCE */
     .experience-section{background:radial-gradient(circle at top,#151515,#050505);padding:110px 40px;text-align:center;}
@@ -276,15 +316,28 @@
     <div class="premium-quote-final">
       <div class="premium-quote-mark">“</div>
       <div class="premium-quote-text"><p>GG Verse is more than a resort project. It is a lifelong vision to create a destination that reflects excellence, hospitality, culture, and unforgettable experiences.</p><h4>— Ganesh Gupta</h4></div>
-      <div class="premium-mountain">△ △ △</div>
+      <div class="premium-mountain">
+  <svg viewBox="0 0 500 220" fill="none">
+    <path d="M20 180 L140 40 L240 180" stroke="#d4af37" stroke-width="4"/>
+    <path d="M120 180 L250 10 L390 180" stroke="#d4af37" stroke-width="4"/>
+    <path d="M250 180 L360 70 L480 180" stroke="#d4af37" stroke-width="4"/>
+  </svg>
+</div>
     </div>
 
     <div class="premium-feature-final">
-      <div><span>◇</span><p>Luxury<br>Experiences</p></div>
-      <div><span>❦</span><p>Wellness<br>Focused</p></div>
-      <div><span>♨</span><p>Culinary<br>Excellence</p></div>
-      <div><span>◎</span><p>Cultural<br>Connection</p></div>
-      <div><span>♡</span><p>Guest<br>Satisfaction</p></div>
+      <div>
+  <i class="fa-regular fa-gem"></i>
+  <p>Luxury<br>Experiences</p>
+</div>
+      <div>
+  <i class="fa-solid fa-leaf"></i><p>Wellness<br>Focused</p></div>
+     <div>
+  <i class="fa-solid fa-utensils"></i><p>Culinary<br>Excellence</p></div>
+      <div>
+  <i class="fa-solid fa-globe"></i><p>Cultural<br>Connection</p></div>
+      <div>
+  <i class="fa-regular fa-heart"></i><p>Guest<br>Satisfaction</p></div>
     </div>
   </div>
 </section>
