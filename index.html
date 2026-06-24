@@ -198,3 +198,2288 @@ header h1 {
     background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
     url("https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1600&q=80");
     background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.vision2036 h2 {
+    color: #d4af37;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.vision2036 h3 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.vision2036 p {
+    max-width: 850px;
+    margin: 20px auto;
+    font-size: 18px;
+}
+
+.vision-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.vision-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.vision-card {
+    background: rgba(0,0,0,0.75);
+    border: 1px solid rgba(212,175,55,0.35);
+    border-radius: 18px;
+    padding: 30px;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(5px);
+}
+
+.vision-card:hover {
+    transform: translateY(-8px);
+    border-color: #d4af37;
+    box-shadow: 0 0 25px rgba(212,175,55,0.2);
+}
+
+.vision-card span {
+    font-size: 42px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.vision-card h3 {
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+.vision-card p {
+    color: #dddddd;
+    line-height: 1.7;
+}
+
+.vision-quote {
+    color: #d4af37;
+    font-style: italic;
+    font-size: 22px;
+}
+  .experience-section {
+    background: radial-gradient(circle at top, #151515, #050505);
+    padding: 110px 40px;
+    text-align: center;
+    color: white;
+}
+
+.experience-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.luxury-line {
+    width: 220px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #d4af37, transparent);
+}
+
+.luxury-symbol {
+    color: #d4af37;
+    font-size: 38px;
+}
+
+.experience-section h2 {
+    font-family: Georgia, serif;
+    color: #d4af37;
+    font-size: 72px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.experience-intro {
+    max-width: 850px;
+    margin: 0 auto 70px;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #eeeeee;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.experience-card {
+    height: 620px;
+    border-radius: 22px;
+    overflow: hidden;
+    border: 1px solid #d4af37;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: 0.4s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 35px rgba(212,175,55,0.25);
+}
+
+.experience-content {
+    height: 100%;
+    padding: 35px;
+    background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.9));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.experience-icon {
+    width: 95px;
+    height: 95px;
+    border: 1px solid #d4af37;
+    border-radius: 50%;
+    color: #d4af37;
+    font-size: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.55);
+    margin-bottom: 25px;
+}
+
+.experience-card h3 {
+    color: #d4af37;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.mini-line {
+    width: 60px;
+    height: 2px;
+    background: #d4af37;
+    margin-bottom: 25px;
+}
+
+.experience-card p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: white;
+}
+
+/* Background Images */
+.dining {
+    background-image: url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80");
+}
+
+.wellness {
+    background-image: url("https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=80");
+}
+
+.nature {
+    background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80");
+}
+
+.events {
+    background-image: url("https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=80");
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-section h2 {
+        font-size: 44px;
+    }
+
+    .experience-card {
+        height: 520px;
+    }
+
+    .luxury-line {
+        width: 90px;
+    }
+}
+
+.gallery-item img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:15px 15px 0 0;
+}
+    .gallery-item{
+    overflow:hidden;
+    border-radius:15px;
+    transition:0.4s;
+}
+
+.gallery-item:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(212,175,55,0.3);
+}
+
+.section-intro{
+    max-width:700px;
+    margin:auto;
+    margin-bottom:50px;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:40px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.gallery-item{
+    background:#111;
+    border-radius:15px;
+    overflow:hidden;
+    border:1px solid rgba(212,175,55,0.2);
+}
+
+.gallery-item img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.gallery-item h3{
+    padding:20px;
+    color:#d4af37;
+}
+  .travel-section {
+    padding: 100px 20px;
+    text-align: center;
+    background: #0d0d0d;
+}
+
+.travel-section h2 {
+    color: #d4af37;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.travel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 50px auto 0;
+}
+
+.travel-card {
+    background: #111;
+    border: 1px solid rgba(212,175,55,0.4);
+    padding: 35px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.travel-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(212,175,55,0.2);
+}
+
+.travel-card h3 {
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+    .contact-section{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.resort-gallery{
+    padding:120px 20px;
+    text-align:center;
+    background:linear-gradient(180deg,#050505,#0d0d0d);
+}
+
+.resort-gallery h2{
+    color:#d4af37;
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.resort-gallery .section-intro{
+    max-width:850px;
+    margin:0 auto 60px;
+    color:#ddd;
+    font-size:18px;
+}
+
+.resort-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.resort-card{
+    position:relative;
+    min-height:320px;
+    border-radius:22px;
+    overflow:hidden;
+    border:1px solid rgba(212,175,55,0.45);
+    background:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.8)),
+    url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:flex-end;
+    padding:35px;
+    text-align:left;
+    transition:0.4s ease;
+}
+
+.resort-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 25px 45px rgba(0,0,0,0.6);
+    border-color:#d4af37;
+}
+
+.resort-card h3{
+    color:#d4af37;
+    font-size:26px;
+    margin-bottom:12px;
+}
+
+.resort-card p{
+    color:#f5f5f5;
+    font-size:16px;
+    line-height:1.7;
+}
+
+@media(max-width:900px){
+    .resort-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+    .resort-grid{
+        grid-template-columns:1fr;
+    }
+
+    .resort-gallery h2{
+        font-size:36px;
+    }
+}
+
+    
+.contact-section h2{
+    color:#d4af37;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    max-width:1000px;
+    margin:50px auto;
+}
+
+.contact-card{
+    background:#111;
+    border:1px solid rgba(212,175,55,0.4);
+    border-radius:15px;
+    padding:30px;
+}
+
+.contact-card h3{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+.contact-buttons{
+    margin-top:40px;
+}
+    .food-creativity{
+    padding:120px 20px;
+    text-align:center;
+}
+
+.food-creativity{
+    padding:120px 20px;
+    text-align:center;
+}
+
+.food-creativity h2{
+    color:#d4af37;
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.food-creativity .section-intro{
+    max-width:850px;
+    margin:0 auto 60px;
+    color:#ddd;
+    line-height:1.8;
+}
+
+.creativity-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.creativity-card{
+    background:linear-gradient(145deg,#111,#1a1a1a);
+    border:1px solid rgba(212,175,55,0.3);
+    border-radius:20px;
+    padding:40px 30px;
+    transition:0.4s;
+}
+
+.creativity-card:hover{
+    transform:translateY(-10px);
+    border-color:#d4af37;
+    box-shadow:0 0 30px rgba(212,175,55,0.2);
+}
+
+.creativity-card h3{
+    color:#d4af37;
+    margin-bottom:20px;
+    font-size:26px;
+}
+
+.creativity-card p{
+    color:#f0f0f0;
+    line-height:1.8;
+}
+
+.chef-quote{
+    margin-top:60px;
+    font-size:24px;
+    font-style:italic;
+    color:#d4af37;
+    max-width:900px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+@media(max-width:900px){
+    .creativity-grid{
+        grid-template-columns:1fr;
+    }
+}
+    .footer{
+    background:#000;
+    text-align:center;
+    padding:50px 20px;
+    border-top:1px solid rgba(212,175,55,0.3);
+}
+
+.footer h3{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+    .hero-logo{
+    width:500px;
+    max-width:90%;
+    margin-bottom:30px;
+}
+    .hero-tagline{
+    color:#d4af37;
+    font-size:20px;
+    letter-spacing:2px;
+    margin-bottom:25px;
+}
+    .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: rgba(0,0,0,0.78);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(212,175,55,0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+}
+
+.nav-brand{
+    color:#d4af37;
+    font-weight:bold;
+    font-size:24px;
+    letter-spacing:2px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 28px;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    background: #d4af37;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+@media(max-width:768px){
+    .navbar{
+        flex-direction:column;
+        padding:15px 20px;
+    }
+
+    .nav-links{
+        margin-top:12px;
+        text-align:center;
+    }
+
+    .nav-links a{
+        display:inline-block;
+        margin:8px 10px;
+        font-size:14px;
+    }
+  
+}
+
+/* PREMIUM FOUNDER SECTION */
+.premium-founder{
+    padding:120px 20px;
+    background:linear-gradient(180deg,#050505,#0d0d0d);
+    max-width:none;
+}
+
+.premium-founder-inner{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:420px 1fr;
+    gap:80px;
+    align-items:center;
+}
+
+.premium-photo img{
+    width:100%;
+    border-radius:28px;
+    border:1px solid rgba(212,175,55,0.4);
+    box-shadow:0 0 45px rgba(212,175,55,0.25);
+}
+
+.small-title{
+    color:#d4af37;
+    letter-spacing:4px;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.premium-founder-content{
+    text-align:left;
+}
+
+.premium-founder-content h2{
+    color:#d4af37;
+    font-size:52px;
+    margin-bottom:10px;
+    text-align:left;
+}
+
+.premium-founder-content h3{
+    color:white;
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+.premium-founder-content p{
+    color:#ddd;
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:18px;
+}
+
+.founder-quote{
+    color:#d4af37 !important;
+    font-style:italic;
+    font-size:22px !important;
+    margin-top:25px;
+}
+
+.premium-stats{
+    max-width:1100px;
+    margin:90px auto 0;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    text-align:center;
+}
+
+.premium-stats div{
+    background:#111;
+    border:1px solid rgba(212,175,55,0.4);
+    border-radius:20px;
+    padding:35px 20px;
+}
+
+.premium-stats h4{
+    color:#d4af37;
+    font-size:46px;
+    margin-bottom:10px;
+}
+
+.premium-stats p{
+    color:white;
+    font-weight:bold;
+}
+
+@media(max-width:900px){
+    .premium-founder-inner{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .premium-founder-content,
+    .premium-founder-content h2{
+        text-align:center;
+    }
+
+    .premium-photo{
+        max-width:360px;
+        margin:auto;
+    }
+
+    .premium-stats{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+    .premium-stats{
+        grid-template-columns:1fr;
+    }
+
+    .premium-founder-content h2{
+        font-size:38px;
+    }
+}
+ .journey-section{
+    padding:120px 20px;
+    background:#0d0d0d;
+    text-align:center;
+}
+
+.journey-section h2{
+    color:#d4af37;
+    font-size:46px;
+    margin-bottom:20px;
+}
+
+.journey-timeline{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:22px;
+    max-width:1300px;
+    margin:60px auto 0;
+}
+
+.journey-step{
+    background:linear-gradient(145deg,#111,#1a1a1a);
+    border:1px solid rgba(212,175,55,0.35);
+    border-radius:20px;
+    padding:35px 22px;
+    transition:0.3s;
+}
+
+.journey-step:hover{
+    transform:translateY(-10px);
+    border-color:#d4af37;
+    box-shadow:0 0 25px rgba(212,175,55,0.18);
+}
+
+.journey-step span{
+    font-size:36px;
+}
+
+.journey-step h3{
+    color:#d4af37;
+    margin:18px 0 12px;
+}
+
+.journey-step p{
+    color:#ddd;
+    line-height:1.7;
+}
+
+@media(max-width:1000px){
+    .journey-timeline{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+    .journey-timeline{
+        grid-template-columns:1fr;
+    }
+
+    .journey-section h2{
+        font-size:34px;
+    }
+}
+ .founder-quote {
+    margin-top: 30px;
+    padding: 25px;
+    border-left: 4px solid gold;
+    background: rgba(255, 215, 0, 0.08);
+    border-radius: 12px;
+}
+
+.founder-quote p {
+    font-size: 20px;
+    font-style: italic;
+    color: #f5f5f5;
+    line-height: 1.7;
+}
+
+.founder-quote span {
+    display: block;
+    margin-top: 15px;
+    color: gold;
+    font-weight: bold;
+}
+    .milestones-section {
+    background: #0d0d0d;
+    color: white;
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.milestones-section h2 {
+    color: #d4af37;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.milestones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+    max-width: 1100px;
+    margin: 50px auto 0;
+}
+
+.milestone-card {
+    background: #151515;
+    border: 1px solid rgba(212,175,55,0.3);
+    padding: 30px 22px;
+    border-radius: 16px;
+    transition: 0.3s ease;
+}
+
+.milestone-card:hover {
+    transform: translateY(-7px);
+    border-color: #d4af37;
+    box-shadow: 0 0 22px rgba(212,175,55,0.18);
+}
+
+.milestone-card h3 {
+    color: #d4af37;
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+
+.milestone-card p {
+    color: #cccccc;
+    line-height: 1.6;
+    font-size: 15px;
+}
+ .philosophy-section {
+    background: linear-gradient(135deg, #050505, #111111);
+    padding: 110px 20px;
+    text-align: center;
+}
+
+.philosophy-section h2 {
+    color: #d4af37;
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+
+.philosophy-intro {
+    max-width: 850px;
+    margin: 0 auto 60px;
+    color: #cccccc;
+    line-height: 1.8;
+}
+
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 60px auto 0;
+}
+
+.philosophy-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(212,175,55,0.25);
+    padding: 45px 35px;
+    border-radius: 18px;
+    transition: 0.3s ease;
+}
+
+.philosophy-card:hover {
+    transform: translateY(-8px);
+    border-color: #d4af37;
+    box-shadow: 0 0 25px rgba(212,175,55,0.15);
+}
+
+.philosophy-card h3 {
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+    .philosophy-icon {
+    color: #d4af37;
+    font-size: 28px;
+    display: block;
+    margin-bottom: 18px;
+}
+.future-quote {
+    width: 100%;
+    max-width: 1000px;
+    margin: 100px auto 0;
+    text-align: center;
+    color: #d4af37;
+}
+
+.future-quote p {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 32px;
+    line-height: 1.5;
+    font-family: Georgia, serif;
+    color: #d4af37;
+}
+
+.quote-lines {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.quote-lines span {
+    width: 180px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #d4af37, transparent);
+}
+
+.quote-lines strong {
+    font-size: 55px;
+    color: #d4af37;
+}
+
+.quote-diamond {
+    margin: 25px 0 12px;
+    color: #d4af37;
+}
+
+.future-quote h4 {
+    color: #d4af37;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}.luxury-icon {
+    display: block;
+    font-size: 52px;
+    color: #d4af37;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+    .vision-card {
+    min-height: 260px;
+    border-radius: 18px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgba(212,175,55,0.35);
+    transition: 0.4s ease;
+}
+
+.card-overlay {
+    height: 100%;
+    padding: 35px;
+    background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.88));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.vision-card:hover {
+    transform: translateY(-10px);
+    border-color: #d4af37;
+    box-shadow: 0 0 35px rgba(212,175,55,0.2);
+}
+
+.vision-card h3 {
+    color: #d4af37;
+    margin-bottom: 12px;
+}
+
+.vision-card p {
+    color: #eeeeee;
+    line-height: 1.6;
+}.card-resort {
+    background-image: url("https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=900&q=80");
+}
+
+.card-spa {
+    background-image: url("https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=80");
+}
+
+.card-dining {
+    background-image: url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80");
+}
+
+.card-pool {
+    background-image: url("https://images.unsplash.com/photo-1501117716987-c8e1ecb21038?auto=format&fit=crop&w=900&q=80");
+}
+
+.card-events {
+    background-image: url("https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=80");
+}
+
+.card-sustainable {
+    background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80");
+}
+.vision-luxury{
+    max-width:none;
+    width:100%;
+    padding:90px 20px;
+    background:
+        linear-gradient(90deg, rgba(0,0,0,0.96), rgba(0,0,0,0.75), rgba(0,0,0,0.35)),
+        url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1800&q=80");
+    background-size:cover;
+    background-position:center right;
+}
+
+.vision-content{
+    max-width:1300px;
+    margin:auto;
+}
+
+.vision-label{
+    color:#d4af37;
+    letter-spacing:7px;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+.vision-label::after{
+    content:"";
+    display:block;
+    width:180px;
+    height:1px;
+    background:#d4af37;
+    margin-top:12px;
+}
+
+.vision-luxury h2{
+    color:white;
+    font-size:76px;
+    line-height:1.05;
+    font-family:Georgia, serif;
+    margin-bottom:35px;
+    text-align:left;
+}
+
+.vision-luxury h2 span{
+    color:#d4af37;
+}
+
+.vision-intro{
+    max-width:850px;
+    color:#ddd;
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:55px;
+}
+
+.vision-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+}
+
+.vision-card{
+    background:rgba(0,0,0,0.82);
+    border:1px solid rgba(212,175,55,0.55);
+    border-radius:18px;
+    padding:32px;
+    display:grid;
+    grid-template-columns:90px 1fr;
+    gap:25px;
+    align-items:center;
+}
+
+.vision-icon{
+    width:78px;
+    height:78px;
+    border:1px solid #d4af37;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:34px;
+}
+
+.vision-card h3{
+    color:#d4af37;
+    font-size:25px;
+    margin-bottom:12px;
+}
+
+.vision-card h3::after{
+    content:"";
+    display:block;
+    width:45px;
+    height:2px;
+    background:#d4af37;
+    margin-top:12px;
+}
+
+.vision-card p{
+    color:#ddd;
+    line-height:1.7;
+}
+
+.vision-quote-box{
+    margin-top:35px;
+    border:1px solid rgba(212,175,55,0.45);
+    border-radius:18px;
+    padding:35px 45px;
+    background:rgba(0,0,0,0.82);
+    display:grid;
+    grid-template-columns:70px 1fr 250px;
+    gap:25px;
+    align-items:center;
+}
+
+.quote-icon{
+    color:#d4af37;
+    font-size:75px;
+}
+
+.vision-quote-box p{
+    color:#f5f5f5;
+    font-family:Georgia, serif;
+    font-size:25px;
+    font-style:italic;
+    line-height:1.6;
+}
+
+.vision-quote-box h4{
+    color:#d4af37;
+    margin-top:18px;
+    font-size:20px;
+}
+
+.mountain-art{
+    color:#d4af37;
+    font-size:70px;
+    text-align:right;
+}
+
+.vision-feature-bar{
+    margin-top:35px;
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:25px;
+    text-align:center;
+}
+
+.vision-feature-bar div{
+    color:#ddd;
+    font-size:17px;
+    border-right:1px solid rgba(212,175,55,0.45);
+}
+
+.vision-feature-bar div:last-child{
+    border-right:none;
+}
+
+.vision-feature-bar span{
+    color:#d4af37;
+    font-size:30px;
+    display:block;
+    margin-bottom:8px;
+}
+
+@media(max-width:1000px){
+    .vision-luxury h2{
+        font-size:50px;
+    }
+
+    .vision-grid{
+        grid-template-columns:1fr;
+    }
+
+    .vision-quote-box{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .mountain-art{
+        text-align:center;
+    }
+
+    .vision-feature-bar{
+        grid-template-columns:1fr;
+    }
+
+    .vision-feature-bar div{
+        border-right:none;
+    }
+}
+ /* EXACT LUXURY VISION 2036 STYLE */
+
+#vision2036{
+    max-width:none !important;
+    width:100% !important;
+    min-height:100vh !important;
+    padding:70px 6% 55px !important;
+    background:
+        linear-gradient(90deg, rgba(0,0,0,0.96) 0%, rgba(0,0,0,0.82) 45%, rgba(0,0,0,0.35) 100%),
+        url("https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1800&q=80") !important;
+    background-size:cover !important;
+    background-position:center right !important;
+}
+
+/* title area */
+#vision2036 .vision-content{
+    max-width:1300px !important;
+    margin:auto !important;
+}
+
+#vision2036 .vision-label{
+    text-align:left !important;
+    color:#d4af37 !important;
+    letter-spacing:7px !important;
+    font-size:14px !important;
+    margin-bottom:22px !important;
+}
+
+#vision2036 .vision-label::after{
+    content:"";
+    display:block;
+    width:180px;
+    height:1px;
+    background:#d4af37;
+    margin-top:14px;
+}
+
+#vision2036 h2{
+    text-align:left !important;
+    font-family:Georgia, serif !important;
+    font-size:76px !important;
+    line-height:1.05 !important;
+    color:#fff !important;
+    margin-bottom:28px !important;
+}
+
+#vision2036 h2 span{
+    color:#d4af37 !important;
+}
+
+#vision2036 .vision-intro{
+    text-align:left !important;
+    max-width:850px !important;
+    color:#ddd !important;
+    font-size:19px !important;
+    line-height:1.8 !important;
+    margin:0 0 45px 0 !important;
+}
+
+/* cards */
+#vision2036 .vision-grid{
+    display:grid !important;
+    grid-template-columns:repeat(3,1fr) !important;
+    gap:22px !important;
+    max-width:1200px !important;
+}
+
+#vision2036 .vision-card{
+    min-height:190px !important;
+    background:linear-gradient(145deg, rgba(10,10,10,0.95), rgba(0,0,0,0.82)) !important;
+    border:1px solid rgba(212,175,55,0.55) !important;
+    border-radius:16px !important;
+    padding:30px !important;
+    display:grid !important;
+    grid-template-columns:90px 1fr !important;
+    gap:24px !important;
+    align-items:center !important;
+    text-align:left !important;
+}
+
+#vision2036 .vision-icon{
+    width:78px !important;
+    height:78px !important;
+    border-radius:50% !important;
+    border:1px solid #d4af37 !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    color:#d4af37 !important;
+    font-size:42px !important;
+}
+
+#vision2036 .vision-card h3{
+    color:#d4af37 !important;
+    font-size:24px !important;
+    margin-bottom:12px !important;
+    text-align:left !important;
+}
+
+#vision2036 .vision-card h3::after{
+    content:"";
+    display:block;
+    width:42px;
+    height:2px;
+    background:#d4af37;
+    margin-top:12px;
+}
+
+#vision2036 .vision-card p{
+    color:#ddd !important;
+    font-size:16px !important;
+    line-height:1.7 !important;
+    text-align:left !important;
+}
+
+/* quote */
+#vision2036 .vision-quote-box{
+    max-width:1200px !important;
+    margin:35px 0 0 !important;
+    padding:34px 45px !important;
+    background:rgba(0,0,0,0.82) !important;
+    border:1px solid rgba(212,175,55,0.45) !important;
+    border-radius:16px !important;
+    display:grid !important;
+    grid-template-columns:70px 1fr 260px !important;
+    gap:25px !important;
+    align-items:center !important;
+}
+
+#vision2036 .quote-icon{
+    color:#d4af37 !important;
+    font-size:72px !important;
+}
+
+#vision2036 .vision-quote-box p{
+    font-family:Georgia, serif !important;
+    color:#f5f5f5 !important;
+    font-size:24px !important;
+    line-height:1.55 !important;
+    font-style:italic !important;
+    text-align:left !important;
+}
+
+#vision2036 .vision-quote-box h4{
+    color:#d4af37 !important;
+    font-size:19px !important;
+    margin-top:18px !important;
+}
+
+#vision2036 .mountain-art{
+    color:#d4af37 !important;
+    font-size:70px !important;
+    text-align:right !important;
+    letter-spacing:-8px !important;
+}
+
+/* bottom feature bar */
+#vision2036 .vision-feature-bar{
+    max-width:1200px !important;
+    margin:28px 0 0 !important;
+    display:grid !important;
+    grid-template-columns:repeat(5,1fr) !important;
+    gap:10px !important;
+}
+
+#vision2036 .vision-feature-bar div{
+    color:#ddd !important;
+    font-size:16px !important;
+    border-right:1px solid rgba(212,175,55,0.45) !important;
+    text-align:center !important;
+}
+
+#vision2036 .vision-feature-bar div:last-child{
+    border-right:none !important;
+}
+
+#vision2036 .vision-feature-bar span{
+    color:#d4af37 !important;
+    font-size:28px !important;
+    display:block !important;
+    margin-bottom:8px !important;
+}
+  </style>
+<header>
+  <div>
+
+    <img src="ggverse-logo.png" alt="GG Verse Logo" class="hero-logo">
+    
+
+    <h2>A Vision of Hospitality, Wellness & Luxury in Nepal</h2>
+<div class="hero-divider"></div>
+    
+    <p class="hero-tagline">
+Building Experiences Today • Creating a Legacy Tomorrow
+</p> <p>
+      Food • Travel • Lifestyle • Hospitality • Entrepreneurship
+    </p>
+
+    <p>
+      Welcome to my journey as a chef, creator, and future hospitality entrepreneur.
+    </p>
+
+
+    <a href="#about" class="btn">Explore My Journey</a>
+    <a href="#food" class="btn">View Food Gallery</a>
+  </div>
+</header>
+
+  <nav class="navbar">
+    <div class="nav-brand">GG VERSE</div>
+
+    <div class="nav-links">
+        <a href="#about">Founder</a>
+      <a href="#journey">Journey</a>
+        <a href="#food">Food</a>
+        <a href="#travel">Travel</a>
+        <a href="#vision2036">Vision 2036</a>
+        <a href="#resort-gallery">Resort</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+<section class="philosophy-section">
+
+    <p class="small-title">THE GG VERSE PHILOSOPHY</p>
+
+    <h2>Creating Experiences That Last Beyond a Visit</h2>
+
+    <p class="philosophy-intro">
+        GG Verse is built on the belief that true hospitality is not simply about service.
+        It is about creating meaningful experiences, lasting memories, and a legacy that inspires people.
+    </p>
+
+    <div class="philosophy-grid">
+
+        <div class="philosophy-card">
+          <span class="philosophy-icon">✦</span>
+            <h3>Excellence</h3>
+            <p>
+                Pursuing the highest standards in hospitality, service, and guest experience.
+            </p>
+        </div>
+
+        <div class="philosophy-card">
+            <h3>Creativity</h3>
+            <p>
+                Bringing together food, travel, culture, and innovation to create something unique.
+            </p>
+        </div>
+
+        <div class="philosophy-card">
+            <h3>Legacy</h3>
+            <p>
+                Building a future hospitality brand that will inspire generations to come.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<section id="about" class="premium-founder">
+
+  <div class="premium-founder-inner">
+
+    <div class="premium-photo">
+      <img src="ganesh-gupta.png" alt="Ganesh Gupta">
+    </div>
+
+    <div class="premium-founder-content">
+      <p class="small-title">FOUNDER OF GG VERSE</p>
+
+      <h2>Ganesh Gupta</h2>
+
+      <h3>Head Chef • Creator • Future Hospitality Entrepreneur</h3>
+
+      <p>
+        GG Verse is a personal hospitality brand built around food, travel,
+        lifestyle, creativity, and the long-term vision of creating a luxury
+        resort and spa destination in Nepal.
+      </p>
+
+      <p>
+        Based in Sydney, Australia, I am building my career in hospitality while
+        developing the foundation for GG Verse Resort & Spa Nepal — a future
+        destination focused on wellness, fine dining, culture, nature, and
+        unforgettable guest experiences.
+      </p>
+
+      <p class="founder-quote">
+        “Building experiences today, creating a legacy tomorrow.”
+      </p>
+      <div class="founder-quote">
+    <p>
+        “I believe hospitality is more than food and accommodation — it is about creating experiences people remember for a lifetime.”
+    </p>
+    <span>— Ganesh Gupta</span>
+</div>
+    </div>
+
+  </div>
+
+  <div class="premium-stats">
+    <div>
+      <h4>5+</h4>
+      <p>Years Hospitality Experience</p>
+    </div>
+
+    <div>
+      <h4>100+</h4>
+      <p>Food Creations</p>
+    </div>
+
+    <div>
+      <h4>2036</h4>
+      <p>Future Resort Vision</p>
+    </div>
+
+    <div>
+      <h4>1</h4>
+      <p>Big Dream: GG Verse Nepal</p>
+    </div>
+  </div>
+  <section id="journey" class="journey-section">
+    <p class="small-title">MY STORY</p>
+
+    <h2>From Nepal to Sydney: My Hospitality Journey</h2>
+
+    <p class="section-intro">
+        GG Verse is built from real experience, hard work, and a long-term dream of creating a luxury hospitality destination in Nepal.
+    </p>
+
+    <div class="journey-timeline">
+
+        <div class="journey-step">
+            <span>🇳🇵</span>
+            <h3>Nepal Roots</h3>
+            <p>Born with dreams, culture, family values, and the desire to build something meaningful.</p>
+        </div>
+
+        <div class="journey-step">
+            <span>🇦🇺</span>
+            <h3>Australia Journey</h3>
+            <p>Moved to Australia in 2019 and started building a new life through study, work, and discipline.</p>
+        </div>
+
+        <div class="journey-step">
+            <span>👨‍🍳</span>
+            <h3>Chef Career</h3>
+            <p>Worked through different kitchen roles, developing skills in food, leadership, service, and hospitality.</p>
+        </div>
+
+        <div class="journey-step">
+            <span>🏆</span>
+            <h3>Head Chef Growth</h3>
+            <p>Growing as a hospitality leader while learning management, menus, teams, costs, and guest experience.</p>
+        </div>
+
+        <div class="journey-step">
+            <span>🏨</span>
+            <h3>Future Vision</h3>
+            <p>Every step today is shaping the future GG Verse Resort & Spa Nepal.</p>
+        </div>.vision-icon{
+    color:#d4af37 !important;
+    font-size:42px !important;
+    font-family:Georgia, serif !important;
+}
+
+.mountain-art{
+    color:#d4af37 !important;
+    font-size:90px !important;
+    letter-spacing:-18px !important;
+    transform:skewX(-12deg);
+}
+
+    </div>
+/* QUOTE + FEATURE BAR LIKE PREMIUM REFERENCE */
+
+#vision2036 .vision-quote-box{
+    max-width:1200px !important;
+    margin:40px auto 0 !important;
+    padding:28px 38px !important;
+    background:
+        linear-gradient(135deg, rgba(0,0,0,0.94), rgba(8,8,8,0.88)) !important;
+    border:1px solid rgba(212,175,55,0.45) !important;
+    border-radius:16px !important;
+    display:grid !important;
+    grid-template-columns:70px 1fr 340px !important;
+    gap:25px !important;
+    align-items:center !important;
+    position:relative !important;
+    overflow:hidden !important;
+}
+
+#vision2036 .vision-quote-box::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+        repeating-linear-gradient(
+            145deg,
+            rgba(212,175,55,0.04) 0px,
+            rgba(212,175,55,0.04) 1px,
+            transparent 1px,
+            transparent 16px
+        );
+    opacity:0.35;
+    pointer-events:none;
+}
+
+#vision2036 .quote-icon{
+    color:#d4af37 !important;
+    font-size:76px !important;
+    font-family:Georgia, serif !important;
+    border-right:2px solid rgba(212,175,55,0.55);
+    height:130px;
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    z-index:1;
+}
+
+#vision2036 .vision-quote-box p{
+    color:#f4f4f4 !important;
+    font-family:Georgia, serif !important;
+    font-size:25px !important;
+    font-style:italic !important;
+    line-height:1.45 !important;
+    text-align:left !important;
+    z-index:1;
+}
+
+#vision2036 .vision-quote-box h4{
+    color:#d4af37 !important;
+    font-size:20px !important;
+    margin-top:18px !important;
+    z-index:1;
+}
+
+#vision2036 .mountain-art{
+    color:#d4af37 !important;
+    font-size:58px !important;
+    text-align:right !important;
+    letter-spacing:8px !important;
+    z-index:1;
+}
+
+/* better mountain symbol */
+#vision2036 .mountain-art::before{
+    content:"△ △ △";
+}
+
+/* hide old triangle text */
+#vision2036 .mountain-art{
+    font-size:0 !important;
+}
+
+#vision2036 .mountain-art::before{
+    font-size:64px !important;
+}
+
+/* FEATURE BAR */
+#vision2036 .vision-feature-bar{
+    max-width:1200px !important;
+    margin:28px auto 0 !important;
+    display:grid !important;
+    grid-template-columns:repeat(5,1fr) !important;
+    gap:0 !important;
+    background:rgba(0,0,0,0.25);
+}
+
+#vision2036 .vision-feature-bar div{
+    color:#ddd !important;
+    font-size:17px !important;
+    line-height:1.4 !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    gap:18px !important;
+    text-align:left !important;
+    padding:8px 20px !important;
+    border-right:1px solid rgba(212,175,55,0.45) !important;
+}
+
+#vision2036 .vision-feature-bar div:last-child{
+    border-right:none !important;
+}
+
+#vision2036 .vision-feature-bar span{
+    color:#d4af37 !important;
+    font-size:38px !important;
+    display:inline-block !important;
+    margin:0 !important;
+    line-height:1 !important;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+    #vision2036 .vision-quote-box{
+        grid-template-columns:1fr !important;
+        text-align:center !important;
+    }
+
+    #vision2036 .quote-icon{
+        border-right:none !important;
+        height:auto !important;
+    }
+
+    #vision2036 .vision-quote-box p{
+        text-align:center !important;
+        font-size:22px !important;
+    }
+
+    #vision2036 .mountain-art{
+        text-align:center !important;
+    }
+
+    #vision2036 .vision-feature-bar{
+        grid-template-columns:1fr !important;
+    }
+
+    #vision2036 .vision-feature-bar div{
+        border-right:none !important;
+        border-bottom:1px solid rgba(212,175,55,0.25) !important;
+        justify-content:flex-start !important;
+    }
+}
+ .premium-quote-final{
+    max-width:1200px;
+    margin:45px auto 0;
+    padding:28px 42px;
+    background:rgba(0,0,0,0.88);
+    border:1px solid rgba(212,175,55,0.55);
+    border-radius:18px;
+    display:grid;
+    grid-template-columns:70px 1fr 320px;
+    gap:25px;
+    align-items:center;
+}
+
+.premium-quote-mark{
+    color:#d4af37;
+    font-size:90px;
+    font-family:Georgia, serif;
+    border-right:2px solid rgba(212,175,55,0.55);
+    line-height:1;
+}
+
+.premium-quote-text p{
+    color:white;
+    font-family:Georgia, serif;
+    font-size:26px;
+    font-style:italic;
+    line-height:1.45;
+}
+
+.premium-quote-text h4{
+    color:#d4af37;
+    font-size:20px;
+    margin-top:18px;
+}
+
+.premium-mountain{
+    color:#d4af37;
+    font-size:60px;
+    text-align:right;
+    letter-spacing:6px;
+}
+
+.premium-feature-final{
+    max-width:1200px;
+    margin:28px auto 0;
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    text-align:center;
+}
+
+.premium-feature-final div{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:16px;
+    color:white;
+    border-right:1px solid rgba(212,175,55,0.45);
+}
+
+.premium-feature-final div:last-child{
+    border-right:none;
+}
+
+.premium-feature-final span{
+    color:#d4af37;
+    font-size:38px;
+}
+
+.premium-feature-final p{
+    color:#ddd;
+    line-height:1.4;
+    margin:0;
+}
+  /* FIX BROKEN PREMIUM QUOTE SECTION */
+#vision2036 .premium-quote-final{
+    max-width:1200px !important;
+    margin:45px auto 0 !important;
+    padding:35px 45px !important;
+    background:rgba(0,0,0,0.88) !important;
+    border:1px solid rgba(212,175,55,0.55) !important;
+    border-radius:18px !important;
+    display:grid !important;
+    grid-template-columns:70px 1fr 300px !important;
+    gap:25px !important;
+    align-items:center !important;
+}
+
+#vision2036 .premium-quote-mark{
+    color:#d4af37 !important;
+    font-size:80px !important;
+    font-family:Georgia, serif !important;
+    border-right:2px solid rgba(212,175,55,0.55) !important;
+    line-height:1 !important;
+}
+
+#vision2036 .premium-quote-text p{
+    color:white !important;
+    font-family:Georgia, serif !important;
+    font-size:24px !important;
+    font-style:italic !important;
+    line-height:1.5 !important;
+    margin:0 !important;
+}
+
+#vision2036 .premium-quote-text h4{
+    color:#d4af37 !important;
+    font-size:20px !important;
+    margin-top:18px !important;
+}
+
+#vision2036 .premium-mountain{
+    color:#d4af37 !important;
+    font-size:60px !important;
+    text-align:right !important;
+}
+
+#vision2036 .premium-feature-final{
+    max-width:1200px !important;
+    margin:30px auto 0 !important;
+    display:grid !important;
+    grid-template-columns:repeat(5,1fr) !important;
+}
+
+#vision2036 .premium-feature-final div{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    gap:15px !important;
+    color:white !important;
+    border-right:1px solid rgba(212,175,55,0.45) !important;
+}
+
+#vision2036 .premium-feature-final div:last-child{
+    border-right:none !important;
+}
+
+#vision2036 .premium-feature-final span{
+    color:#d4af37 !important;
+    font-size:34px !important;
+}
+
+#vision2036 .premium-feature-final p{
+    color:#ddd !important;
+    margin:0 !important;
+    line-height:1.4 !important;
+}
+  </section>
+  <section id="milestones" class="milestones-section">
+    <p class="small-title">ACHIEVEMENTS</p>
+
+    <h2>Milestones & Growth</h2>
+
+    <p class="section-intro">
+        Every stage of my journey has helped build the foundation of GG Verse — from kitchen experience to leadership, creativity, and future entrepreneurship.
+    </p>
+
+    <div class="milestones-grid">
+
+        <div class="milestone-card">
+            <h3>2019</h3>
+            <p>Moved to Australia and began building a new future in hospitality.</p>
+        </div>
+
+        <div class="milestone-card">
+            <h3>Education</h3>
+            <p>Completed commercial cookery and hospitality management studies.</p>
+        </div>
+
+        <div class="milestone-card">
+            <h3>Chef Career</h3>
+            <p>Developed professional experience across busy kitchens, food service, and operations.</p>
+        </div>
+
+        <div class="milestone-card">
+            <h3>Leadership</h3>
+            <p>Grew into senior kitchen roles with responsibility for teams, quality, and guest experience.</p>
+        </div>
+
+        <div class="milestone-card">
+            <h3>Head Chef</h3>
+            <p>Leading kitchen operations in Sydney while developing stronger business and management skills.</p>
+        </div>
+
+        <div class="milestone-card">
+            <h3>GG Verse</h3>
+            <p>Building a luxury personal brand with a long-term vision for hospitality, food, travel, and lifestyle.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="vision2036" class="vision-luxury">
+
+    <div class="vision-content">
+
+        <p class="vision-label">VISION 2036</p>
+
+        <h2>
+            Building GG Verse<br>
+            <span>Resort & Spa Nepal</span>
+        </h2>
+
+        <p class="vision-intro">
+            By 2036, GG Verse aims to become a luxury hospitality destination in Nepal,
+            bringing together wellness, food, travel, culture, and unforgettable guest experiences.
+        </p>
+
+        <div class="vision-grid">
+
+            <div class="vision-card">
+              <div class="vision-icon">♜</div>
+                <div>
+                    <h3>Luxury Resort</h3>
+                    <p>Premium accommodation designed for comfort, elegance, and world-class hospitality.</p>
+                </div>
+            </div>
+
+            <div class="vision-card">
+                <div class="vision-icon">✦</div>
+                <div>
+                    <h3>Spa & Wellness</h3>
+                    <p>Relaxation, wellness treatments, massage therapies, and holistic experiences.</p>
+                </div>
+            </div>
+
+            <div class="vision-card">
+                <div class="vision-icon">♨</div>
+                <div>
+                    <h3>Fine Dining</h3>
+                    <p>Signature dining experiences inspired by global cuisine and Nepalese flavours.</p>
+                </div>
+            </div>
+
+            <div class="vision-card">
+                <div class="vision-icon">≋</div>
+                <div>
+                    <h3>Infinity Pool</h3>
+                    <p>Luxury leisure spaces offering breathtaking views and relaxation.</p>
+                </div>
+            </div>
+
+            <div class="vision-card">
+              <div class="vision-icon">◇</div>
+                <div>
+                    <h3>Events & Weddings</h3>
+                    <p>Elegant venues for celebrations, conferences, weddings, and special occasions.</p>
+                </div>
+            </div>
+
+            <div class="vision-card">
+               <div class="vision-icon">❦</div>
+                <div>
+                    <h3>Sustainable Design</h3>
+                    <p>Environmentally responsible hospitality inspired by nature and local culture.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="max-width:1200px; margin:45px auto 0; padding:35px 45px; background:rgba(0,0,0,0.88); border:1px solid rgba(212,175,55,0.55); border-radius:18px; display:grid; grid-template-columns:70px 1fr 300px; gap:25px; align-items:center;">
+
+    <div style="color:#d4af37; font-size:80px; font-family:Georgia, serif; border-right:2px solid rgba(212,175,55,0.55); line-height:1;">
+        “
+    </div>
+
+    <div>
+        <p style="color:white; font-family:Georgia, serif; font-size:24px; font-style:italic; line-height:1.5; margin:0;">
+            GG Verse is more than a resort project. It is a lifelong vision to create a destination that reflects excellence, hospitality, culture, and unforgettable experiences.
+        </p>
+        <h4 style="color:#d4af37; font-size:20px; margin-top:18px;">
+            — Ganesh Gupta
+        </h4>
+    </div>
+
+    <div style="color:#d4af37; font-size:60px; text-align:right;">
+        △△△
+    </div>
+
+</div>
+
+<div style="max-width:1200px; margin:30px auto 0; display:grid; grid-template-columns:repeat(5,1fr); text-align:center;">
+
+    <div style="color:white; border-right:1px solid rgba(212,175,55,0.45);">
+        <span style="color:#d4af37; font-size:34px;">◇</span><br>
+        Luxury<br>Experiences
+    </div>
+
+    <div style="color:white; border-right:1px solid rgba(212,175,55,0.45);">
+        <span style="color:#d4af37; font-size:34px;">❦</span><br>
+        Wellness<br>Focused
+    </div>
+
+    <div style="color:white; border-right:1px solid rgba(212,175,55,0.45);">
+        <span style="color:#d4af37; font-size:34px;">♨</span><br>
+        Culinary<br>Excellence
+    </div>
+
+    <div style="color:white; border-right:1px solid rgba(212,175,55,0.45);">
+        <span style="color:#d4af37; font-size:34px;">◎</span><br>
+        Cultural<br>Connection
+    </div>
+
+    <div style="color:white;">
+        <span style="color:#d4af37; font-size:34px;">♡</span><br>
+        Guest<br>Satisfaction
+    </div>
+
+</div>
+
+</section>
+<section id="experience" class="experience-section">
+
+    <div class="experience-header">
+        <div class="luxury-line"></div>
+        <div class="luxury-symbol">✦</div>
+        <div class="luxury-line"></div>
+    </div>
+
+    <h2>The GG Verse Experience</h2>
+
+    <p class="experience-intro">
+        A harmonious blend of luxury, wellness, nature, and celebration crafted to create unforgettable memories in Nepal.
+    </p>
+
+    <div class="experience-grid">
+
+        <div class="experience-card dining">
+            <div class="experience-content">
+                <div class="experience-icon">🍴</div>
+                <h3>Fine Dining</h3>
+                <div class="mini-line"></div>
+                <p>Signature culinary experiences inspired by Nepalese heritage and international cuisine.</p>
+            </div>
+        </div>
+
+        <div class="experience-card wellness">
+            <div class="experience-content">
+                <div class="experience-icon">♨</div>
+                <h3>Luxury Wellness</h3>
+                <div class="mini-line"></div>
+                <p>Spa treatments, infinity pools, yoga retreats, and complete relaxation.</p>
+            </div>
+        </div>
+
+        <div class="experience-card nature">
+            <div class="experience-content">
+                <div class="experience-icon">❦</div>
+                <h3>Nature Retreats</h3>
+                <div class="mini-line"></div>
+                <p>Discover Nepal’s natural beauty through curated adventures and exclusive escapes.</p>
+            </div>
+        </div>
+
+        <div class="experience-card events">
+            <div class="experience-content">
+                <div class="experience-icon">◇</div>
+                <h3>Weddings & Events</h3>
+                <div class="mini-line"></div>
+                <p>Celebrate unforgettable moments in a world-class luxury destination.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+  <section id="food" class="food-gallery">
+    <h2>Signature Culinary Collection</h2>
+
+<p class="section-intro">
+Showcasing dishes crafted throughout my professional hospitality journey in Sydney.
+</p>
+<div style="margin-top:50px;">
+    <a href="https://www.instagram.com/gg_food_art"
+       class="btn"
+       target="_blank">
+       View Full Food Gallery
+    </a>
+</div>
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="lamb-shank.png" alt="Food">
+            <h3>Signature Creations</h3>
+        </div>
+
+        <div class="gallery-item">
+            <img src="beef-short-rib.png" alt="Food">
+            <h3>Modern Dining</h3>
+        </div>
+
+        <div class="gallery-item">
+            <img src="thai-beef-salad.png" alt="Food">
+            <h3>Chef Specials</h3>
+        </div>
+
+        <div class="gallery-item">
+            <img src="prawn-pasta.png" alt="Food">
+            <h3>International Cuisine</h3>
+        </div>
+     
+
+    </div>
+</section>
+  <section id="travel" class="travel-section">
+    <h2>Travel & Lifestyle</h2>
+
+    <p class="section-intro">
+        A Vision of Hospitality, Wellness & Luxury in Nepal
+
+Built Through Years of Culinary Excellence and Hospitality Leadership in Sydney.
+    </p>
+
+    <div class="travel-grid">
+
+        <div class="travel-card">
+            <h3>Sydney Journey</h3>
+            <p>
+                My current life and hospitality career in Sydney, Australia — learning, growing, and building the foundation for GG Verse.
+            </p>
+        </div>
+
+        <div class="travel-card">
+            <h3>Nepal Roots</h3>
+            <p>
+                Nepal is home, culture, memory, and future. It is the heart of the GG Verse Resort & Spa vision.
+            </p>
+        </div>
+
+        <div class="travel-card">
+            <h3>Lifestyle & Growth</h3>
+            <p>
+                Personal growth, discipline, creativity, mindset, and the daily journey of becoming better.
+            </p>
+        </div>
+
+    </div>
+</section>
+    </div>
+
+ 
+  <section id="food-creativity" class="food-creativity">
+    <h2>The Culinary Vision Behind GG Verse</h2>
+
+    <p class="section-intro">
+        From professional kitchens in Sydney to future hospitality concepts in Nepal,
+        food remains at the heart of the GG Verse journey.
+    </p>
+
+    <div class="creativity-grid">
+        <div class="creativity-card">
+            <h3>👨‍🍳 Professional Chef Journey</h3>
+            <p>
+                Years of hands-on kitchen experience, leadership, menu creation,
+                plating, preparation, and professional hospitality service.
+            </p>
+        </div>
+
+        <div class="creativity-card">
+            <h3>📸 GG Food Art & Storytelling</h3>
+            <p>
+                Creative food content, restaurant dishes, chef specials,
+                visual stories, and the journey behind every plate.
+            </p>
+        </div>
+
+        <div class="creativity-card">
+            <h3>🏨 Future Hospitality Concepts</h3>
+            <p>
+                Building ideas for future GG Verse restaurants, cafés,
+                hotel dining, resort menus, and luxury guest experiences.
+            </p>
+        </div>
+    </div>
+
+    <div class="chef-quote">
+        "Every great hospitality destination begins with great food, genuine service, and a clear vision."
+    </div>
+</section>
+ 
+
+</section><section id="resort-gallery" class="resort-gallery">
+    <h2>Future GG Verse Resort Concept</h2>
+    <p class="section-intro">
+        A visual concept of the future GG Verse Resort & Spa Nepal — luxury, wellness, nature, culture, and unforgettable hospitality.
+    </p>
+
+    <div class="resort-grid">
+        <div class="resort-card">
+            <h3>Luxury Rooms & Suites</h3>
+            <p>Comfort, elegance, and world-class accommodation.</p>
+        </div>
+
+        <div class="resort-card">
+            <h3>Infinity Pool</h3>
+            <p>A peaceful escape surrounded by nature and mountain views.</p>
+        </div>
+
+        <div class="resort-card">
+            <h3>Spa & Wellness</h3>
+            <p>Massage, relaxation, yoga, wellness, and healing spaces.</p>
+        </div>
+
+        <div class="resort-card">
+            <h3>Fine Dining Restaurant</h3>
+            <p>Chef-driven menus inspired by Nepalese and international flavours.</p>
+        </div>
+
+        <div class="resort-card">
+            <h3>Wedding & Events</h3>
+            <p>A destination for celebrations, memories, and premium experiences.</p>
+        </div>
+
+        <div class="resort-card">
+            <h3>Nepal Nature Retreat</h3>
+            <p>Culture, adventure, hospitality, and natural beauty in one place.</p>
+        </div>
+    </div>
+  
+    </div>
+
+</section>
+   <section id="contact" class="contact-section">
+
+    <h2>Contact & Collaboration</h2>
+
+    <p class="section-intro">
+        Interested in collaborating, connecting, or following the GG Verse journey?
+        I'd love to hear from you.
+    </p>
+
+    <div class="contact-grid">
+
+        <div class="contact-card">
+            <h3>📧 Email</h3>
+            <p>ggverseofficials@gmail.com</p>
+        </div>
+
+        <div class="contact-card">
+            <h3>📍 Location</h3>
+            <p>Sydney, Australia</p>
+        </div>
+
+        <div class="contact-card">
+            <h3>🏨 Future Vision</h3>
+            <p>GG Verse Resort & Spa Nepal</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+  <section id="social" class="socials">
+    <h2>Follow GG Verse</h2>
+    <p>Connect with GG Verse across social media.</p>
+
+<a href="https://youtube.com/@ggverse_officials" class="btn">YouTube</a>
+<a href="https://instagram.com/ggverse_officials/" class="btn">Instagram</a>
+<a href="https://tiktok.com/@ggverseofficial" class="btn">TikTok</a>
+<a href="https://facebook.com/profile.php?id=61590780698637" class="btn">Facebook</a>
+  </section>
+
+  
+
+  <div style="text-align:center; margin:40px 0;">
+    <img src="https://hitscounter.dev/api/hit?url=https://ggverseofficials.github.io&label=GG%20Verse%20Visitors&icon=eye" alt="Visitors">
+</div>
+
+<footer class="footer">
+  <footer class="footer">
+    <h3>GG VERSE</h3>
+
+    <p>
+        Food • Travel • Lifestyle • Hospitality • Entrepreneurship
+    </p>
+
+    <p>
+        From Sydney Kitchens to a Future Luxury Resort in Nepal
+    </p>
+
+    <p>
+        © 2026 GG Verse. All Rights Reserved.
+    </p>
+</footer>
+</body>
+</html>
