@@ -1231,9 +1231,113 @@
       #vision2036 h2{font-size:42px;}
     }
 
+/* ===== INTERACTIVE + EMOTIONAL GG VERSE UPGRADE ===== */
+.loader{position:fixed;inset:0;background:radial-gradient(circle at center,rgba(212,175,55,.12),transparent 34%),#020202;z-index:99999;display:flex;align-items:center;justify-content:center;transition:opacity .9s ease,visibility .9s ease;}
+.loader.hide{opacity:0;visibility:hidden;}
+.loader-inner{text-align:center;padding:45px;border:1px solid rgba(212,175,55,.42);border-radius:26px;background:rgba(0,0,0,.55);backdrop-filter:blur(10px);box-shadow:0 0 55px rgba(212,175,55,.12);}
+.loader-inner h1{color:var(--gold);font-size:62px;letter-spacing:6px;}
+.loader-inner p{color:white;letter-spacing:5px;margin:10px 0;}
+.loader-line{width:220px;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent);margin:22px auto;animation:linePulse 1.5s infinite;}
+.loader-inner span{color:#ddd;letter-spacing:2px;font-size:14px;}
+@keyframes linePulse{0%,100%{opacity:.3;transform:scaleX(.7);}50%{opacity:1;transform:scaleX(1);}}
+
+.cursor-glow{position:fixed;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(212,175,55,.12),transparent 62%);pointer-events:none;z-index:1;transform:translate(-50%,-50%);transition:.08s linear;mix-blend-mode:screen;}
+.sound-toggle{position:fixed;right:22px;bottom:22px;width:48px;height:48px;border-radius:50%;border:1px solid rgba(212,175,55,.55);background:rgba(0,0,0,.72);color:var(--gold);z-index:1000;cursor:pointer;backdrop-filter:blur(8px);}
+
+.reveal{opacity:0;transform:translateY(55px);transition:opacity 1s ease,transform 1s ease;}
+.reveal.active{opacity:1;transform:translateY(0);}
+.btn{position:relative;overflow:hidden;}
+.btn::before{content:"";position:absolute;top:0;left:-90%;width:70%;height:100%;background:linear-gradient(120deg,transparent,rgba(255,255,255,.32),transparent);transform:skewX(-20deg);transition:.7s;}
+.btn:hover::before{left:120%;}
+
+/* Masterplan */
+.interactive-masterplan{max-width:none;background:radial-gradient(circle at top,rgba(212,175,55,.10),transparent 35%),linear-gradient(180deg,#050505,#0b0b0b);text-align:center;position:relative;overflow:hidden;}
+.interactive-masterplan::before{content:"";position:absolute;inset:0;background-image:linear-gradient(135deg,rgba(212,175,55,.035) 1px,transparent 1px);background-size:32px 32px;opacity:.35;pointer-events:none;}
+.interactive-masterplan h2,.interactive-masterplan .small-title,.interactive-masterplan .section-intro{position:relative;z-index:1;}
+.masterplan-map{max-width:1150px;min-height:560px;margin:65px auto 0;border:1px solid rgba(212,175,55,.42);border-radius:32px;background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.78)),url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80");background-size:cover;background-position:center;position:relative;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.55);z-index:1;}
+.map-point{position:absolute;width:92px;height:92px;border-radius:50%;border:1px solid var(--gold);background:rgba(0,0,0,.72);color:var(--gold);cursor:pointer;display:flex;align-items:center;justify-content:center;font-weight:600;box-shadow:0 0 25px rgba(212,175,55,.22);transition:.3s;}
+.map-point::before{content:"";position:absolute;inset:-10px;border:1px solid rgba(212,175,55,.25);border-radius:50%;animation:pulseRing 2s infinite;}
+@keyframes pulseRing{0%{transform:scale(.8);opacity:.8;}100%{transform:scale(1.25);opacity:0;}}
+.map-point:hover{transform:scale(1.08);background:var(--gold);color:#000;}
+.point-villas{top:14%;left:16%;}.point-spa{top:50%;left:12%;}.point-lobby{top:34%;left:45%;}.point-restaurant{top:16%;right:18%;}.point-pool{bottom:16%;left:40%;}.point-events{bottom:18%;right:14%;}
+.masterplan-info{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);width:min(760px,88%);padding:28px 32px;border:1px solid rgba(212,175,55,.42);border-radius:22px;background:rgba(0,0,0,.78);backdrop-filter:blur(8px);text-align:center;}
+.masterplan-info h3{color:var(--gold);font-size:30px;margin-bottom:10px;}
+.masterplan-info p{color:#eee;line-height:1.75;}
+
+/* Video showcase */
+.cinematic-video-section{max-width:none;text-align:center;background:linear-gradient(135deg,rgba(0,0,0,.88),rgba(0,0,0,.75)),url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1800&q=80");background-size:cover;background-position:center;}
+.video-showcase{max-width:1200px;margin:60px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+.video-card{min-height:320px;padding:42px 32px;border:1px solid rgba(212,175,55,.42);border-radius:24px;background:rgba(0,0,0,.76);backdrop-filter:blur(8px);transition:.35s;}
+.video-card:hover{transform:translateY(-10px);border-color:var(--gold);box-shadow:0 0 30px rgba(212,175,55,.18);}
+.video-play{width:86px;height:86px;border-radius:50%;border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;margin:0 auto 26px;color:var(--gold);font-size:30px;}
+.video-card h3{color:var(--gold);font-size:28px;margin-bottom:14px;}
+.video-card p{color:#ddd;line-height:1.8;}
+
+/* Roadmap */
+.roadmap-section{max-width:none;text-align:center;background:radial-gradient(circle at top,rgba(212,175,55,.09),transparent 35%),linear-gradient(180deg,#050505,#101010,#050505);overflow:hidden;position:relative;}
+.roadmap-line{max-width:1250px;margin:70px auto 0;display:grid;grid-template-columns:repeat(5,1fr);gap:20px;position:relative;}
+.roadmap-line::before{content:"";position:absolute;top:48px;left:7%;right:7%;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent);opacity:.55;}
+.roadmap-item{position:relative;padding:36px 24px;background:linear-gradient(145deg,rgba(18,18,18,.96),rgba(0,0,0,.88));border:1px solid rgba(212,175,55,.38);border-radius:22px;text-align:left;transition:.35s;}
+.roadmap-item:hover{transform:translateY(-10px);border-color:var(--gold);}
+.roadmap-item span{display:inline-flex;align-items:center;justify-content:center;width:78px;height:78px;border-radius:50%;border:1px solid var(--gold);color:var(--gold);background:#050505;font-weight:700;margin-bottom:22px;position:relative;z-index:1;}
+.roadmap-item h3{color:var(--gold);font-size:24px;margin-bottom:12px;}
+.roadmap-item p{color:#ddd;line-height:1.7;font-size:15px;}
+
+/* Testimonials */
+.testimonial-section{max-width:none;text-align:center;background:linear-gradient(180deg,#0b0b0b,#050505);}
+.testimonial-grid{max-width:1150px;margin:60px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+.testimonial-card{padding:42px 34px;border:1px solid rgba(212,175,55,.4);border-radius:24px;background:linear-gradient(145deg,rgba(18,18,18,.96),rgba(0,0,0,.88));text-align:left;transition:.35s;}
+.testimonial-card:hover{transform:translateY(-10px);border-color:var(--gold);box-shadow:0 0 30px rgba(212,175,55,.16);}
+.stars{color:var(--gold);letter-spacing:4px;margin-bottom:22px;}
+.testimonial-card p{color:#f1f1f1;font-family:'Playfair Display',serif;font-size:22px;font-style:italic;line-height:1.55;margin-bottom:22px;}
+.testimonial-card h4{color:var(--gold);font-family:'Poppins',sans-serif;font-size:16px;}
+
+/* Founder note */
+.founder-note-section{max-width:none;background:radial-gradient(circle at center,rgba(212,175,55,.12),transparent 34%),linear-gradient(180deg,#050505,#0b0b0b);text-align:center;}
+.founder-note-box{max-width:1050px;margin:auto;padding:55px;border:1px solid rgba(212,175,55,.46);border-radius:28px;background:rgba(0,0,0,.72);backdrop-filter:blur(9px);box-shadow:0 30px 70px rgba(0,0,0,.5);}
+.founder-note-box h2{font-size:62px;margin-bottom:28px;}
+.founder-note-box p{color:#e7e7e7;font-size:19px;line-height:1.9;margin-bottom:22px;}
+.founder-note-box h4{color:var(--gold);margin-top:24px;font-family:'Poppins',sans-serif;letter-spacing:1px;}
+
+/* Luxury footer */
+.luxury-footer{text-align:left;padding:70px 40px 40px;background:#000;}
+.footer-grid{max-width:1250px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:45px;}
+.footer-grid h3{color:var(--gold);font-size:34px;margin-bottom:18px;}
+.footer-grid h4{color:var(--gold);font-family:'Poppins',sans-serif;margin-bottom:18px;}
+.footer-grid p,.footer-grid a{color:#ccc;display:block;text-decoration:none;margin-bottom:10px;line-height:1.7;}
+.footer-grid a:hover{color:var(--gold);}
+.footer-divider{max-width:1250px;height:1px;margin:45px auto 25px;background:linear-gradient(to right,transparent,var(--gold),transparent);}
+.luxury-footer>p{max-width:1250px;margin:8px auto;text-align:center;color:#aaa;}
+
+@media(max-width:1000px){
+  .video-showcase,.testimonial-grid,.footer-grid{grid-template-columns:1fr;}
+  .roadmap-line{grid-template-columns:1fr;}
+  .roadmap-line::before{display:none;}
+  .map-point{width:72px;height:72px;font-size:12px;}
+  .masterplan-map{min-height:620px;}
+}
+@media(max-width:650px){
+  .loader-inner h1{font-size:42px;}
+  .founder-note-box{padding:36px 24px;}
+  .founder-note-box h2{font-size:42px;}
+  .cursor-glow{display:none;}
+}
+
   </style>
 </head>
 <body>
+
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <h1>GG VERSE</h1>
+    <p>EST. 2025</p>
+    <div class="loader-line"></div>
+    <span>Building Experiences • Creating a Legacy</span>
+  </div>
+</div>
+<div class="cursor-glow"></div>
+<button class="sound-toggle" id="soundToggle" aria-label="Ambience toggle"><i class="fa-solid fa-volume-xmark"></i></button>
+
 
 <header>
   <div>
@@ -1243,7 +1347,8 @@
     <p class="hero-tagline">Building Experiences Today • Creating a Legacy Tomorrow</p>
     <p>Food • Travel • Lifestyle • Hospitality • Entrepreneurship</p>
     <p>Welcome to my journey as a chef, creator, and future hospitality entrepreneur.</p>
-    <a href="#about" class="btn">Explore My Journey</a>
+    <a href="#vision2036" class="btn">Explore the Vision</a>
+    <a href="#roadmap2036" class="btn">Roadmap to 2036</a>
     <a href="#food" class="btn">View Food Gallery</a>
   </div>
 </header>
@@ -1254,14 +1359,16 @@
     <a href="#about">Founder</a>
     <a href="#journey">Journey</a>
     <a href="#vision2036">Vision 2036</a>
+    <a href="#roadmap2036">Roadmap</a>
     <a href="#food">Food</a>
     <a href="#travel">Travel</a>
   <a href="#resort-gallery">Resort</a>
+    <a href="#testimonials">Reviews</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
 
-<section class="philosophy-section">
+<section class="philosophy-section reveal">
   <p class="small-title">THE GG VERSE PHILOSOPHY</p>
   <h2>Creating Experiences That Last Beyond a Visit</h2>
   <p class="philosophy-intro">GG Verse is built on the belief that true hospitality is not simply about service. It is about creating meaningful experiences, lasting memories, and a legacy that inspires people.</p>
@@ -1272,7 +1379,7 @@
   </div>
 </section>
 
-<section id="about" class="premium-founder">
+<section id="about" class="premium-founder reveal">
   <div class="premium-founder-inner">
     <div class="premium-photo"><img src="ganesh-gupta.png" alt="Ganesh Gupta"></div>
     <div class="premium-founder-content">
@@ -1285,14 +1392,14 @@
     </div>
   </div>
   <div class="premium-stats">
-    <div><h4>5+</h4><p>Years Hospitality Experience</p></div>
-    <div><h4>100+</h4><p>Food Creations</p></div>
-    <div><h4>2036</h4><p>Future Resort Vision</p></div>
-    <div><h4>1</h4><p>Big Dream: GG Verse Nepal</p></div>
+    <div><h4 class="counter" data-count="5" data-suffix="+">0</h4><p>Years Hospitality Experience</p></div>
+    <div><h4 class="counter" data-count="100" data-suffix="+">0</h4><p>Food Creations</p></div>
+    <div><h4 class="counter" data-count="2036">0</h4><p>Future Resort Vision</p></div>
+    <div><h4 class="counter" data-count="1">0</h4><p>Big Dream: GG Verse Nepal</p></div>
   </div>
 </section>
 
-<section id="journey" class="journey-section premium-story-section">
+<section id="journey" class="journey-section premium-story-section reveal">
   <div class="story-shell">
     <p class="small-title">FOUNDER JOURNEY • AMBITION • LEGACY</p>
     <h2>The Journey Behind GG Verse</h2>
@@ -1337,7 +1444,7 @@
   </div>
 </section>
 
-<section id="milestones" class="milestones-section premium-milestones">
+<section id="milestones" class="milestones-section premium-milestones reveal">
   <p class="small-title">ACHIEVEMENTS • GROWTH • FOUNDATION</p>
   <h2>Milestones & Growth</h2>
   <p class="section-intro">Every stage of my journey has helped build the foundation of GG Verse — from kitchen experience to leadership, creativity, and future entrepreneurship.</p>
@@ -1352,7 +1459,7 @@
   </div>
 </section>
 
-<section id="vision2036" class="vision-luxury">
+<section id="vision2036" class="vision-luxury reveal">
   <div class="vision-content">
     <p class="vision-label">VISION 2036 • LUXURY HOSPITALITY MASTERPLAN</p>
     <h2>Creating Nepal’s Future<br><span>Luxury Resort Legacy</span></h2>
@@ -1405,7 +1512,26 @@
   </div>
 </section>
 
-<section id="experience" class="experience-section">
+
+<section id="masterplan" class="interactive-masterplan reveal">
+  <p class="small-title">INTERACTIVE RESORT MASTERPLAN</p>
+  <h2>Explore the Future GG Verse Destination</h2>
+  <p class="section-intro">A conceptual layout of the future resort experience — designed around arrival, relaxation, dining, wellness, celebration, and unforgettable Himalayan hospitality.</p>
+  <div class="masterplan-map">
+    <button class="map-point point-villas" data-title="Himalayan Villas" data-text="Private luxury villas designed for comfort, privacy, mountain views, and personalised hospitality."><span>Villas</span></button>
+    <button class="map-point point-spa" data-title="Spa Sanctuary" data-text="Massage, yoga, meditation, relaxation rituals, and nature-inspired healing."><span>Spa</span></button>
+    <button class="map-point point-lobby" data-title="Grand Arrival Lobby" data-text="A warm luxury arrival space designed to introduce every guest to GG Verse hospitality."><span>Lobby</span></button>
+    <button class="map-point point-restaurant" data-title="Signature Restaurant" data-text="Chef-led dining blending Nepalese culture, international flavours, seasonal produce, and premium service."><span>Dining</span></button>
+    <button class="map-point point-pool" data-title="Infinity Pool" data-text="A signature pool escape with panoramic views, sunset moments, calm design, and luxury relaxation."><span>Pool</span></button>
+    <button class="map-point point-events" data-title="Wedding Garden" data-text="Elegant outdoor spaces for weddings, celebrations, cultural ceremonies, and lifetime memories."><span>Events</span></button>
+    <div class="masterplan-info">
+      <h3>Grand Arrival Lobby</h3>
+      <p>Select any gold point to explore the concept behind each area of the future GG Verse Resort & Spa Nepal.</p>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="experience-section reveal">
   <div class="experience-header"><div class="luxury-line"></div><div class="luxury-symbol">✦</div><div class="luxury-line"></div></div>
   <h2>The GG Verse Experience</h2>
   <p class="experience-intro">A harmonious blend of luxury, wellness, nature, and celebration crafted to create unforgettable memories in Nepal.</p>
@@ -1417,7 +1543,7 @@
   </div>
 </section>
 
-<section id="food" class="food-gallery">
+<section id="food" class="food-gallery reveal">
   <h2>Signature Culinary Collection</h2>
   <p class="section-intro">Showcasing dishes crafted throughout my professional hospitality journey in Sydney.</p>
   <a href="https://www.instagram.com/gg_food_art" class="btn" target="_blank">View Full Food Gallery</a>
@@ -1429,7 +1555,7 @@
   </div>
 </section>
 
-<section id="travel" class="travel-section premium-travel">
+<section id="travel" class="travel-section premium-travel reveal">
   <p class="small-title">TRAVEL • CULTURE • LIFESTYLE</p>
 
   <h2>Travel & Lifestyle</h2>
@@ -1467,7 +1593,19 @@
   </div>
 </section>
 
-<section id="food-creativity" class="food-creativity premium-culinary">
+
+<section id="experience-video" class="cinematic-video-section reveal">
+  <p class="small-title">EXPERIENCE GG VERSE</p>
+  <h2>A Brand Built Through Food, Travel & Vision</h2>
+  <p class="section-intro">Use this section to feature future GG Verse videos — food creations, Sydney journey, Nepal travel, resort inspiration, and behind-the-scenes hospitality stories.</p>
+  <div class="video-showcase">
+    <div class="video-card"><div class="video-play"><i class="fa-solid fa-play"></i></div><h3>Food Stories</h3><p>Showcase your chef journey, signature dishes, plating, kitchen leadership, and GG Food Art.</p></div>
+    <div class="video-card"><div class="video-play"><i class="fa-solid fa-mountain-sun"></i></div><h3>Nepal Vision</h3><p>Share landscapes, culture, hospitality inspiration, and the emotional reason behind GG Verse.</p></div>
+    <div class="video-card"><div class="video-play"><i class="fa-solid fa-hotel"></i></div><h3>Future Resort Concept</h3><p>Build anticipation with resort ideas, luxury references, wellness concepts, and project updates.</p></div>
+  </div>
+</section>
+
+<section id="food-creativity" class="food-creativity premium-culinary reveal">
   <div class="culinary-inner">
     <p class="small-title">FOOD • CREATIVITY • HOSPITALITY</p>
     <h2>The Culinary Vision Behind GG Verse</h2>
@@ -1518,7 +1656,7 @@
   </div>
 </section>
 
-<section id="resort-gallery" class="resort-gallery premium-resort-concept">
+<section id="resort-gallery" class="resort-gallery premium-resort-concept reveal">
   <p class="small-title">FUTURE RESORT FACILITIES</p>
   <h2>Future GG Verse Resort Concept</h2>
   <p class="section-intro">
@@ -1578,7 +1716,44 @@
   </div>
 </section>
 
-<section id="contact" class="contact-section premium-contact">
+
+<section id="roadmap2036" class="roadmap-section reveal">
+  <p class="small-title">ROADMAP TO 2036</p>
+  <h2>From Brand Vision to Luxury Destination</h2>
+  <p class="section-intro">GG Verse is a long-term journey. Each stage builds trust, audience, experience, investment readiness, and the future foundation for GG Verse Resort & Spa Nepal.</p>
+  <div class="roadmap-line">
+    <div class="roadmap-item"><span>2025</span><h3>GG Verse Created</h3><p>Build the brand identity, website, social platforms, and foundation story.</p></div>
+    <div class="roadmap-item"><span>2026</span><h3>Food & Travel Platform</h3><p>Grow content around food, hospitality, travel, lifestyle, and Nepal vision.</p></div>
+    <div class="roadmap-item"><span>2028</span><h3>Brand Expansion</h3><p>Build stronger partnerships, audience trust, and professional recognition.</p></div>
+    <div class="roadmap-item"><span>2032</span><h3>Investment & Planning</h3><p>Explore land, business planning, finance, design, and resort feasibility.</p></div>
+    <div class="roadmap-item"><span>2036</span><h3>Resort Vision</h3><p>Launch the future dream: GG Verse Resort & Spa Nepal.</p></div>
+  </div>
+</section>
+
+
+<section id="testimonials" class="testimonial-section reveal">
+  <p class="small-title">TRUST • SERVICE • RECOGNITION</p>
+  <h2>Hospitality Reputation</h2>
+  <p class="section-intro">GG Verse is built from real work, discipline, service, and the belief that great hospitality should leave people feeling valued.</p>
+  <div class="testimonial-grid">
+    <div class="testimonial-card"><div class="stars">★★★★★</div><p>“Reliable, disciplined, and passionate about delivering strong hospitality standards.”</p><h4>Hospitality Leadership</h4></div>
+    <div class="testimonial-card"><div class="stars">★★★★★</div><p>“A chef-driven mindset with attention to food quality, presentation, cleanliness, and team performance.”</p><h4>Kitchen Excellence</h4></div>
+    <div class="testimonial-card"><div class="stars">★★★★★</div><p>“The GG Verse vision connects food, culture, travel, wellness, and future luxury hospitality in Nepal.”</p><h4>Future Brand Vision</h4></div>
+  </div>
+</section>
+
+
+<section id="founder-note" class="founder-note-section reveal">
+  <div class="founder-note-box">
+    <p class="small-title">A PERSONAL NOTE FROM THE FOUNDER</p>
+    <h2>Why GG Verse Exists</h2>
+    <p>GG Verse is not just a website, a food page, or a future resort idea. It is a personal promise to build something meaningful from experience, discipline, creativity, and love for Nepalese hospitality.</p>
+    <p>My dream is to one day create a destination where guests feel peace, luxury, culture, flavour, care, and unforgettable memories — a place that represents Nepal with pride and world-class standards.</p>
+    <h4>— Ganesh Gupta</h4>
+  </div>
+</section>
+
+<section id="contact" class="contact-section premium-contact reveal">
   <p class="small-title">CONTACT • COLLABORATION • FUTURE PROJECTS</p>
   <h2>Contact & Collaboration</h2>
   <p class="section-intro">Interested in collaborating, connecting, or following the GG Verse journey? Let’s build meaningful hospitality, food, travel, and lifestyle opportunities together.</p>
@@ -1607,7 +1782,7 @@
   </div>
 </section>
 
-<section id="social" class="socials premium-social">
+<section id="social" class="socials premium-social reveal">
   <p class="small-title">CONNECT WITH THE BRAND</p>
   <h2>Follow GG Verse</h2>
   <p class="section-intro">Follow the journey across food, travel, lifestyle, hospitality, and the future vision of GG Verse Resort & Spa Nepal.</p>
@@ -1624,12 +1799,37 @@
   <img src="https://hitscounter.dev/api/hit?url=https://ggverseofficials.github.io&label=GG%20Verse%20Visitors&icon=eye" alt="Visitors">
 </div>
 
-<footer class="footer">
-  <h3>GG VERSE</h3>
-  <p>Food • Travel • Lifestyle • Hospitality • Entrepreneurship</p>
+
+<footer class="footer luxury-footer">
+  <div class="footer-grid">
+    <div><h3>GG VERSE</h3><p>Building experiences today, creating a luxury hospitality legacy tomorrow.</p></div>
+    <div><h4>Explore</h4><a href="#about">Founder</a><a href="#journey">Journey</a><a href="#vision2036">Vision 2036</a><a href="#roadmap2036">Roadmap</a></div>
+    <div><h4>Experience</h4><a href="#food">Food</a><a href="#travel">Travel</a><a href="#resort-gallery">Resort Concept</a><a href="#masterplan">Masterplan</a></div>
+    <div><h4>Connect</h4><a href="https://youtube.com/@ggverse_officials" target="_blank">YouTube</a><a href="https://instagram.com/ggverse_officials/" target="_blank">Instagram</a><a href="https://tiktok.com/@ggverseofficial" target="_blank">TikTok</a><a href="https://facebook.com/profile.php?id=61590780698637" target="_blank">Facebook</a></div>
+  </div>
+  <div class="footer-divider"></div>
   <p>© 2025 GG Verse. All Rights Reserved.</p>
   <p>Sydney, Australia • Future GG Verse Resort & Spa Nepal</p>
 </footer>
+
+
+
+<script>
+window.addEventListener("load",()=>{setTimeout(()=>{const l=document.getElementById("loader");if(l)l.classList.add("hide");},900);});
+const glow=document.querySelector(".cursor-glow");
+document.addEventListener("mousemove",(e)=>{if(glow){glow.style.left=e.clientX+"px";glow.style.top=e.clientY+"px";}});
+const revealObserver=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("active");}});},{threshold:.14});
+document.querySelectorAll(".reveal").forEach(el=>revealObserver.observe(el));
+const counters=document.querySelectorAll(".counter");
+const counterObserver=new IntersectionObserver((entries,observer)=>{entries.forEach(entry=>{if(entry.isIntersecting){const el=entry.target;const target=Number(el.dataset.count||0);const suffix=el.dataset.suffix||"";let current=0;const steps=60;const inc=target/steps;const update=()=>{current+=inc;if(current<target){el.textContent=Math.floor(current)+suffix;requestAnimationFrame(update);}else{el.textContent=target+suffix;}};update();observer.unobserve(el);}});},{threshold:.5});
+counters.forEach(c=>counterObserver.observe(c));
+const infoTitle=document.querySelector(".masterplan-info h3");
+const infoText=document.querySelector(".masterplan-info p");
+document.querySelectorAll(".map-point").forEach(point=>{point.addEventListener("click",()=>{if(infoTitle&&infoText){infoTitle.textContent=point.dataset.title;infoText.textContent=point.dataset.text;}});});
+const soundToggle=document.getElementById("soundToggle");
+let soundOn=false;
+if(soundToggle){soundToggle.addEventListener("click",()=>{soundOn=!soundOn;soundToggle.innerHTML=soundOn?'<i class="fa-solid fa-volume-high"></i>':'<i class="fa-solid fa-volume-xmark"></i>';});}
+</script>
 
 </body>
 </html>
