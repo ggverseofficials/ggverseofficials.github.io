@@ -1870,7 +1870,779 @@ header h2{font-size:76px !important;color:#fff !important;text-shadow:0 0 22px r
   }
 }
 
+
+/* =========================================================
+   CLEAN PREMIUM HERO - REPLACES CINEMATIC VERSION
+   ========================================================= */
+
+.cinematic-hero,
+.cinematic-hero *{
+  animation:none !important;
+}
+
+.premium-calm-hero{
+  min-height:100vh;
+  width:100%;
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  padding:120px 7%;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.94) 0%, rgba(0,0,0,.74) 45%, rgba(0,0,0,.25) 100%),
+    url("https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=2000&q=85") !important;
+  background-size:cover !important;
+  background-position:center right !important;
+  text-align:left;
+}
+
+.premium-calm-hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(circle at 20% 28%, rgba(212,175,55,.16), transparent 28%),
+    linear-gradient(to top, #0d0d0d 0%, transparent 22%);
+  pointer-events:none;
+}
+
+.premium-calm-hero::after{
+  content:"";
+  position:absolute;
+  left:7%;
+  bottom:70px;
+  width:360px;
+  height:1px;
+  background:linear-gradient(to right,var(--gold),transparent);
+  opacity:.7;
+}
+
+.premium-hero-inner{
+  max-width:850px;
+  position:relative;
+  z-index:2;
+  background:transparent !important;
+  border:none !important;
+  box-shadow:none !important;
+  backdrop-filter:none !important;
+  padding:0 !important;
+}
+
+.premium-calm-hero .hero-kicker{
+  color:var(--gold);
+  letter-spacing:6px;
+  font-size:13px;
+  font-weight:600;
+  text-transform:uppercase;
+  margin-bottom:24px;
+}
+
+.premium-calm-hero h1{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(54px, 7vw, 106px);
+  line-height:.98;
+  color:#fff;
+  font-weight:700;
+  margin:0 0 30px;
+  letter-spacing:.3px;
+  text-shadow:0 16px 40px rgba(0,0,0,.75);
+}
+
+.premium-calm-hero h1 span{
+  color:var(--gold);
+}
+
+.premium-hero-text{
+  max-width:760px;
+  color:#f1f1f1;
+  font-size:20px;
+  line-height:1.9;
+  margin:0;
+  text-shadow:0 8px 25px rgba(0,0,0,.85);
+}
+
+.premium-hero-line{
+  width:260px;
+  height:1px;
+  margin:34px 0 8px;
+  background:linear-gradient(to right,var(--gold),transparent);
+  position:relative;
+}
+
+.premium-hero-line::after{
+  content:"";
+  position:absolute;
+  left:110px;
+  top:50%;
+  width:10px;
+  height:10px;
+  background:var(--gold);
+  transform:translateY(-50%) rotate(45deg);
+  box-shadow:0 0 18px rgba(212,175,55,.6);
+}
+
+.premium-calm-hero .hero-actions{
+  margin-top:22px;
+}
+
+.premium-calm-hero .btn{
+  margin:20px 12px 0 0;
+}
+
+.premium-calm-hero .hero-btn-secondary{
+  background:rgba(0,0,0,.45);
+}
+
+@media(max-width:768px){
+  .premium-calm-hero{
+    justify-content:center;
+    text-align:center;
+    padding:120px 24px 80px;
+    background-position:center !important;
+  }
+
+  .premium-calm-hero::after{
+    left:50%;
+    transform:translateX(-50%);
+    width:240px;
+  }
+
+  .premium-hero-line{
+    margin:34px auto 8px;
+  }
+
+  .premium-calm-hero .btn{
+    display:block;
+    width:max-content;
+    max-width:100%;
+    margin:18px auto 0;
+  }
+
+  .premium-calm-hero .hero-kicker{
+    letter-spacing:3px;
+    font-size:11px;
+  }
+}
+
+
+/* =========================================================
+   20-FEATURE LUXURY EXPERIENCE UPGRADE
+   ========================================================= */
+
+/* 1. Premium hero particles + softer cinematic feel */
+.hero-particles-layer{
+  position:absolute;
+  inset:0;
+  background-image:
+    radial-gradient(circle, rgba(212,175,55,.58) 1px, transparent 1.4px),
+    radial-gradient(circle, rgba(255,255,255,.18) 1px, transparent 1.4px);
+  background-size:120px 120px,190px 190px;
+  background-position:0 0, 70px 90px;
+  opacity:.22;
+  animation:luxParticleRise 22s linear infinite;
+  pointer-events:none;
+  z-index:1;
+}
+
+@keyframes luxParticleRise{
+  from{transform:translateY(0);}
+  to{transform:translateY(-160px);}
+}
+
+/* 2. Nepal live time bar */
+.nepal-live-bar{
+  margin:0 0 24px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.nepal-live-bar div{
+  border:1px solid rgba(212,175,55,.32);
+  background:rgba(0,0,0,.45);
+  color:#e9e9e9;
+  border-radius:30px;
+  padding:10px 15px;
+  display:flex;
+  align-items:center;
+  gap:9px;
+  backdrop-filter:blur(10px);
+}
+
+.nepal-live-bar i{
+  color:var(--gold);
+}
+
+/* 3. Luxury texture overlay for major sections */
+section::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image:
+    linear-gradient(135deg, rgba(212,175,55,.026) 1px, transparent 1px),
+    radial-gradient(rgba(212,175,55,.035) 1px, transparent 1px);
+  background-size:42px 42px,36px 36px;
+  opacity:.18;
+  pointer-events:none;
+}
+
+section > *{
+  position:relative;
+  z-index:1;
+}
+
+/* 4. Glassmorphism upgrade */
+.signature-card,
+.story-step,
+.vision-card,
+.stay-card,
+.destination-grid div,
+.journal-grid article,
+.contact-lux-card,
+.testimonial-card,
+.roadmap-item{
+  backdrop-filter:blur(14px);
+}
+
+/* 5. Gold ambient glow hover */
+.signature-card:hover,
+.story-step:hover,
+.vision-card:hover,
+.stay-card:hover,
+.destination-grid div:hover,
+.journal-grid article:hover,
+.contact-lux-card:hover,
+.testimonial-card:hover,
+.roadmap-item:hover{
+  box-shadow:
+    0 0 42px rgba(212,175,55,.18),
+    0 0 80px rgba(212,175,55,.07),
+    0 28px 70px rgba(0,0,0,.55) !important;
+}
+
+/* 6. Luxury cursor ring */
+.cursor-ring{
+  position:fixed;
+  left:0;
+  top:0;
+  width:34px;
+  height:34px;
+  border:1px solid rgba(212,175,55,.75);
+  border-radius:50%;
+  pointer-events:none;
+  transform:translate(-50%,-50%);
+  z-index:9998;
+  transition:width .18s ease,height .18s ease,border-color .18s ease;
+}
+
+.cursor-ring.hovering{
+  width:58px;
+  height:58px;
+  border-color:rgba(212,175,55,1);
+  box-shadow:0 0 26px rgba(212,175,55,.24);
+}
+
+/* 7. Premium signature experience */
+.signature-experience-section{
+  max-width:none;
+  text-align:center;
+  background:
+    radial-gradient(circle at center top,rgba(212,175,55,.12),transparent 38%),
+    linear-gradient(180deg,#050505,#0b0b0b);
+  position:relative;
+  overflow:hidden;
+}
+
+.signature-grid{
+  max-width:1250px;
+  margin:65px auto 0;
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:18px;
+}
+
+.signature-card{
+  min-height:330px;
+  border:1px solid rgba(212,175,55,.38);
+  border-radius:24px;
+  background:linear-gradient(145deg,rgba(18,18,18,.82),rgba(0,0,0,.68));
+  padding:38px 24px;
+  transition:.4s;
+  position:relative;
+  overflow:hidden;
+}
+
+.signature-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:radial-gradient(circle at top,rgba(212,175,55,.12),transparent 42%);
+  opacity:0;
+  transition:.4s;
+}
+
+.signature-card:hover::before{
+  opacity:1;
+}
+
+.signature-card h3{
+  color:var(--gold);
+  font-size:24px;
+  margin:26px 0 16px;
+}
+
+.signature-card p{
+  color:#ddd;
+  font-size:15.5px;
+  line-height:1.75;
+}
+
+/* 8. Custom gold line icons */
+.line-icon{
+  width:76px;
+  height:76px;
+  margin:0 auto;
+  border:1px solid rgba(212,175,55,.8);
+  border-radius:50%;
+  position:relative;
+}
+
+.diamond-icon::before{
+  content:"◇";
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--gold);
+  font-size:42px;
+}
+
+.leaf-icon::before{
+  content:"☘";
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--gold);
+  font-size:34px;
+}
+
+.cuisine-icon::before{
+  content:"♨";
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--gold);
+  font-size:34px;
+}
+
+.mountain-icon::before{
+  content:"△";
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--gold);
+  font-size:42px;
+}
+
+.heart-icon::before{
+  content:"♡";
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--gold);
+  font-size:42px;
+}
+
+/* 9. Artistic Nepal map */
+.artistic-map-section{
+  max-width:none;
+  text-align:center;
+  background:
+    radial-gradient(circle at center,rgba(212,175,55,.10),transparent 38%),
+    linear-gradient(180deg,#050505,#0b0b0b);
+  position:relative;
+  overflow:hidden;
+}
+
+.nepal-map-art{
+  max-width:1120px;
+  height:560px;
+  margin:65px auto 0;
+  border:1px solid rgba(212,175,55,.42);
+  border-radius:32px;
+  position:relative;
+  overflow:hidden;
+  background:
+    linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.82)),
+    url("https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1600&q=80");
+  background-size:cover;
+  background-position:center;
+  box-shadow:0 30px 75px rgba(0,0,0,.58);
+}
+
+.map-glow{
+  position:absolute;
+  width:520px;
+  height:220px;
+  left:50%;
+  top:42%;
+  transform:translate(-50%,-50%) rotate(-8deg);
+  border:1px solid rgba(212,175,55,.48);
+  border-radius:58% 42% 56% 44%;
+  box-shadow:0 0 55px rgba(212,175,55,.16);
+}
+
+.nepal-point{
+  position:absolute;
+  border:1px solid var(--gold);
+  background:rgba(0,0,0,.76);
+  color:var(--gold);
+  border-radius:30px;
+  padding:12px 18px;
+  cursor:pointer;
+  box-shadow:0 0 25px rgba(212,175,55,.22);
+}
+
+.nepal-point::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:9px;
+  height:9px;
+  background:var(--gold);
+  border-radius:50%;
+  transform:translate(-50%,-50%);
+  box-shadow:0 0 20px var(--gold);
+}
+
+.point-pokhara{left:27%;top:34%;}
+.point-lumbini{left:38%;top:60%;}
+.point-kathmandu{left:55%;top:38%;}
+
+.map-info-card{
+  position:absolute;
+  left:50%;
+  bottom:30px;
+  transform:translateX(-50%);
+  width:min(760px,88%);
+  padding:28px;
+  border:1px solid rgba(212,175,55,.42);
+  border-radius:22px;
+  background:rgba(0,0,0,.78);
+  backdrop-filter:blur(10px);
+}
+
+.map-info-card h3{
+  color:var(--gold);
+  font-size:30px;
+  margin-bottom:10px;
+}
+
+.map-info-card p{
+  color:#eee;
+}
+
+/* 10. 360 tour concept */
+.tour-section{
+  max-width:none;
+  text-align:center;
+  background:
+    radial-gradient(circle at top,rgba(212,175,55,.10),transparent 35%),
+    linear-gradient(180deg,#0b0b0b,#050505);
+  position:relative;
+  overflow:hidden;
+}
+
+.tour-tabs{
+  max-width:920px;
+  margin:45px auto 26px;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.tour-tab{
+  border:1px solid rgba(212,175,55,.45);
+  color:var(--gold);
+  background:rgba(0,0,0,.62);
+  border-radius:30px;
+  padding:12px 18px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.tour-tab.active,
+.tour-tab:hover{
+  background:var(--gold);
+  color:#000;
+}
+
+.tour-view{
+  max-width:1180px;
+  height:560px;
+  margin:0 auto;
+  border:1px solid rgba(212,175,55,.48);
+  border-radius:32px;
+  background:
+    linear-gradient(rgba(0,0,0,.16),rgba(0,0,0,.82)),
+    url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=80");
+  background-size:cover;
+  background-position:center;
+  position:relative;
+  overflow:hidden;
+  transition:background-image .6s ease;
+  box-shadow:0 35px 80px rgba(0,0,0,.58);
+}
+
+.tour-view::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(120deg,transparent,rgba(255,255,255,.07),transparent);
+  animation:tourSweep 8s infinite;
+}
+
+@keyframes tourSweep{
+  0%{transform:translateX(-120%);}
+  55%,100%{transform:translateX(120%);}
+}
+
+.tour-view-overlay{
+  position:absolute;
+  left:34px;
+  bottom:34px;
+  max-width:520px;
+  padding:28px;
+  border:1px solid rgba(212,175,55,.42);
+  border-radius:22px;
+  background:rgba(0,0,0,.78);
+  text-align:left;
+  backdrop-filter:blur(10px);
+}
+
+.tour-view-overlay span{
+  color:var(--gold);
+  letter-spacing:4px;
+  font-size:12px;
+}
+
+.tour-view-overlay h3{
+  color:var(--gold);
+  font-size:36px;
+  margin:10px 0;
+}
+
+.tour-view-overlay p{
+  color:#eee;
+}
+
+/* 11. Night mood transition */
+.night-toggle{
+  position:fixed;
+  right:88px;
+  bottom:22px;
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  border:1px solid rgba(212,175,55,.55);
+  background:rgba(0,0,0,.72);
+  color:var(--gold);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:1000;
+  cursor:pointer;
+  backdrop-filter:blur(8px);
+}
+
+body.night-mode{
+  background:#02050a;
+}
+
+body.night-mode section,
+body.night-mode .premium-calm-hero{
+  filter:saturate(.9) brightness(.85);
+}
+
+body.night-mode .night-toggle{
+  background:var(--gold);
+  color:#000;
+}
+
+/* 12. Immersive gateway */
+.immersive-gateway{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  background:
+    radial-gradient(circle at center,rgba(212,175,55,.12),transparent 42%),
+    rgba(0,0,0,.92);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:30px;
+  backdrop-filter:blur(12px);
+}
+
+.immersive-gateway.open{
+  display:flex;
+}
+
+.gateway-content{
+  width:min(980px,95vw);
+  padding:55px;
+  border:1px solid rgba(212,175,55,.48);
+  border-radius:30px;
+  background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.86)),
+    url("https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1600&q=80");
+  background-size:cover;
+  background-position:center;
+  text-align:center;
+  box-shadow:0 35px 90px rgba(0,0,0,.7);
+}
+
+.gateway-content h2{
+  font-size:62px;
+}
+
+.gateway-content p{
+  color:#eee;
+}
+
+.gateway-close{
+  position:absolute;
+  top:28px;
+  right:32px;
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  border:1px solid rgba(212,175,55,.55);
+  background:rgba(0,0,0,.7);
+  color:var(--gold);
+  font-size:26px;
+  cursor:pointer;
+}
+
+.gateway-grid{
+  margin-top:35px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+}
+
+.gateway-grid a{
+  color:var(--gold);
+  text-decoration:none;
+  border:1px solid rgba(212,175,55,.36);
+  border-radius:18px;
+  padding:18px;
+  background:rgba(0,0,0,.62);
+  transition:.3s;
+}
+
+.gateway-grid a:hover{
+  background:var(--gold);
+  color:#000;
+}
+
+/* 13. Footer polish */
+.luxury-footer,
+footer{
+  background:
+    radial-gradient(circle at center top,rgba(212,175,55,.08),transparent 35%),
+    #000 !important;
+}
+
+/* 14. Easter egg sparkle */
+.logo-sparkle{
+  position:fixed;
+  width:8px;
+  height:8px;
+  background:var(--gold);
+  border-radius:50%;
+  pointer-events:none;
+  z-index:99999;
+  animation:sparklePop .75s ease forwards;
+}
+
+@keyframes sparklePop{
+  from{opacity:1;transform:scale(.3);}
+  to{opacity:0;transform:scale(4) translateY(-22px);}
+}
+
+/* 15. Better mobile */
+@media(max-width:1050px){
+  .signature-grid{
+    grid-template-columns:1fr;
+  }
+
+  .tour-view{
+    height:430px;
+  }
+
+  .gateway-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:680px){
+  .nepal-live-bar{
+    justify-content:center;
+  }
+
+  .nepal-map-art{
+    height:620px;
+  }
+
+  .map-glow{
+    width:330px;
+  }
+
+  .point-pokhara{left:10%;top:28%;}
+  .point-lumbini{left:24%;top:55%;}
+  .point-kathmandu{left:52%;top:34%;}
+
+  .tour-view-overlay{
+    left:18px;
+    right:18px;
+    bottom:18px;
+  }
+
+  .gateway-content{
+    padding:38px 22px;
+  }
+
+  .gateway-content h2{
+    font-size:40px;
+  }
+}
+
 </style>
+
+<style>
+.gg-logo{
+position:fixed;top:14px;left:28px;z-index:9999;
+width:220px;max-width:32vw;
+filter:drop-shadow(0 0 18px rgba(212,175,55,.35));
+transition:.35s ease;
+}
+.gg-logo:hover{transform:scale(1.03);}
+@media(max-width:768px){.gg-logo{width:150px;}}
+</style>
+
 </head>
 <body>
 
@@ -1926,49 +2698,41 @@ header h2{font-size:76px !important;color:#fff !important;text-shadow:0 0 22px r
 
 
 
-<header class="cinematic-hero" id="home">
-  <div class="hero-bg hero-bg-1"></div>
-  <div class="hero-bg hero-bg-2"></div>
-  <div class="hero-bg hero-bg-3"></div>
 
-  <div class="hero-clouds"></div>
-  <div class="hero-gold-particles"></div>
+<header class="premium-calm-hero" id="home">
+  <div class="premium-hero-overlay"></div>
 
-  <div class="cinematic-hero-overlay"></div>
-
-  <div class="cinematic-hero-content">
-    <p class="hero-kicker">GG VERSE • FUTURE LUXURY DESTINATION</p>
-
-    <div class="hero-gold-line">
-      <span></span>
-    </div>
+  <div class="hero-particles-layer" aria-hidden="true"></div>
+  <div class="premium-hero-inner">
+    <p class="hero-kicker">GG VERSE • LUXURY HOSPITALITY VISION</p>
 
     <h1>
       GG Verse<br>
       <span>Resort & Spa Nepal</span>
     </h1>
 
-    <p class="cinematic-hero-subtitle">
-      A future Himalayan luxury hospitality destination inspired by wellness,
-      fine dining, culture, nature, and unforgettable guest experiences.
+    
+    <div class="nepal-live-bar">
+      <div><i class="fa-regular fa-clock"></i><span id="nepalTime">Nepal Time</span></div>
+      <div><i class="fa-solid fa-mountain-sun"></i><span>Himalayan Calm</span></div>
+      <div><i class="fa-solid fa-wind"></i><span>Soft Mountain Air</span></div>
+    </div>
+
+    <p class="premium-hero-text">
+      A future luxury hospitality destination inspired by Nepalese culture,
+      Himalayan wellness, fine dining, nature, and unforgettable guest experiences.
     </p>
 
-    <div class="hero-actions">
-      <a href="#vision2036" class="btn">Explore the Vision</a>
-      <a href="#masterplan" class="btn hero-btn-secondary">Enter GG Verse</a>
-    </div>
+    <div class="premium-hero-line"></div>
 
-    <div class="hero-signature">
-      <span>Building experiences today</span>
-      <i></i>
-      <span>Creating a legacy tomorrow</span>
+    <div class="hero-actions">
+      <a href="#vision2036" class="btn">Explore Vision 2036</a>
+      <button class="btn hero-btn-secondary" id="enterGGVerse" type="button">Enter GG Verse</button>
+      <a href="#about" class="btn hero-btn-secondary">Meet the Founder</a>
     </div>
   </div>
-
-  <a href="#about" class="scroll-indicator" aria-label="Scroll to founder section">
-    <span></span>
-  </a>
 </header>
+
 
 
 <nav class="navbar">
@@ -2454,12 +3218,114 @@ header h2{font-size:76px !important;color:#fff !important;text-shadow:0 0 22px r
   </div>
 </section>
 
-<section id="performance-note" class="performance-section reveal">
-  <p class="small-title">QUALITY • SPEED • ACCESSIBILITY</p>
-  <h2>Built for a Premium Visitor Experience</h2>
-  <p class="section-intro">This version includes lazy-loaded images, smoother interactions, clearer navigation, responsive layouts, readable typography, and stronger accessibility structure.</p>
-  <div class="performance-grid"><div><h3>Fast</h3><p>Images are prepared for lazy loading so the page feels lighter.</p></div><div><h3>Responsive</h3><p>Layouts are designed to adapt across desktop and mobile.</p></div><div><h3>Accessible</h3><p>Clearer buttons, labels, and readable visual contrast improve usability.</p></div></div>
+
+<section id="signature-experience" class="signature-experience-section reveal">
+  <p class="small-title">THE GG VERSE PROMISE</p>
+  <h2>The Signature Experience</h2>
+  <p class="section-intro">
+    Not just a future destination — a feeling guests will remember through luxury, wellness, cuisine, Nepalese culture, and heartfelt hospitality.
+  </p>
+
+  <div class="signature-grid">
+    <div class="signature-card">
+      <div class="line-icon diamond-icon"></div>
+      <h3>Luxury Without Limits</h3>
+      <p>Every detail is designed for comfort, elegance, privacy, and timeless hospitality.</p>
+    </div>
+
+    <div class="signature-card">
+      <div class="line-icon leaf-icon"></div>
+      <h3>Wellness Beyond Relaxation</h3>
+      <p>Your body rests, your mind reconnects, and your soul breathes in peace.</p>
+    </div>
+
+    <div class="signature-card">
+      <div class="line-icon cuisine-icon"></div>
+      <h3>Culinary Excellence</h3>
+      <p>Nepalese inspiration, global technique, refined presentation, and memorable flavours.</p>
+    </div>
+
+    <div class="signature-card">
+      <div class="line-icon mountain-icon"></div>
+      <h3>Inspired by Nepal</h3>
+      <p>Every experience celebrates the beauty, culture, nature, and spirit of Nepal.</p>
+    </div>
+
+    <div class="signature-card">
+      <div class="line-icon heart-icon"></div>
+      <h3>Hospitality From the Heart</h3>
+      <p>Guests arrive as visitors and leave feeling connected, cared for, and remembered.</p>
+    </div>
+  </div>
 </section>
+
+
+
+<section id="artistic-nepal-map" class="artistic-map-section reveal">
+  <p class="small-title">ARTISTIC NEPAL MAP</p>
+  <h2>Where the Dream Belongs</h2>
+  <p class="section-intro">
+    A premium destination map concept showing Nepal as the emotional home of GG Verse — culture, nature, wellness, and future hospitality.
+  </p>
+
+  <div class="nepal-map-art">
+    <div class="map-glow"></div>
+    <button class="nepal-point point-pokhara" data-title="Pokhara Inspiration" data-text="Lake views, mountain calm, wellness travel, and resort lifestyle inspiration.">Pokhara</button>
+    <button class="nepal-point point-lumbini" data-title="Lumbini Roots" data-text="Peace, spirituality, heritage, reflection, and meaningful Nepalese identity.">Lumbini</button>
+    <button class="nepal-point point-kathmandu" data-title="Kathmandu Connection" data-text="Culture, arrival, business energy, food stories, and international access.">Kathmandu</button>
+
+    <div class="map-info-card">
+      <h3 id="mapInfoTitle">Nepal: The Heart of GG Verse</h3>
+      <p id="mapInfoText">Click a gold location to explore how each place can inspire the future resort experience.</p>
+    </div>
+  </div>
+</section>
+
+<section id="resort-tour" class="tour-section reveal">
+  <p class="small-title">360° RESORT TOUR CONCEPT</p>
+  <h2>Walk Through the Future</h2>
+  <p class="section-intro">
+    A concept preview of the spaces guests may one day explore — lobby, villa, spa, dining, infinity pool, and wedding pavilion.
+  </p>
+
+  <div class="tour-tabs">
+    <button class="tour-tab active" data-bg="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=80" data-title="Grand Arrival Lobby">Lobby</button>
+    <button class="tour-tab" data-bg="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1600&q=80" data-title="Luxury Villa">Villa</button>
+    <button class="tour-tab" data-bg="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1600&q=80" data-title="Spa Sanctuary">Spa</button>
+    <button class="tour-tab" data-bg="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=80" data-title="Signature Dining">Dining</button>
+    <button class="tour-tab" data-bg="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1600&q=80" data-title="Infinity Pool">Pool</button>
+  </div>
+
+  <div class="tour-view" id="tourView">
+    <div class="tour-view-overlay">
+      <span>CONCEPT TOUR</span>
+      <h3 id="tourTitle">Grand Arrival Lobby</h3>
+      <p>Move through the future GG Verse spaces with a luxury visual preview.</p>
+    </div>
+  </div>
+</section>
+
+<div class="night-toggle" id="nightToggle" title="Switch mood">
+  <i class="fa-regular fa-moon"></i>
+</div>
+
+<div class="immersive-gateway" id="immersiveGateway">
+  <button class="gateway-close" id="gatewayClose">&times;</button>
+  <div class="gateway-content">
+    <p class="small-title">ENTER GG VERSE</p>
+    <h2>Explore the Future Resort Experience</h2>
+    <p>Choose a destination moment and jump directly into the story.</p>
+
+    <div class="gateway-grid">
+      <a href="#vision2036">Vision 2036</a>
+      <a href="#masterplan">Masterplan</a>
+      <a href="#accommodation">Villas</a>
+      <a href="#resort-tour">360° Tour</a>
+      <a href="#signature-experience">Signature Experience</a>
+      <a href="#contact">Collaborate</a>
+    </div>
+  </div>
+</div>
 
 <section id="contact" class="contact-section premium-contact reveal">
   <p class="small-title">CONTACT • COLLABORATION • FUTURE PROJECTS</p>
@@ -2510,7 +3376,7 @@ header h2{font-size:76px !important;color:#fff !important;text-shadow:0 0 22px r
 
 <footer class="footer luxury-footer">
   <div class="footer-grid">
-    <div><h3>GG VERSE</h3><p>Building experiences today, creating a luxury hospitality legacy tomorrow.</p></div>
+    <div><h3>GG VERSE</h3><p>The journey begins today — a future luxury hospitality legacy for Nepal.</p></div>
     <div><h4>Explore</h4><a href="#about">Founder</a><a href="#journey">Journey</a><a href="#vision2036">Vision 2036</a><a href="#roadmap2036">Roadmap</a></div>
     <div><h4>Experience</h4><a href="#food">Food</a><a href="#travel">Travel</a><a href="#resort-gallery">Resort Concept</a><a href="#masterplan">Masterplan</a></div>
     <div><h4>Connect</h4><a href="https://youtube.com/@ggverse_officials" target="_blank">YouTube</a><a href="https://instagram.com/ggverse_officials/" target="_blank">Instagram</a><a href="https://tiktok.com/@ggverseofficial" target="_blank">TikTok</a><a href="https://facebook.com/profile.php?id=61590780698637" target="_blank">Facebook</a></div>
@@ -2788,5 +3654,118 @@ if(ambientVolume){
   </div>
 </div>
 <script>document.addEventListener("keydown",(e)=>{if(e.key==="Escape"){const m=document.getElementById("luxModal");if(m)m.classList.remove("open");const c=document.querySelector(".ai-concierge");if(c)c.classList.remove("open");}});</script>
+
+<script>
+/* 20-feature upgrade interactions */
+(function(){
+  // Nepal local time
+  function updateNepalTime(){
+    const el = document.getElementById("nepalTime");
+    if(!el) return;
+    const now = new Date();
+    const time = new Intl.DateTimeFormat("en-US", {
+      timeZone:"Asia/Kathmandu",
+      hour:"2-digit",
+      minute:"2-digit",
+      hour12:true
+    }).format(now);
+    el.textContent = "Nepal " + time;
+  }
+  updateNepalTime();
+  setInterval(updateNepalTime, 30000);
+
+  // Cursor ring
+  if(!document.querySelector(".cursor-ring")){
+    const ring = document.createElement("div");
+    ring.className = "cursor-ring";
+    document.body.appendChild(ring);
+
+    document.addEventListener("mousemove", e => {
+      ring.style.left = e.clientX + "px";
+      ring.style.top = e.clientY + "px";
+    });
+
+    document.querySelectorAll("a,button,.open-lux-modal,.map-point,.nepal-point,.tour-tab").forEach(el => {
+      el.addEventListener("mouseenter", () => ring.classList.add("hovering"));
+      el.addEventListener("mouseleave", () => ring.classList.remove("hovering"));
+    });
+  }
+
+  // Artistic Nepal map
+  const mapTitle = document.getElementById("mapInfoTitle");
+  const mapText = document.getElementById("mapInfoText");
+  document.querySelectorAll(".nepal-point").forEach(point => {
+    point.addEventListener("click", () => {
+      if(mapTitle) mapTitle.textContent = point.dataset.title;
+      if(mapText) mapText.textContent = point.dataset.text;
+    });
+  });
+
+  // Tour preview
+  const tourView = document.getElementById("tourView");
+  const tourTitle = document.getElementById("tourTitle");
+  document.querySelectorAll(".tour-tab").forEach(tab => {
+    tab.addEventListener("click", () => {
+      document.querySelectorAll(".tour-tab").forEach(t => t.classList.remove("active"));
+      tab.classList.add("active");
+      if(tourView){
+        tourView.style.backgroundImage = `linear-gradient(rgba(0,0,0,.16),rgba(0,0,0,.82)), url("${tab.dataset.bg}")`;
+      }
+      if(tourTitle) tourTitle.textContent = tab.dataset.title;
+    });
+  });
+
+  // Night mode
+  const nightToggle = document.getElementById("nightToggle");
+  if(nightToggle){
+    nightToggle.addEventListener("click", () => {
+      document.body.classList.toggle("night-mode");
+      nightToggle.innerHTML = document.body.classList.contains("night-mode")
+        ? '<i class="fa-regular fa-sun"></i>'
+        : '<i class="fa-regular fa-moon"></i>';
+    });
+  }
+
+  // Immersive gateway
+  const enter = document.getElementById("enterGGVerse");
+  const gateway = document.getElementById("immersiveGateway");
+  const close = document.getElementById("gatewayClose");
+
+  if(enter && gateway){
+    enter.addEventListener("click", () => gateway.classList.add("open"));
+  }
+  if(close && gateway){
+    close.addEventListener("click", () => gateway.classList.remove("open"));
+  }
+  if(gateway){
+    gateway.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => gateway.classList.remove("open"));
+    });
+  }
+
+  // Logo / brand sparkle easter egg
+  const brand = document.querySelector(".nav-brand");
+  if(brand){
+    brand.addEventListener("click", e => {
+      for(let i=0;i<10;i++){
+        const s = document.createElement("span");
+        s.className = "logo-sparkle";
+        s.style.left = (e.clientX + (Math.random()*80-40)) + "px";
+        s.style.top = (e.clientY + (Math.random()*50-25)) + "px";
+        document.body.appendChild(s);
+        setTimeout(() => s.remove(), 800);
+      }
+    });
+  }
+
+  // Escape closes immersive gateway
+  document.addEventListener("keydown", e => {
+    if(e.key === "Escape" && gateway){
+      gateway.classList.remove("open");
+    }
+  });
+})();
+</script>
+
 </body>
 </html>
