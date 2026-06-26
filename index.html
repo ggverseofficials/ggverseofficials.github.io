@@ -2781,6 +2781,209 @@ footer{
  justify-content:center;
  align-items:center;
 }
+
+/* =========================================================
+   FOUNDER DOCUMENTARY - IMAGE REMOVED, LUXURY STORY REDESIGN
+   ========================================================= */
+
+#founder-documentary{
+  background:
+    radial-gradient(circle at 18% 20%, rgba(212,175,55,.12), transparent 34%),
+    linear-gradient(135deg,#030303,#0b0b0b 55%,#050505);
+  position:relative;
+  overflow:hidden;
+}
+
+#founder-documentary::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image:
+    linear-gradient(135deg, rgba(212,175,55,.035) 1px, transparent 1px),
+    radial-gradient(rgba(212,175,55,.04) 1px, transparent 1px);
+  background-size:42px 42px,34px 34px;
+  opacity:.35;
+  pointer-events:none;
+}
+
+#founder-documentary::after{
+  content:"";
+  position:absolute;
+  width:520px;
+  height:520px;
+  right:-180px;
+  top:90px;
+  border:1px solid rgba(212,175,55,.14);
+  border-radius:50%;
+  box-shadow:0 0 90px rgba(212,175,55,.08);
+  pointer-events:none;
+}
+
+#founder-documentary .documentary-grid{
+  max-width:1180px;
+  margin:auto;
+  display:block !important;
+  text-align:left;
+  position:relative;
+  z-index:1;
+}
+
+#founder-documentary .documentary-content{
+  max-width:1080px;
+  margin:auto;
+  padding:58px 64px 54px;
+  border-left:3px solid rgba(212,175,55,.75);
+  border-top:1px solid rgba(212,175,55,.28);
+  border-bottom:1px solid rgba(212,175,55,.28);
+  border-right:1px solid rgba(212,175,55,.18);
+  border-radius:0 28px 28px 0;
+  background:
+    radial-gradient(circle at top left, rgba(212,175,55,.12), transparent 38%),
+    linear-gradient(145deg, rgba(18,18,18,.88), rgba(0,0,0,.72));
+  box-shadow:0 35px 80px rgba(0,0,0,.55);
+  position:relative;
+  overflow:hidden;
+}
+
+#founder-documentary .documentary-content::before{
+  content:"";
+  position:absolute;
+  inset:16px;
+  border:1px solid rgba(212,175,55,.10);
+  border-radius:0 20px 20px 0;
+  pointer-events:none;
+}
+
+.documentary-quote-mark{
+  position:absolute;
+  right:52px;
+  top:20px;
+  font-family:'Playfair Display',serif;
+  font-size:150px;
+  line-height:1;
+  color:rgba(212,175,55,.12);
+  pointer-events:none;
+}
+
+#founder-documentary .small-title{
+  color:var(--gold);
+  letter-spacing:7px;
+  font-size:13px;
+  margin-bottom:22px;
+}
+
+#founder-documentary h2{
+  text-align:left !important;
+  font-family:'Playfair Display',serif;
+  font-size:68px;
+  line-height:1.08;
+  color:var(--gold);
+  margin-bottom:28px;
+  max-width:850px;
+  text-shadow:0 0 24px rgba(212,175,55,.12);
+}
+
+#founder-documentary .documentary-content > p{
+  max-width:920px;
+  color:#f0f0f0;
+  font-size:19px;
+  line-height:1.95;
+  margin-bottom:34px;
+}
+
+#founder-documentary .doc-points{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+  margin-top:28px;
+}
+
+#founder-documentary .doc-points span{
+  text-align:center;
+  padding:16px 18px;
+  border:1px solid rgba(212,175,55,.40);
+  border-radius:40px;
+  color:var(--gold);
+  background:rgba(0,0,0,.42);
+  box-shadow:inset 0 0 18px rgba(212,175,55,.04);
+}
+
+.documentary-mini-timeline{
+  margin-top:42px;
+  padding-top:34px;
+  border-top:1px solid rgba(212,175,55,.24);
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  gap:14px;
+  position:relative;
+}
+
+.documentary-mini-timeline::before{
+  content:"";
+  position:absolute;
+  top:61px;
+  left:8%;
+  right:8%;
+  height:1px;
+  background:linear-gradient(to right, transparent, rgba(212,175,55,.7), transparent);
+}
+
+.documentary-mini-timeline div{
+  text-align:center;
+  position:relative;
+  z-index:1;
+}
+
+.documentary-mini-timeline span{
+  width:58px;
+  height:58px;
+  margin:0 auto 12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid rgba(212,175,55,.5);
+  border-radius:50%;
+  background:#050505;
+  font-size:24px;
+  box-shadow:0 0 22px rgba(212,175,55,.12);
+}
+
+.documentary-mini-timeline p{
+  color:#ddd;
+  font-size:14px;
+  line-height:1.4;
+  margin:0;
+}
+
+@media(max-width:900px){
+  #founder-documentary .documentary-content{
+    padding:42px 26px;
+    border-left:1px solid rgba(212,175,55,.38);
+    border-radius:24px;
+  }
+
+  #founder-documentary h2{
+    font-size:42px;
+    text-align:center !important;
+  }
+
+  #founder-documentary .small-title,
+  #founder-documentary .documentary-content > p{
+    text-align:center;
+  }
+
+  #founder-documentary .doc-points{
+    grid-template-columns:1fr;
+  }
+
+  .documentary-mini-timeline{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .documentary-mini-timeline::before{
+    display:none;
+  }
+}
 </style>
 <style>
 .gg-logo{
@@ -2888,11 +3091,6 @@ Hero → Navigation → Founder → Founder Documentary → Brand Philosophy →
 <div><h4 class="counter" data-count="100" data-suffix="+">0</h4><p>Food Creations</p></div>
 <div><h4 class="counter" data-count="2036">0</h4><p>Future Resort Vision</p></div>
 <div><h4 class="counter" data-count="1">0</h4><p>Big Dream: GG Verse Nepal</p></div>
-</div>
-</section><section class="founder-documentary-section reveal" id="founder-documentary">
-<div class="documentary-grid">
-<div class="documentary-image"></div>
-<div class="documentary-content"><p class="small-title">FOUNDER DOCUMENTARY</p><h2>The Human Story Behind the Brand</h2><p>GG Verse becomes more powerful when visitors understand the person behind the vision — the journey from Nepal to Australia, the discipline of kitchen life, the growth into leadership, and the dream to create something meaningful back home.</p><div class="doc-points"><span>Hospitality discipline</span><span>Chef leadership</span><span>Nepalese identity</span><span>Future resort vision</span></div></div>
 </div>
 </section><section class="philosophy-section reveal">
 <p class="small-title">THE GG VERSE PHILOSOPHY</p>
@@ -3167,11 +3365,6 @@ Hero → Navigation → Founder → Founder Documentary → Brand Philosophy →
 <p id="mapInfoText">Click a gold location to explore how each place can inspire the future resort experience.</p>
 </div>
 </div>
-</section><section class="world-map-section reveal" id="world-map">
-<p class="small-title">GLOBAL CONNECTIONS</p><h2>From Sydney to Nepal</h2>
-<p class="section-intro">A real hospitality journey in Australia connected to a future luxury destination vision in Nepal.</p>
-<div class="world-map-card"><div class="map-location australia"><span>Sydney</span></div><div class="map-location nepal"><span>Nepal</span></div><div class="connection-line"></div>
-<div class="map-story"><h3>Two Places. One Vision.</h3><p>Sydney represents experience, discipline, leadership, and professional hospitality growth. Nepal represents home, culture, nature, wellness, and the future destination of GG Verse Resort &amp; Spa.</p></div></div>
 </section><section class="travel-section premium-travel reveal" id="travel">
 <p class="small-title">TRAVEL • CULTURE • LIFESTYLE</p>
 <h2>Travel &amp; Lifestyle</h2>
