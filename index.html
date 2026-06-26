@@ -1323,7 +1323,173 @@
   .cursor-glow{display:none;}
 }
 
-  </style>
+  
+.sound-toggle.sound-on{
+  background:var(--gold);
+  color:#000;
+  box-shadow:0 0 25px rgba(212,175,55,.45);
+}
+
+
+.sound-toggle::after{
+  content:"Soft Flute";
+  position:absolute;
+  right:58px;
+  top:50%;
+  transform:translateY(-50%);
+  white-space:nowrap;
+  color:#d4af37;
+  background:rgba(0,0,0,.78);
+  border:1px solid rgba(212,175,55,.35);
+  padding:8px 12px;
+  border-radius:20px;
+  font-size:12px;
+  opacity:0;
+  pointer-events:none;
+  transition:.3s;
+}
+
+.sound-toggle:hover::after{
+  opacity:1;
+}
+
+.sound-toggle.sound-on{
+  background:var(--gold);
+  color:#000;
+  box-shadow:0 0 25px rgba(212,175,55,.45);
+}
+
+
+/* =========================================================
+   PREMIUM AMBIENT EXPERIENCE PANEL
+   ========================================================= */
+.sound-toggle{display:none !important;}
+
+.ambient-panel{
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  z-index:1000;
+  font-family:'Poppins',sans-serif;
+}
+
+.ambient-main-btn{
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  border:1px solid rgba(212,175,55,.6);
+  background:rgba(0,0,0,.78);
+  color:var(--gold);
+  cursor:pointer;
+  backdrop-filter:blur(10px);
+  box-shadow:0 0 24px rgba(212,175,55,.18);
+  transition:.3s;
+}
+
+.ambient-main-btn:hover,
+.ambient-main-btn.active{
+  background:var(--gold);
+  color:#000;
+  box-shadow:0 0 28px rgba(212,175,55,.48);
+}
+
+.ambient-menu{
+  position:absolute;
+  right:0;
+  bottom:70px;
+  width:330px;
+  padding:20px;
+  border:1px solid rgba(212,175,55,.45);
+  border-radius:22px;
+  background:rgba(0,0,0,.88);
+  backdrop-filter:blur(14px);
+  box-shadow:0 25px 65px rgba(0,0,0,.55);
+  opacity:0;
+  transform:translateY(18px) scale(.96);
+  pointer-events:none;
+  transition:.35s ease;
+}
+
+.ambient-panel.open .ambient-menu{
+  opacity:1;
+  transform:translateY(0) scale(1);
+  pointer-events:auto;
+}
+
+.ambient-title{
+  color:var(--gold);
+  letter-spacing:2px;
+  text-transform:uppercase;
+  font-size:13px;
+  margin-bottom:14px;
+  text-align:center;
+}
+
+.ambient-mode{
+  width:100%;
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:13px 12px;
+  margin-bottom:10px;
+  border:1px solid rgba(212,175,55,.22);
+  border-radius:15px;
+  background:rgba(255,255,255,.03);
+  color:white;
+  cursor:pointer;
+  text-align:left;
+  transition:.25s;
+}
+
+.ambient-mode:hover,
+.ambient-mode.active{
+  border-color:var(--gold);
+  background:rgba(212,175,55,.12);
+}
+
+.ambient-mode span{
+  font-size:24px;
+  width:35px;
+}
+
+.ambient-mode strong{
+  color:var(--gold);
+  display:block;
+  font-size:15px;
+}
+
+.ambient-mode small{
+  color:#cfcfcf;
+  font-size:12px;
+}
+
+.ambient-volume{
+  margin-top:15px;
+  padding-top:14px;
+  border-top:1px solid rgba(212,175,55,.25);
+  display:grid;
+  grid-template-columns:70px 1fr;
+  gap:12px;
+  align-items:center;
+}
+
+.ambient-volume span{
+  color:#ddd;
+  font-size:13px;
+}
+
+.ambient-volume input{
+  accent-color:#d4af37;
+}
+
+@media(max-width:650px){
+  .ambient-menu{
+    width:290px;
+    right:-4px;
+  }
+}
+
+</style>
 </head>
 <body>
 
@@ -1336,7 +1502,46 @@
   </div>
 </div>
 <div class="cursor-glow"></div>
-<button class="sound-toggle" id="soundToggle" aria-label="Ambience toggle"><i class="fa-solid fa-volume-xmark"></i></button>
+
+<div class="ambient-panel" id="ambientPanel">
+  <button class="ambient-main-btn" id="ambientToggle" aria-label="Ambient experience toggle">
+    <i class="fa-solid fa-spa"></i>
+  </button>
+
+  <div class="ambient-menu" id="ambientMenu">
+    <p class="ambient-title">Ambient Experience</p>
+
+    <button class="ambient-mode active" data-mode="mountain">
+      <span>🌿</span>
+      <div>
+        <strong>Mountain Calm</strong>
+        <small>Flute • River • Birds • Wind</small>
+      </div>
+    </button>
+
+    <button class="ambient-mode" data-mode="lounge">
+      <span>🍷</span>
+      <div>
+        <strong>Luxury Lounge</strong>
+        <small>Soft piano • Warm atmosphere</small>
+      </div>
+    </button>
+
+    <button class="ambient-mode" data-mode="night">
+      <span>🌙</span>
+      <div>
+        <strong>Night Retreat</strong>
+        <small>Crickets • Water • Distant bells</small>
+      </div>
+    </button>
+
+    <div class="ambient-volume">
+      <span>Volume</span>
+      <input type="range" id="ambientVolume" min="0" max="100" value="28">
+    </div>
+  </div>
+</div>
+
 
 
 <header>
@@ -1826,10 +2031,233 @@ counters.forEach(c=>counterObserver.observe(c));
 const infoTitle=document.querySelector(".masterplan-info h3");
 const infoText=document.querySelector(".masterplan-info p");
 document.querySelectorAll(".map-point").forEach(point=>{point.addEventListener("click",()=>{if(infoTitle&&infoText){infoTitle.textContent=point.dataset.title;infoText.textContent=point.dataset.text;}});});
-const soundToggle=document.getElementById("soundToggle");
-let soundOn=false;
-if(soundToggle){soundToggle.addEventListener("click",()=>{soundOn=!soundOn;soundToggle.innerHTML=soundOn?'<i class="fa-solid fa-volume-high"></i>':'<i class="fa-solid fa-volume-xmark"></i>';});}
+
+const ambientPanel = document.getElementById("ambientPanel");
+const ambientToggle = document.getElementById("ambientToggle");
+const ambientModes = document.querySelectorAll(".ambient-mode");
+const ambientVolume = document.getElementById("ambientVolume");
+
+let ambientOn = false;
+let currentMode = "mountain";
+let ctx = null;
+let master = null;
+let activeNodes = [];
+let movementTimer = null;
+
+function clearAmbient(){
+  if(movementTimer){
+    clearInterval(movementTimer);
+    movementTimer = null;
+  }
+
+  activeNodes.forEach(node => {
+    try{
+      if(node.stop) node.stop();
+      if(node.disconnect) node.disconnect();
+    }catch(e){}
+  });
+
+  activeNodes = [];
+}
+
+function createNoiseSource(type="lowpass", freq=900, gainValue=.02){
+  const bufferSize = ctx.sampleRate * 2;
+  const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
+  const data = buffer.getChannelData(0);
+
+  for(let i=0;i<bufferSize;i++){
+    data[i] = (Math.random() * 2 - 1) * 0.32;
+  }
+
+  const source = ctx.createBufferSource();
+  source.buffer = buffer;
+  source.loop = true;
+
+  const filter = ctx.createBiquadFilter();
+  filter.type = type;
+  filter.frequency.value = freq;
+
+  const gain = ctx.createGain();
+  gain.gain.value = gainValue;
+
+  source.connect(filter);
+  filter.connect(gain);
+  gain.connect(master);
+  source.start();
+
+  activeNodes.push(source, filter, gain);
+  return {source, filter, gain};
+}
+
+function createTone(freq, type="sine", gainValue=.04){
+  const osc = ctx.createOscillator();
+  const gain = ctx.createGain();
+
+  osc.type = type;
+  osc.frequency.value = freq;
+  gain.gain.value = gainValue;
+
+  osc.connect(gain);
+  gain.connect(master);
+  osc.start();
+
+  activeNodes.push(osc, gain);
+  return {osc, gain};
+}
+
+function setVolume(){
+  if(!master || !ctx || !ambientVolume) return;
+  const value = Number(ambientVolume.value) / 100;
+  const safeVolume = value * 0.42;
+  master.gain.cancelScheduledValues(ctx.currentTime);
+  master.gain.linearRampToValueAtTime(ambientOn ? safeVolume : 0.0001, ctx.currentTime + .7);
+}
+
+function initAudio(){
+  if(!ctx){
+    ctx = new (window.AudioContext || window.webkitAudioContext)();
+    master = ctx.createGain();
+    master.gain.value = 0.0001;
+    master.connect(ctx.destination);
+  }
+
+  if(ctx.state === "suspended"){
+    ctx.resume();
+  }
+}
+
+function buildMountainCalm(){
+  clearAmbient();
+
+  // soft bamboo-flute inspired tones
+  const flute = createTone(392, "sine", .055);
+  const harmony = createTone(196, "sine", .025);
+
+  const lfo = ctx.createOscillator();
+  const lfoGain = ctx.createGain();
+  lfo.frequency.value = 4.1;
+  lfoGain.gain.value = 4.5;
+  lfo.connect(lfoGain);
+  lfoGain.connect(flute.osc.frequency);
+  lfo.start();
+  activeNodes.push(lfo, lfoGain);
+
+  createNoiseSource("lowpass", 700, .013); // gentle wind
+  createNoiseSource("bandpass", 1200, .006); // soft birds/air texture
+
+  const notes = [392, 440, 349.23, 329.63, 392, 493.88, 440];
+  let i = 0;
+  movementTimer = setInterval(() => {
+    if(!ambientOn || !ctx) return;
+    i = (i + 1) % notes.length;
+    flute.osc.frequency.linearRampToValueAtTime(notes[i], ctx.currentTime + 3.2);
+  }, 6200);
+}
+
+function buildLuxuryLounge(){
+  clearAmbient();
+
+  createTone(130.81, "sine", .035);
+  createTone(196, "sine", .028);
+  createTone(261.63, "triangle", .018);
+  createTone(329.63, "sine", .012);
+
+  createNoiseSource("lowpass", 420, .01); // warm room texture
+
+  const notes = [261.63, 293.66, 329.63, 392, 329.63, 293.66];
+  let i = 0;
+  movementTimer = setInterval(() => {
+    if(!ambientOn || !ctx) return;
+    i = (i + 1) % notes.length;
+    const bell = createTone(notes[i], "sine", .035);
+    bell.gain.gain.setValueAtTime(.0001, ctx.currentTime);
+    bell.gain.gain.linearRampToValueAtTime(.035, ctx.currentTime + .25);
+    bell.gain.gain.linearRampToValueAtTime(.0001, ctx.currentTime + 2.8);
+    setTimeout(() => {
+      try{bell.osc.stop();}catch(e){}
+    }, 3200);
+  }, 5200);
+}
+
+function buildNightRetreat(){
+  clearAmbient();
+
+  createTone(98, "sine", .032);
+  createTone(146.83, "sine", .018);
+  createNoiseSource("lowpass", 500, .018); // distant water
+  createNoiseSource("bandpass", 2400, .006); // cricket-like air
+
+  movementTimer = setInterval(() => {
+    if(!ambientOn || !ctx) return;
+    const bellFreqs = [523.25, 659.25, 783.99];
+    const freq = bellFreqs[Math.floor(Math.random() * bellFreqs.length)];
+    const bell = createTone(freq, "sine", .03);
+    bell.gain.gain.setValueAtTime(.0001, ctx.currentTime);
+    bell.gain.gain.linearRampToValueAtTime(.03, ctx.currentTime + .4);
+    bell.gain.gain.linearRampToValueAtTime(.0001, ctx.currentTime + 4.5);
+    setTimeout(() => {
+      try{bell.osc.stop();}catch(e){}
+    }, 4800);
+  }, 9000);
+}
+
+function buildMode(mode){
+  if(mode === "mountain") buildMountainCalm();
+  if(mode === "lounge") buildLuxuryLounge();
+  if(mode === "night") buildNightRetreat();
+  setVolume();
+}
+
+function startAmbient(){
+  initAudio();
+  ambientOn = true;
+  buildMode(currentMode);
+  ambientToggle.classList.add("active");
+  ambientToggle.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
+  setVolume();
+}
+
+function stopAmbient(){
+  ambientOn = false;
+  if(master && ctx){
+    master.gain.cancelScheduledValues(ctx.currentTime);
+    master.gain.linearRampToValueAtTime(0.0001, ctx.currentTime + 1.2);
+  }
+  ambientToggle.classList.remove("active");
+  ambientToggle.innerHTML = '<i class="fa-solid fa-spa"></i>';
+}
+
+if(ambientToggle){
+  ambientToggle.addEventListener("click", () => {
+    ambientPanel.classList.toggle("open");
+
+    if(!ambientOn){
+      startAmbient();
+    }else if(ambientPanel.classList.contains("open")){
+      // keep playing while choosing mode
+    }else{
+      stopAmbient();
+    }
+  });
+}
+
+ambientModes.forEach(btn => {
+  btn.addEventListener("click", () => {
+    currentMode = btn.dataset.mode;
+    ambientModes.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    if(ambientOn){
+      buildMode(currentMode);
+    }
+  });
+});
+
+if(ambientVolume){
+  ambientVolume.addEventListener("input", setVolume);
+}
 </script>
+
 
 </body>
 </html>
