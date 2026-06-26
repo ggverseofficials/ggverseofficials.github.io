@@ -1489,6 +1489,108 @@
   }
 }
 
+
+/* COMPLETE LUXURY HOTEL WEBSITE EXPERIENCE UPGRADE */
+header{position:relative;overflow:hidden;background:linear-gradient(rgba(0,0,0,.58),rgba(0,0,0,.82)),url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=80") !important;background-size:cover !important;background-position:center !important;}
+header::before{content:"";position:absolute;inset:-10%;background:radial-gradient(circle at 30% 20%,rgba(212,175,55,.13),transparent 28%),linear-gradient(120deg,transparent,rgba(255,255,255,.06),transparent);animation:cinematicMove 12s ease-in-out infinite alternate;pointer-events:none;}
+header::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,#0d0d0d 0%,transparent 22%);pointer-events:none;}
+header>div{position:relative;z-index:2;background:rgba(0,0,0,.38) !important;max-width:1050px !important;}
+header h2{font-size:76px !important;color:#fff !important;text-shadow:0 0 22px rgba(212,175,55,.2);}
+.hero-subtitle{max-width:820px;margin:0 auto;color:#eee;font-size:19px;line-height:1.9;}
+@keyframes cinematicMove{from{transform:scale(1) translateX(-1%);}to{transform:scale(1.06) translateX(1%);}}
+
+.lux-modal{position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.86);display:none;align-items:center;justify-content:center;padding:30px;}
+.lux-modal.open{display:flex;}
+.lux-modal-content{width:min(1100px,96vw);display:grid;grid-template-columns:1fr 1fr;background:#050505;border:1px solid rgba(212,175,55,.48);border-radius:28px;overflow:hidden;position:relative;box-shadow:0 40px 90px rgba(0,0,0,.8);}
+.lux-modal-close{position:absolute;top:18px;right:18px;z-index:2;width:42px;height:42px;border-radius:50%;border:1px solid rgba(212,175,55,.5);background:rgba(0,0,0,.7);color:var(--gold);font-size:26px;cursor:pointer;}
+.lux-modal-image{min-height:520px;background-size:cover;background-position:center;}
+.lux-modal-text{padding:60px 45px;}
+.lux-modal-text h2{text-align:left;font-size:48px;}
+.lux-modal-text p{color:#ddd;line-height:1.9;margin-bottom:25px;}
+.lux-modal-text ul{list-style:none;display:grid;gap:12px;}
+.lux-modal-text li{color:#eee;border-bottom:1px solid rgba(212,175,55,.2);padding-bottom:10px;}
+.lux-modal-text li::before{content:"✦";color:var(--gold);margin-right:10px;}
+.open-lux-modal{cursor:pointer;}
+
+.ai-concierge{position:fixed;left:22px;bottom:22px;z-index:1000;}
+.concierge-toggle{width:56px;height:56px;border-radius:50%;border:1px solid rgba(212,175,55,.6);background:rgba(0,0,0,.8);color:var(--gold);cursor:pointer;backdrop-filter:blur(10px);}
+.concierge-panel{position:absolute;left:0;bottom:72px;width:340px;border:1px solid rgba(212,175,55,.45);border-radius:24px;background:rgba(0,0,0,.9);backdrop-filter:blur(14px);overflow:hidden;opacity:0;pointer-events:none;transform:translateY(16px);transition:.3s;}
+.ai-concierge.open .concierge-panel{opacity:1;pointer-events:auto;transform:translateY(0);}
+.concierge-header{padding:20px;border-bottom:1px solid rgba(212,175,55,.25);}
+.concierge-header h3{color:var(--gold);}.concierge-header p{color:#ccc;font-size:13px;}
+.concierge-chat{padding:18px;min-height:120px;max-height:240px;overflow:auto;}
+.bot-msg,.user-msg{padding:12px 14px;border-radius:16px;margin-bottom:10px;font-size:14px;line-height:1.55;}
+.bot-msg{background:rgba(212,175,55,.12);color:#eee;}.user-msg{background:rgba(255,255,255,.08);color:white;text-align:right;}
+.quick-questions{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:16px;}
+.quick-questions button{border:1px solid rgba(212,175,55,.28);background:rgba(255,255,255,.04);color:#ddd;border-radius:12px;padding:10px;cursor:pointer;}
+.quick-questions button:hover{color:#000;background:var(--gold);}
+
+.world-map-section,.lux-gallery-section,.journal-section,.newsletter-section{max-width:none;text-align:center;background:radial-gradient(circle at top,rgba(212,175,55,.09),transparent 35%),linear-gradient(180deg,#050505,#0b0b0b);position:relative;overflow:hidden;}
+.world-map-card{max-width:1100px;height:520px;margin:60px auto 0;border:1px solid rgba(212,175,55,.42);border-radius:30px;background:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.72)),url("https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1600&q=80");background-size:cover;background-position:center;position:relative;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.55);}
+.map-location{position:absolute;width:130px;height:130px;border-radius:50%;border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;color:var(--gold);background:rgba(0,0,0,.72);box-shadow:0 0 35px rgba(212,175,55,.24);}
+.map-location::before{content:"";position:absolute;inset:-14px;border:1px solid rgba(212,175,55,.25);border-radius:50%;animation:pulseRing 2.5s infinite;}
+.australia{right:18%;bottom:18%;}.nepal{left:20%;top:20%;}
+.connection-line{position:absolute;left:30%;top:40%;width:45%;height:1px;background:linear-gradient(to right,var(--gold),transparent,var(--gold));transform:rotate(18deg);opacity:.7;}
+.map-story{position:absolute;left:50%;bottom:30px;transform:translateX(-50%);width:min(760px,88%);padding:28px;border:1px solid rgba(212,175,55,.4);border-radius:22px;background:rgba(0,0,0,.78);backdrop-filter:blur(8px);}
+.map-story h3{color:var(--gold);font-size:30px;}.map-story p{color:#eee;line-height:1.8;}
+
+.masonry-gallery{max-width:1200px;margin:60px auto 0;display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:18px;}
+.masonry-item{border-radius:24px;border:1px solid rgba(212,175,55,.35);background-size:cover;background-position:center;position:relative;overflow:hidden;transition:.35s;}
+.masonry-item:hover{transform:scale(1.025);border-color:var(--gold);box-shadow:0 25px 55px rgba(0,0,0,.5);}
+.masonry-item::after{content:"View Story";position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:center;padding:25px;color:var(--gold);font-weight:600;background:linear-gradient(transparent,rgba(0,0,0,.82));opacity:0;transition:.3s;}
+.masonry-item:hover::after{opacity:1;}
+.masonry-item:nth-child(1){background-image:url("https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1200&q=80");}
+.masonry-item:nth-child(2){background-image:url("https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80");}
+.masonry-item:nth-child(3){background-image:url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80");}
+.masonry-item:nth-child(4){background-image:url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80");}
+.masonry-item:nth-child(5){background-image:url("https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1200&q=80");}
+.masonry-item.tall{grid-row:span 2;}.masonry-item.wide{grid-column:span 2;}
+
+.journal-grid{max-width:1150px;margin:60px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+.journal-grid article{padding:38px 30px;text-align:left;border:1px solid rgba(212,175,55,.38);border-radius:24px;background:linear-gradient(145deg,rgba(18,18,18,.96),rgba(0,0,0,.88));transition:.35s;}
+.journal-grid article:hover{transform:translateY(-10px);border-color:var(--gold);}
+.journal-grid span{color:var(--gold);letter-spacing:3px;text-transform:uppercase;font-size:13px;}
+.journal-grid h3{color:var(--gold);font-size:28px;margin:18px 0 14px;}
+.journal-grid p{color:#ddd;line-height:1.8;}
+
+.newsletter-box{max-width:900px;margin:auto;padding:55px;border:1px solid rgba(212,175,55,.46);border-radius:30px;background:rgba(0,0,0,.75);backdrop-filter:blur(10px);box-shadow:0 30px 70px rgba(0,0,0,.48);}
+.newsletter-box h2{font-size:60px;}.newsletter-box p{color:#ddd;line-height:1.8;margin-bottom:30px;}
+.newsletter-box form{display:flex;gap:14px;}
+.newsletter-box input{flex:1;padding:17px 20px;border-radius:30px;border:1px solid rgba(212,175,55,.35);background:rgba(255,255,255,.05);color:white;outline:none;}
+.newsletter-box button{padding:17px 28px;border-radius:30px;border:1px solid var(--gold);background:var(--gold);color:#000;font-weight:700;cursor:pointer;}
+
+@media(max-width:1000px){header h2{font-size:48px !important;}.lux-modal-content{grid-template-columns:1fr;}.lux-modal-image{min-height:320px;}.masonry-gallery{grid-template-columns:1fr;grid-auto-rows:260px;}.masonry-item.tall,.masonry-item.wide{grid-row:span 1;grid-column:span 1;}.journal-grid{grid-template-columns:1fr;}.newsletter-box form{flex-direction:column;}.world-map-card{height:620px;}}
+@media(max-width:650px){.concierge-panel{width:300px;}.map-location{width:95px;height:95px;font-size:13px;}.newsletter-box{padding:34px 22px;}}
+
+
+/* NEXT-LEVEL LUXURY BRAND EXPANSION */
+.accommodation-section,.booking-concept-section,.destination-guide-section,.founder-documentary-section,.performance-section{max-width:none;position:relative;overflow:hidden;text-align:center;background:radial-gradient(circle at top,rgba(212,175,55,.09),transparent 35%),linear-gradient(180deg,#050505,#0b0b0b);}
+.accommodation-section::before,.destination-guide-section::before,.performance-section::before{content:"";position:absolute;inset:0;background-image:linear-gradient(135deg,rgba(212,175,55,.035) 1px,transparent 1px);background-size:34px 34px;opacity:.35;pointer-events:none;}
+.stay-grid{max-width:1250px;margin:65px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:30px;position:relative;z-index:1;}
+.stay-card{min-height:460px;padding:38px;border:1px solid rgba(212,175,55,.45);border-radius:28px;background:linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,.86)),url("https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80");background-size:cover;background-position:center;text-align:left;display:flex;flex-direction:column;justify-content:flex-end;transition:.45s;position:relative;overflow:hidden;}
+.stay-card:nth-child(2){background-image:linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,.86)),url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80");}
+.stay-card:nth-child(3){background-image:linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,.86)),url("https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80");}
+.stay-card::after{content:"";position:absolute;inset:18px;border:1px solid rgba(212,175,55,.22);border-radius:22px;pointer-events:none;}
+.stay-card:hover{transform:translateY(-12px) scale(1.015);border-color:var(--gold);box-shadow:0 35px 75px rgba(0,0,0,.65),0 0 28px rgba(212,175,55,.2);}
+.stay-card span{color:var(--gold);letter-spacing:3px;text-transform:uppercase;font-size:13px;position:relative;z-index:1;}
+.stay-card h3{color:var(--gold);font-size:32px;margin:15px 0;position:relative;z-index:1;}
+.stay-card p{color:#eee;line-height:1.75;position:relative;z-index:1;}
+.booking-card{max-width:1180px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center;padding:55px;border:1px solid rgba(212,175,55,.45);border-radius:30px;background:linear-gradient(135deg,rgba(0,0,0,.86),rgba(0,0,0,.7)),url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=80");background-size:cover;background-position:center;text-align:left;box-shadow:0 35px 80px rgba(0,0,0,.55);}
+.booking-card h2{text-align:left;font-size:58px;}.booking-card p{color:#eee;line-height:1.85;}
+.booking-form{display:grid;gap:16px;}.booking-form input,.booking-form select{padding:17px 20px;border-radius:30px;border:1px solid rgba(212,175,55,.38);background:rgba(0,0,0,.72);color:white;outline:none;}.booking-form button{padding:17px 28px;border-radius:30px;border:1px solid var(--gold);background:var(--gold);color:#000;font-weight:700;cursor:pointer;}
+.destination-grid{max-width:1180px;margin:65px auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative;z-index:1;}
+.destination-grid div,.performance-grid div{padding:38px 28px;border:1px solid rgba(212,175,55,.36);border-radius:24px;background:linear-gradient(145deg,rgba(18,18,18,.96),rgba(0,0,0,.88));transition:.35s;}
+.destination-grid div:hover,.performance-grid div:hover{transform:translateY(-10px);border-color:var(--gold);box-shadow:0 0 30px rgba(212,175,55,.16);}
+.destination-grid i{color:var(--gold);font-size:38px;margin-bottom:22px;}
+.destination-grid h3,.performance-grid h3{color:var(--gold);font-size:25px;margin-bottom:14px;}
+.destination-grid p,.performance-grid p{color:#ddd;line-height:1.75;}
+.documentary-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:430px 1fr;gap:60px;align-items:center;text-align:left;}
+.documentary-image{min-height:560px;border-radius:30px;border:1px solid rgba(212,175,55,.45);background:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.4)),url("ganesh-gupta.png");background-size:cover;background-position:center;box-shadow:0 30px 70px rgba(0,0,0,.55);}
+.documentary-content h2{text-align:left;font-size:62px;}.documentary-content p{color:#e4e4e4;font-size:18px;line-height:1.9;}
+.doc-points{margin-top:35px;display:grid;grid-template-columns:repeat(2,1fr);gap:14px;}.doc-points span{padding:14px 18px;border:1px solid rgba(212,175,55,.35);border-radius:30px;color:var(--gold);background:rgba(0,0,0,.45);text-align:center;}
+.performance-grid{max-width:1050px;margin:55px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;position:relative;z-index:1;}
+@media(max-width:1000px){.stay-grid,.destination-grid,.performance-grid,.booking-card,.documentary-grid{grid-template-columns:1fr;}.booking-card h2,.documentary-content h2{font-size:42px;}.documentary-image{min-height:420px;}}
+
 </style>
 </head>
 <body>
@@ -1546,12 +1648,11 @@
 
 <header>
   <div>
-    <img src="ggverse-logo.png" alt="GG Verse Logo" class="hero-logo">
-    <h2>A Vision of Hospitality, Wellness & Luxury in Nepal</h2>
+    <img loading="lazy" src="ggverse-logo.png" alt="GG Verse Logo" class="hero-logo">
+    <h2>GG Verse Resort & Spa Nepal</h2>
     <div class="hero-divider"></div>
-    <p class="hero-tagline">Building Experiences Today • Creating a Legacy Tomorrow</p>
-    <p>Food • Travel • Lifestyle • Hospitality • Entrepreneurship</p>
-    <p>Welcome to my journey as a chef, creator, and future hospitality entrepreneur.</p>
+    <p class="hero-tagline">Luxury Hospitality • Himalayan Wellness • Culinary Excellence</p>
+    <p class="hero-subtitle">A future luxury destination shaped by food, wellness, culture, travel, and the dream of creating unforgettable hospitality experiences in Nepal.</p>
     <a href="#vision2036" class="btn">Explore the Vision</a>
     <a href="#roadmap2036" class="btn">Roadmap to 2036</a>
     <a href="#food" class="btn">View Food Gallery</a>
@@ -1568,7 +1669,11 @@
     <a href="#food">Food</a>
     <a href="#travel">Travel</a>
   <a href="#resort-gallery">Resort</a>
+    <a href="#accommodation">Villas</a>
+    <a href="#destination-guide">Nepal</a>
     <a href="#testimonials">Reviews</a>
+    <a href="#journal">Journal</a>
+    <a href="#concierge">Concierge</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
@@ -1586,7 +1691,7 @@
 
 <section id="about" class="premium-founder reveal">
   <div class="premium-founder-inner">
-    <div class="premium-photo"><img src="ganesh-gupta.png" alt="Ganesh Gupta"></div>
+    <div class="premium-photo"><img loading="lazy" src="ganesh-gupta.png" alt="Ganesh Gupta"></div>
     <div class="premium-founder-content">
       <p class="small-title">FOUNDER OF GG VERSE</p>
       <h2>Ganesh Gupta</h2>
@@ -1741,10 +1846,10 @@
   <h2>The GG Verse Experience</h2>
   <p class="experience-intro">A harmonious blend of luxury, wellness, nature, and celebration crafted to create unforgettable memories in Nepal.</p>
   <div class="experience-grid">
-    <div class="experience-card dining"><div class="experience-content"><div class="experience-icon">🍴</div><h3>Fine Dining</h3><div class="mini-line"></div><p>Signature culinary experiences inspired by Nepalese heritage and international cuisine.</p></div></div>
-    <div class="experience-card wellness"><div class="experience-content"><div class="experience-icon">♨</div><h3>Luxury Wellness</h3><div class="mini-line"></div><p>Spa treatments, infinity pools, yoga retreats, and complete relaxation.</p></div></div>
-    <div class="experience-card nature"><div class="experience-content"><div class="experience-icon">❦</div><h3>Nature Retreats</h3><div class="mini-line"></div><p>Discover Nepal’s natural beauty through curated adventures and exclusive escapes.</p></div></div>
-    <div class="experience-card events"><div class="experience-content"><div class="experience-icon">◇</div><h3>Weddings & Events</h3><div class="mini-line"></div><p>Celebrate unforgettable moments in a world-class luxury destination.</p></div></div>
+    <div class="experience-card dining open-lux-modal" data-title="Fine Dining Experience" data-desc="Signature culinary experiences inspired by Nepalese heritage, premium plating, international technique, and memorable service." data-features="Chef-led menus|Nepalese flavours|Modern presentation|Seasonal inspiration" data-image="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80"><div class="experience-content"><div class="experience-icon">🍴</div><h3>Fine Dining</h3><div class="mini-line"></div><p>Signature culinary experiences inspired by Nepalese heritage and international cuisine.</p></div></div>
+    <div class="experience-card wellness open-lux-modal" data-title="Luxury Wellness Journey" data-desc="Spa, relaxation, mindful wellness, and calm luxury designed to restore peace of mind." data-features="Spa rituals|Yoga and meditation|Massage therapies|Nature-inspired calm" data-image="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80"><div class="experience-content"><div class="experience-icon">♨</div><h3>Luxury Wellness</h3><div class="mini-line"></div><p>Spa treatments, infinity pools, yoga retreats, and complete relaxation.</p></div></div>
+    <div class="experience-card nature open-lux-modal" data-title="Nature Retreats" data-desc="Curated escapes connected to Nepal’s landscapes, fresh air, mountain calm, and soulful travel experiences." data-features="Mountain escapes|Nature walks|Cultural discovery|Peaceful retreats" data-image="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"><div class="experience-content"><div class="experience-icon">❦</div><h3>Nature Retreats</h3><div class="mini-line"></div><p>Discover Nepal’s natural beauty through curated adventures and exclusive escapes.</p></div></div>
+    <div class="experience-card events open-lux-modal" data-title="Weddings & Events" data-desc="Elegant celebration moments designed for weddings, private events, cultural ceremonies, and unforgettable memories." data-features="Luxury ceremonies|Private events|Cultural celebrations|Guest experience design" data-image="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1200&q=80"><div class="experience-content"><div class="experience-icon">◇</div><h3>Weddings & Events</h3><div class="mini-line"></div><p>Celebrate unforgettable moments in a world-class luxury destination.</p></div></div>
   </div>
 </section>
 
@@ -1753,10 +1858,10 @@
   <p class="section-intro">Showcasing dishes crafted throughout my professional hospitality journey in Sydney.</p>
   <a href="https://www.instagram.com/gg_food_art" class="btn" target="_blank">View Full Food Gallery</a>
   <div class="gallery-grid">
-    <div class="gallery-item"><img src="lamb-shank.png" alt="Lamb shank dish"><h3>Signature Creations</h3></div>
-    <div class="gallery-item"><img src="beef-short-rib.png" alt="Beef short rib dish"><h3>Modern Dining</h3></div>
-    <div class="gallery-item"><img src="thai-beef-salad.png" alt="Thai beef salad"><h3>Chef Specials</h3></div>
-    <div class="gallery-item"><img src="prawn-pasta.png" alt="Prawn pasta"><h3>International Cuisine</h3></div>
+    <div class="gallery-item"><img loading="lazy" src="lamb-shank.png" alt="Lamb shank dish"><h3>Signature Creations</h3></div>
+    <div class="gallery-item"><img loading="lazy" src="beef-short-rib.png" alt="Beef short rib dish"><h3>Modern Dining</h3></div>
+    <div class="gallery-item"><img loading="lazy" src="thai-beef-salad.png" alt="Thai beef salad"><h3>Chef Specials</h3></div>
+    <div class="gallery-item"><img loading="lazy" src="prawn-pasta.png" alt="Prawn pasta"><h3>International Cuisine</h3></div>
   </div>
 </section>
 
@@ -1870,7 +1975,7 @@
 
   <div class="resort-grid premium-resort-grid">
 
-    <div class="resort-card resort-villas">
+    <div class="resort-card resort-villas open-lux-modal" data-title="Himalayan Luxury Villas" data-desc="Private luxury villas designed for comfort, privacy, mountain views, and world-class luxury stays." data-features="Private villas|Mountain-view design|Premium amenities|Personalised hospitality" data-image="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80">
       <div class="resort-overlay">
         <span>01</span>
         <h3>Himalayan Luxury Villas</h3>
@@ -1878,7 +1983,7 @@
       </div>
     </div>
 
-    <div class="resort-card resort-infinity">
+    <div class="resort-card resort-infinity open-lux-modal" data-title="Infinity Pool" data-desc="A signature pool destination for peaceful mornings, sunset views, and premium leisure experiences." data-features="Panoramic views|Sunset leisure|Luxury loungers|Poolside service" data-image="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1200&q=80">
       <div class="resort-overlay">
         <span>02</span>
         <h3>Infinity Pool</h3>
@@ -1886,7 +1991,7 @@
       </div>
     </div>
 
-    <div class="resort-card resort-sanctuary">
+    <div class="resort-card resort-sanctuary open-lux-modal" data-title="Spa Sanctuary" data-desc="Massage suites, wellness rituals, yoga, meditation, and healing spaces inspired by nature and calm luxury." data-features="Massage suites|Yoga spaces|Healing rituals|Quiet luxury" data-image="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1200&q=80">
       <div class="resort-overlay">
         <span>03</span>
         <h3>Spa Sanctuary</h3>
@@ -1894,7 +1999,7 @@
       </div>
     </div>
 
-    <div class="resort-card resort-signature">
+    <div class="resort-card resort-signature open-lux-modal" data-title="Signature Restaurant" data-desc="A chef-led restaurant concept blending Nepalese heritage, international flavours, and refined service." data-features="Chef-led dining|Premium plating|Local ingredients|Global flavour" data-image="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=80">
       <div class="resort-overlay">
         <span>04</span>
         <h3>Signature Restaurant</h3>
@@ -1902,7 +2007,7 @@
       </div>
     </div>
 
-    <div class="resort-card resort-wedding">
+    <div class="resort-card resort-wedding open-lux-modal" data-title="Wedding Destination" data-desc="Elegant celebration spaces for weddings, private events, cultural ceremonies, and lifetime memories." data-features="Wedding garden|Private events|Cultural ceremonies|Luxury styling" data-image="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1200&q=80">
       <div class="resort-overlay">
         <span>05</span>
         <h3>Wedding Destination</h3>
@@ -1910,7 +2015,7 @@
       </div>
     </div>
 
-    <div class="resort-card resort-sky">
+    <div class="resort-card resort-sky open-lux-modal" data-title="Sky Lounge & Rooftop Bar" data-desc="A premium social space with sunset drinks, panoramic views, live atmosphere, and luxury evening experiences." data-features="Rooftop bar|Sunset drinks|Live ambience|Social luxury" data-image="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=80">
       <div class="resort-overlay">
         <span>06</span>
         <h3>Sky Lounge & Rooftop Bar</h3>
@@ -1958,6 +2063,92 @@
   </div>
 </section>
 
+
+<section id="world-map" class="world-map-section reveal">
+  <p class="small-title">GLOBAL CONNECTIONS</p><h2>From Sydney to Nepal</h2>
+  <p class="section-intro">GG Verse connects a real hospitality journey in Australia with a future luxury destination vision in Nepal.</p>
+  <div class="world-map-card"><div class="map-location australia"><span>Sydney</span></div><div class="map-location nepal"><span>Nepal</span></div><div class="connection-line"></div>
+  <div class="map-story"><h3>Two Places. One Vision.</h3><p>Sydney represents experience, discipline, leadership, and professional hospitality growth. Nepal represents home, culture, nature, wellness, and the future destination of GG Verse Resort & Spa.</p></div></div>
+</section>
+
+<section id="lux-gallery" class="lux-gallery-section reveal">
+  <p class="small-title">VISUAL STORYTELLING</p><h2>Food, Travel & Lifestyle Gallery</h2>
+  <p class="section-intro">A cinematic gallery for future dishes, Nepal travel, luxury resort inspiration, and brand visuals.</p>
+  <div class="masonry-gallery">
+    <div class="masonry-item tall open-lux-modal" data-title="Chef Signature Dish" data-desc="Food is the heart of GG Verse — flavour, story, presentation, and hospitality on one plate." data-features="Signature plating|Chef story|Premium presentation|Hospitality emotion" data-image="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1200&q=80"></div>
+    <div class="masonry-item open-lux-modal" data-title="Luxury Retreat Mood" data-desc="A calm visual direction inspired by wellness, mountains, and luxury hospitality." data-features="Wellness mood|Natural design|Quiet luxury|Premium atmosphere" data-image="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80"></div>
+    <div class="masonry-item wide open-lux-modal" data-title="Himalayan Escape" data-desc="Nepal’s landscapes are a powerful part of the future GG Verse identity." data-features="Mountain views|Nature travel|Cultural pride|Destination vision" data-image="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"></div>
+    <div class="masonry-item open-lux-modal" data-title="Dining Atmosphere" data-desc="The future dining experience will combine warmth, detail, service, and storytelling." data-features="Restaurant mood|Guest experience|Warm service|Premium dining" data-image="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80"></div>
+    <div class="masonry-item tall open-lux-modal" data-title="Celebration Destination" data-desc="GG Verse aims to become a destination for meaningful moments and luxury celebrations." data-features="Weddings|Events|Culture|Memories" data-image="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1200&q=80"></div>
+  </div>
+</section>
+
+<section id="journal" class="journal-section reveal">
+  <p class="small-title">GG VERSE JOURNAL</p><h2>Stories That Build the Brand</h2>
+  <p class="section-intro">A future journal for food stories, travel memories, hospitality insights, personal growth, and updates toward the 2036 resort vision.</p>
+  <div class="journal-grid">
+    <article><span>Food</span><h3>The Plate Is the First Experience</h3><p>How culinary presentation, flavour, timing, and care shape hospitality memories.</p></article>
+    <article><span>Travel</span><h3>Nepal as a Luxury Destination</h3><p>Why culture, mountains, wellness, and warmth can define the future of GG Verse.</p></article>
+    <article><span>Leadership</span><h3>From Kitchen Discipline to Vision</h3><p>How daily hospitality lessons are building the foundation for a larger dream.</p></article>
+  </div>
+</section>
+
+<section id="newsletter" class="newsletter-section reveal">
+  <div class="newsletter-box"><p class="small-title">JOIN THE JOURNEY</p><h2>Become Part of GG Verse</h2>
+  <p>Receive future updates about food, travel, luxury hospitality, and the road to GG Verse Resort & Spa Nepal.</p>
+  <form onsubmit="event.preventDefault(); alert('Thank you for joining the GG Verse journey.');"><input type="email" placeholder="Enter your email address" required><button type="submit">Join the Journey</button></form></div>
+</section>
+
+
+<section id="accommodation" class="accommodation-section reveal">
+  <p class="small-title">ACCOMMODATION CONCEPT</p>
+  <h2>Future Villas & Signature Stays</h2>
+  <p class="section-intro">A luxury accommodation concept for GG Verse Resort & Spa Nepal — designed to make the future vision feel real, premium, and bookable.</p>
+  <div class="stay-grid">
+    <div class="stay-card open-lux-modal" data-title="Himalayan View Villa" data-desc="A private villa concept designed for peaceful mountain views, natural materials, warm lighting, and premium comfort." data-features="King bedroom|Mountain balcony|Private lounge|Personalised arrival" data-image="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80"><span>Signature Stay</span><h3>Himalayan View Villa</h3><p>Private luxury accommodation with calm interiors and future mountain-inspired design.</p></div>
+    <div class="stay-card open-lux-modal" data-title="Wellness Retreat Suite" data-desc="A suite concept created for guests seeking rest, spa treatments, meditation, and peace." data-features="Wellness bath|Meditation corner|Spa access|Soft natural textures" data-image="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80"><span>Wellness Stay</span><h3>Wellness Retreat Suite</h3><p>A calming stay concept connected to spa, meditation, and emotional wellbeing.</p></div>
+    <div class="stay-card open-lux-modal" data-title="Presidential Legacy Villa" data-desc="The most premium future villa concept for special guests, private celebrations, and luxury hospitality experiences." data-features="Private dining|Premium terrace|Luxury lounge|Dedicated service" data-image="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80"><span>Ultra Luxury</span><h3>Presidential Legacy Villa</h3><p>A flagship stay concept for unforgettable luxury experiences and celebration moments.</p></div>
+  </div>
+</section>
+
+<section id="booking-concept" class="booking-concept-section reveal">
+  <div class="booking-card">
+    <div><p class="small-title">CONCEPT BOOKING EXPERIENCE</p><h2>Imagine Your Future Stay</h2><p>This concept booking panel helps visitors picture GG Verse as a real future destination — from villas and spa packages to dining and celebration experiences.</p></div>
+    <form class="booking-form" onsubmit="event.preventDefault(); alert('Thank you. This is a future concept booking form for GG Verse.');">
+      <select required><option value="">Select Experience</option><option>Himalayan View Villa</option><option>Wellness Retreat Suite</option><option>Signature Dining</option><option>Wedding Destination</option></select>
+      <input type="date" required>
+      <select required><option value="">Guests</option><option>1 Guest</option><option>2 Guests</option><option>Family / Group</option><option>Event Enquiry</option></select>
+      <button type="submit">Explore Concept</button>
+    </form>
+  </div>
+</section>
+
+<section id="destination-guide" class="destination-guide-section reveal">
+  <p class="small-title">NEPAL DESTINATION GUIDE</p>
+  <h2>Culture, Nature & Wellness</h2>
+  <p class="section-intro">GG Verse is rooted in Nepal — a country of mountains, culture, warmth, spirituality, food, and unforgettable journeys.</p>
+  <div class="destination-grid">
+    <div><i class="fa-solid fa-mountain-sun"></i><h3>Himalayan Landscapes</h3><p>Mountains, sunrise views, fresh air, forests, and breathtaking natural beauty.</p></div>
+    <div><i class="fa-solid fa-hands-praying"></i><h3>Spiritual Wellness</h3><p>Meditation, temples, peace, reflection, and emotional connection.</p></div>
+    <div><i class="fa-solid fa-bowl-food"></i><h3>Nepalese Cuisine</h3><p>Local flavours, spices, culture, comfort food, and future fine-dining inspiration.</p></div>
+    <div><i class="fa-solid fa-people-group"></i><h3>Culture & Community</h3><p>Hospitality, festivals, family values, local stories, and meaningful guest experiences.</p></div>
+  </div>
+</section>
+
+<section id="founder-documentary" class="founder-documentary-section reveal">
+  <div class="documentary-grid">
+    <div class="documentary-image"></div>
+    <div class="documentary-content"><p class="small-title">FOUNDER DOCUMENTARY</p><h2>The Human Story Behind the Brand</h2><p>GG Verse becomes more powerful when visitors understand the person behind the vision — the journey from Nepal to Australia, the discipline of kitchen life, the growth into leadership, and the dream to create something meaningful back home.</p><div class="doc-points"><span>Hospitality discipline</span><span>Chef leadership</span><span>Nepalese identity</span><span>Future resort vision</span></div></div>
+  </div>
+</section>
+
+<section id="performance-note" class="performance-section reveal">
+  <p class="small-title">QUALITY • SPEED • ACCESSIBILITY</p>
+  <h2>Built for a Premium Visitor Experience</h2>
+  <p class="section-intro">This version includes lazy-loaded images, smoother interactions, clearer navigation, responsive layouts, readable typography, and stronger accessibility structure.</p>
+  <div class="performance-grid"><div><h3>Fast</h3><p>Images are prepared for lazy loading so the page feels lighter.</p></div><div><h3>Responsive</h3><p>Layouts are designed to adapt across desktop and mobile.</p></div><div><h3>Accessible</h3><p>Clearer buttons, labels, and readable visual contrast improve usability.</p></div></div>
+</section>
+
 <section id="contact" class="contact-section premium-contact reveal">
   <p class="small-title">CONTACT • COLLABORATION • FUTURE PROJECTS</p>
   <h2>Contact & Collaboration</h2>
@@ -2001,7 +2192,7 @@
 </section>
 
 <div style="text-align:center; margin:40px 0;">
-  <img src="https://hitscounter.dev/api/hit?url=https://ggverseofficials.github.io&label=GG%20Verse%20Visitors&icon=eye" alt="Visitors">
+  <img loading="lazy" src="https://hitscounter.dev/api/hit?url=https://ggverseofficials.github.io&label=GG%20Verse%20Visitors&icon=eye" alt="Visitors">
 </div>
 
 
@@ -2259,5 +2450,31 @@ if(ambientVolume){
 </script>
 
 
+
+<div class="lux-modal" id="luxModal">
+  <div class="lux-modal-content">
+    <button class="lux-modal-close" id="luxModalClose">&times;</button>
+    <div class="lux-modal-image" id="luxModalImage"></div>
+    <div class="lux-modal-text">
+      <p class="small-title">GG VERSE EXPERIENCE</p>
+      <h2 id="luxModalTitle">Luxury Experience</h2>
+      <p id="luxModalDesc">Experience details will appear here.</p>
+      <ul id="luxModalList"></ul>
+    </div>
+  </div>
+</div>
+
+<div class="ai-concierge" id="concierge">
+  <button class="concierge-toggle" id="conciergeToggle"><i class="fa-solid fa-comments"></i></button>
+  <div class="concierge-panel">
+    <div class="concierge-header"><h3>GG Verse Concierge</h3><p>Ask about the brand, food, resort, or Vision 2036.</p></div>
+    <div class="concierge-chat" id="conciergeChat"><div class="bot-msg">Namaste. Welcome to GG Verse. How can I guide you?</div></div>
+    <div class="quick-questions">
+      <button data-q="vision">Vision 2036</button><button data-q="food">Food</button>
+      <button data-q="resort">Resort</button><button data-q="founder">Founder</button>
+    </div>
+  </div>
+</div>
+<script>document.addEventListener("keydown",(e)=>{if(e.key==="Escape"){const m=document.getElementById("luxModal");if(m)m.classList.remove("open");const c=document.querySelector(".ai-concierge");if(c)c.classList.remove("open");}});</script>
 </body>
 </html>
